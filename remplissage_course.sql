@@ -31,24 +31,39 @@ INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Prefe
 (15, 'Nguyen', 'Linh', 27, 'F', 'Standard', 'Vietnamien', 'linh.nguyen@example.com', '0123456803', 35);
 
 
-/*
+
 INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
-(1, 'Bernard', 'Luc', '2020-01-15', '1234567890', 'B', '0123456792', 'luc.bernard@example.com', 'actif', 'Paris'),
-(2, 'Legrand', 'Sophie', '2018-07-10', '0987654321', 'B', '0123456793', 'sophie.legrand@example.com', 'actif', 'Marseille'),
-(3, 'Lambert', 'Paul', '2019-03-22', '1122334455', 'B', '0123456794', 'paul.lambert@example.com', 'inactif', 'Lyon'),
-(4, 'Nguyen', 'Van', '2022-02-18', '2233445566', 'B', '0123456795', 'van.nguyen@example.com', 'actif', 'Paris'),
-(5, 'Rossi', 'Giulia', '2021-09-10', '3344556677', 'B', '0123456796', 'giulia.rossi@example.com', 'actif', 'Milan'),
-(6, 'Wilson', 'Mark', '2019-11-15', '4455667788', 'B', '0123456797', 'mark.wilson@example.com', 'inactif', 'Londres'),
-(7, 'Müller', 'Laura', '2021-03-28', '5566778899', 'B', '0123456798', 'laura.muller@example.com', 'actif', 'Berlin'),
-(8, 'Hernandez', 'Miguel', '2020-06-30', '6677889900', 'B', '0123456799', 'miguel.hernandez@example.com', 'inactif', 'Madrid'),
-(9, 'Chen', 'Li', '2020-05-12', '7788990011', 'B', '0123456800', 'li.chen@example.com', 'actif', 'Shanghai'),
-(10, 'Garcia', 'Luis', '2017-12-05', '8899001122', 'B', '0123456801', 'luis.garcia@example.com', 'actif', 'Barcelona'),
-(11, 'Johnson', 'Sara', '2018-04-18', '9900112233', 'B', '0123456802', 'sara.johnson@example.com', 'actif', 'New York'),
-(12, 'Patel', 'Amit', '2021-08-01', '1011121314', 'B', '0123456803', 'amit.patel@example.com', 'actif', 'Mumbai'),
-(13, 'Brown', 'Emily', '2019-05-05', '1112131415', 'B', '0123456804', 'emily.brown@example.com', 'inactif', 'Sydney'),
-(14, 'Davis', 'Jake', '2018-10-24', '1213141516', 'B', '0123456805', 'jake.davis@example.com', 'actif', 'Chicago'),
+(1, 'Bernard', 'Luc', '2020-01-15', '1234567890', 'B', '0123456792', 'luc.bernard@example.com', 'actif', 'Paris');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
+(2, 'Legrand', 'Sophie', '2018-07-10', '0987654321', 'B', '0123456793', 'sophie.legrand@example.com', 'actif', 'Marseille');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
+(3, 'Lambert', 'Paul', '2019-03-22', '1122334455', 'B', '0123456794', 'paul.lambert@example.com', 'inactif', 'Lyon');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
+(4, 'Nguyen', 'Van', '2022-02-18', '2233445566', 'B', '0123456795', 'van.nguyen@example.com', 'actif', 'Paris');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
+(5, 'Rossi', 'Giulia', '2021-09-10', '3344556677', 'B', '0123456796', 'giulia.rossi@example.com', 'actif', 'Milan');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
+(6, 'Wilson', 'Mark', '2019-11-15', '4455667788', 'B', '0123456797', 'mark.wilson@example.com', 'inactif', 'Londres');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
+(7, 'Müller', 'Laura', '2021-03-28', '5566778899', 'B', '0123456798', 'laura.muller@example.com', 'actif', 'Berlin');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
+(8, 'Hernandez', 'Miguel', '2020-06-30', '6677889900', 'B', '0123456799', 'miguel.hernandez@example.com', 'inactif', 'Madrid');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
+(9, 'Chen', 'Li', '2020-05-12', '7788990011', 'B', '0123456800', 'li.chen@example.com', 'actif', 'Shanghai');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
+(10, 'Garcia', 'Luis', '2017-12-05', '8899001122', 'B', '0123456801', 'luis.garcia@example.com', 'actif', 'Barcelona');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
+(11, 'Johnson', 'Sara', '2018-04-18', '9900112233', 'B', '0123456802', 'sara.johnson@example.com', 'actif', 'New York');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
+(12, 'Patel', 'Amit', '2021-08-01', '1011121314', 'B', '0123456803', 'amit.patel@example.com', 'actif', 'Mumbai');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
+(13, 'Brown', 'Emily', '2019-05-05', '1112131415', 'B', '0123456804', 'emily.brown@example.com', 'inactif', 'Sydney');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
+(14, 'Davis', 'Jake', '2018-10-24', '1213141516', 'B', '0123456805', 'jake.davis@example.com', 'actif', 'Chicago');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
 (15, 'Ali', 'Aisha', '2022-07-15', '1314151617', 'B', '0123456806', 'aisha.ali@example.com', 'actif', 'Dubai');
 
+/*
 INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
 (1, '10 Rue de la Paix', 'Paris', '75002', 1000, TRUE, 'Prise en charge', 'Proche de la place Vendôme'),
 (2, '25 Avenue du Prado', 'Marseille', '13006', 2000, TRUE, 'En_Attente', 'Centre ville'),
