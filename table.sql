@@ -6,7 +6,7 @@ DROP TABLE  Arrivee;
 DROP TABLE  Heure;
 DROP TABLE  Dates;
 DROP TABLE Meteo;
--- DROP TABLE Course;
+DROP TABLE Course;
 
 -- Création des tables de dimensions
 
@@ -130,7 +130,7 @@ CREATE TABLE Course (
     ID_CHAUFFEUR INT, 
     ID_VEHICULE INT, 
     ID_METEO INT,
-    ID_COURSE INT PRIMARY KEY,
+    ID_COURSE INT PRIMARY KEY
 
     /*
     Prix NUMBER(10,2),
