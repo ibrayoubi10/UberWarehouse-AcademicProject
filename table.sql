@@ -60,7 +60,7 @@ CREATE TABLE Vehicule (
     Etat_Vehicule  VARCHAR2(20) CHECK (Etat_Vehicule IN ('Excellent', 'Bon', 'Mauvais')),
     Km_Parcourus INT,
     Derniere_Revision DATE,
-    Consommation FLOAT,
+    Consommation Number(10,2),
     Assurance_Valide Number(1,0)
 );
 
@@ -107,13 +107,13 @@ CREATE TABLE Dates (
 CREATE TABLE Meteo (
     ID_METEO INT PRIMARY KEY,
     Date_Meteo DATE ,
-    Temperature FLOAT,
+    Temperature Number(10,2),
     Humidite INT CHECK (Humidite BETWEEN 0 AND 100),
-    Precipitations FLOAT CHECK (Precipitations >= 0),
-    Vent_Vitesse FLOAT CHECK (Vent_Vitesse >= 0),
+    Precipitations Number(10,2) CHECK (Precipitations >= 0),
+    Vent_Vitesse Number(10,2) CHECK (Vent_Vitesse >= 0),
     Vent_Direction  VARCHAR2(10),
     Condition_Meteo  VARCHAR2(50),
-    Pression_Atmospherique FLOAT,
+    Pression_Atmospherique Number(10,2),
     Indice_UV INT CHECK (Indice_UV BETWEEN 0 AND 11)
 );
 
@@ -128,16 +128,16 @@ CREATE TABLE fait_COURSE (
     ID_VEHICULE INT, -- Référence vers la dimension Vehicule
     ID_METEO INT, -- Référence vers la dimension Meteo
 
-    Prix FLOAT, -- Prix total de la course
-    Distance_Parcourue FLOAT, -- Distance parcourue en m
+    Prix Number(10,2), -- Prix total de la course
+    Distance_Parcourue Number(10,2), -- Distance parcourue en m
     Duree_Du_Trajet INT, -- Durée du trajet en minutes
     Nombre_Passagers INT, -- Nombre de passagers
     Statut_Course  VARCHAR2(20) CHECK(Statut_Course IN('Demande', 'Confirmation', 'Prise_en_Charge', 'Termine')), -- Statut de la course
     Temps_dattente_client INT, -- Temps d'attente du client en minutes
     Code_Promo  VARCHAR2(10), -- Code promotionnel utilisé
     Motif_Annulation  VARCHAR2(255), -- Motif d'annulation de la course
-    Revenue_moyen_par_course FLOAT, -- Revenu moyen par course
-    Indice_Satisfaction_Client FLOAT, -- Indice de satisfaction du client
+    Revenue_moyen_par_course Number(10,2), -- Revenu moyen par course
+    Indice_Satisfaction_Client Number(10,2), -- Indice de satisfaction du client
 
     -- Définition de la clé primaire composite
     PRIMARY KEY (ID_DATE, ID_ARRIVEE, ID_DEPART, ID_CLIENT, ID_HEURE, ID_CHAUFFEUR, ID_VEHICULE, ID_METEO),
