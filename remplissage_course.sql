@@ -61,24 +61,39 @@ INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, 
 INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
 (15, 'Ali', 'Aisha', TO_DATE('2022-07-15', 'yyyy-mm-dd'), '1314151617', 'B', '0123456806', 'aisha.ali@example.com', 'actif', 'Dubai');
 
-/*
+
 INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(1, '10 Rue de la Paix', 'Paris', '75002', 1000, TRUE, 'Prise en charge', 'Proche de la place Vendôme'),
-(2, '25 Avenue du Prado', 'Marseille', '13006', 2000, TRUE, 'En_Attente', 'Centre ville'),
-(3, '5 Boulevard des Belges', 'Lyon', '69006', 3000, FALSE, 'Annule', 'Quartier résidentiel'),
-(4, '12 Rue du Bac', 'Paris', '75007', 1500, TRUE, 'Prise en charge', 'Près de la Tour Eiffel'),
-(5, '50 Rue Nationale', 'Lille', '59800', 500, TRUE, 'Prise en charge', 'Proche de la gare Lille Flandres'),
-(6, '8 Rue de Rivoli', 'Paris', '75004', 1800, TRUE, 'En_Attente', 'Près de l’Hôtel de Ville'),
-(7, '3 Place Bellecour', 'Lyon', '69002', 2700, TRUE, 'Annule', 'Centre de Lyon'),
-(8, '14 Cours Mirabeau', 'Aix-en-Provence', '13100', 3200, TRUE, 'Prise en charge', 'Près de la Fontaine de la Rotonde'),
-(9, '22 Rue Espariat', 'Marseille', '13001', 1900, TRUE, 'En_Attente', 'Centre historique'),
-(10, '7 Avenue Montaigne', 'Paris', '75008', 1400, TRUE, 'Prise en charge', 'Proche des Champs-Élysées'),
-(11, '9 Rue du Louvre', 'Paris', '75001', 900, TRUE, 'Annule', 'Près du musée du Louvre'),
-(12, '30 Rue de la Liberté', 'Dijon', '21000', 400, FALSE, 'Prise en charge', 'Centre de Dijon'),
-(13, '6 Rue Saint-Dominique', 'Paris', '75007', 1300, TRUE, 'En_Attente', 'Près des Invalides'),
-(14, '3 Rue Sainte-Catherine', 'Bordeaux', '33000', 1200, TRUE, 'Prise en charge', 'Centre de Bordeaux'),
+(1, '10 Rue de la Paix', 'Paris', '75002', 1000, TRUE, 'Prise en charge', 'Proche de la place Vendôme');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(2, '25 Avenue du Prado', 'Marseille', '13006', 2000, TRUE, 'En_Attente', 'Centre ville');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(3, '5 Boulevard des Belges', 'Lyon', '69006', 3000, FALSE, 'Annule', 'Quartier résidentiel');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(4, '12 Rue du Bac', 'Paris', '75007', 1500, TRUE, 'Prise en charge', 'Près de la Tour Eiffel');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(5, '50 Rue Nationale', 'Lille', '59800', 500, TRUE, 'Prise en charge', 'Proche de la gare Lille Flandres');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(6, '8 Rue de Rivoli', 'Paris', '75004', 1800, TRUE, 'En_Attente', 'Près de l’Hôtel de Ville');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(7, '3 Place Bellecour', 'Lyon', '69002', 2700, TRUE, 'Annule', 'Centre de Lyon');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(8, '14 Cours Mirabeau', 'Aix-en-Provence', '13100', 3200, TRUE, 'Prise en charge', 'Près de la Fontaine de la Rotonde');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(9, '22 Rue Espariat', 'Marseille', '13001', 1900, TRUE, 'En_Attente', 'Centre historique');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(10, '7 Avenue Montaigne', 'Paris', '75008', 1400, TRUE, 'Prise en charge', 'Proche des Champs-Élysées');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(11, '9 Rue du Louvre', 'Paris', '75001', 900, TRUE, 'Annule', 'Près du musée du Louvre');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(12, '30 Rue de la Liberté', 'Dijon', '21000', 400, FALSE, 'Prise en charge', 'Centre de Dijon');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(13, '6 Rue Saint-Dominique', 'Paris', '75007', 1300, TRUE, 'En_Attente', 'Près des Invalides');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(14, '3 Rue Sainte-Catherine', 'Bordeaux', '33000', 1200, TRUE, 'Prise en charge', 'Centre de Bordeaux');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
 (15, '24 Place Stanislas', 'Nancy', '54000', 800, FALSE, 'Prise en charge', 'Centre historique de Nancy');
 
+/*
 INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Couleur, Immatriculation, Statut) VALUES
 (1, 'Toyota', 'Corolla', 2020, 'Berline', 'Blanc', 'AB-123-CD', 'Disponible'),
 (2, 'Peugeot', '308', 2018, 'Hatchback', 'Rouge', 'EF-456-GH', 'En_Cours'),
