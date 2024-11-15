@@ -122,36 +122,37 @@ INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Etat_Ve
 INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Etat_Vehicule, Km_Parcourus, Derniere_Revision, Consommation, Assurance_Valide) VALUES
 (15, 'Mazda', 'CX-5', 2020, 'Essence', 'Excellent', 28000, TO_DATE('2023-06-09', 'YYYY-MM-DD'), 7.1, 1);
 
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES
-(1, '10 Rue de la Paix', 'Paris', '75002', '2024-11-15 09:30:00', 1500, 1, 'Arrivée proche de la Place Vendôme');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES
-(2, '25 Avenue du Prado', 'Marseille', '13006', '2024-11-15 10:00:00', 1000, 1, 'Arrivée près du Palais des Congrès');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES
-(3, '5 Boulevard des Belges', 'Lyon', '69006', '2024-11-15 10:30:00', 2000, 0, 'Arrivée dans le quartier résidentiel');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES
-(4, '12 Rue du Bac', 'Paris', '75007', '2024-11-15 11:00:00', 1000, 1, 'Arrivée proche de la Tour Eiffel');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES
-(5, '50 Rue Nationale', 'Lille', '59800', '2024-11-15 11:20:00', 500, 1, 'Arrivée proche de la gare Lille Flandres');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES
-(6, '8 Rue de Rivoli', 'Paris', '75004', '2024-11-15 12:00:00', 1800, 1, 'Arrivée près de l’Hôtel de Ville');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES
-(7, '3 Place Bellecour', 'Lyon', '69002', '2024-11-15 12:30:00', 2200, 1, 'Arrivée au cœur du centre de Lyon');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES
-(8, '14 Cours Mirabeau', 'Aix-en-Provence', '13100', '2024-11-15 13:00:00', 3000, 1, 'Arrivée à la Fontaine de la Rotonde');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES
-(9, '22 Rue Espariat', 'Marseille', '13001', '2024-11-15 13:30:00', 1600, 1, 'Arrivée dans le centre historique');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES
-(10, '7 Avenue Montaigne', 'Paris', '75008', '2024-11-15 14:00:00', 1200, 1, 'Arrivée proche des Champs-Élysées');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES
-(11, '9 Rue du Louvre', 'Paris', '75001', '2024-11-15 14:30:00', 800, 1, 'Arrivée près du musée du Louvre');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES
-(12, '30 Rue de la Liberté', 'Dijon', '21000', '2024-11-15 15:00:00', 500, 0, 'Arrivée au centre de Dijon');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES
-(13, '6 Rue Saint-Dominique', 'Paris', '75007', '2024-11-15 15:30:00', 1500, 1, 'Arrivée près des Invalides');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES
-(14, '3 Rue Sainte-Catherine', 'Bordeaux', '33000', '2024-11-15 16:00:00', 1200, 1, 'Arrivée au centre de Bordeaux');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES
-(15, '24 Place Stanislas', 'Nancy', '54000', '2024-11-15 16:30:00', 800, 0, 'Arrivée au centre historique de Nancy');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (1, '22 Rue de la République', 'Paris', '75003', to_timestamp('2024-11-15 09:30:00', 'YYYY-MM-DD HH24:MI:SS'), 1500, 1, 'Arrivée près du Marais');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (2, '14 Rue de la Canebière', 'Marseille', '13001', to_timestamp('2024-11-15 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1000, 1, 'Arrivée à proximité du Vieux-Port');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (3, '8 Place des Terreaux', 'Lyon', '69001', to_timestamp('2024-11-15 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), 2000, 0, 'Arrivée dans le quartier historique');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (4, '16 Avenue des Champs-Élysées', 'Paris', '75008', to_timestamp('2024-11-15 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1000, 1, 'Arrivée au cœur de Paris');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (5, '30 Boulevard de la Liberté', 'Lille', '59000', to_timestamp('2024-11-15 11:20:00', 'YYYY-MM-DD HH24:MI:SS'), 500, 1, 'Arrivée à proximité de la gare Lille Flandres');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (6, '5 Rue de la Concorde', 'Paris', '75008', to_timestamp('2024-11-15 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1800, 1, 'Arrivée près de l’Hôtel de Ville');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (7, '10 Rue de la République', 'Lyon', '69002', to_timestamp('2024-11-15 12:30:00', 'YYYY-MM-DD HH24:MI:SS'), 2200, 1, 'Arrivée dans le quartier des Brotteaux');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (8, '25 Rue d\Italie', 'Aix-en-Provence', '13100', to_timestamp('2024-11-15 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), 3000, 1, 'Arrivée proche du Cours Mirabeau');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (9, '17 Rue de la Palud', 'Marseille', '13006', to_timestamp('2024-11-15 13:30:00', 'YYYY-MM-DD HH24:MI:SS'), 1600, 1, 'Arrivée dans le centre historique');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (10, '6 Rue de Rivoli', 'Paris', '75001', to_timestamp('2024-11-15 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1200, 1, 'Arrivée au bord de la Seine');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (11, '4 Rue de la Montagne Sainte-Geneviève', 'Paris', '75005', to_timestamp('2024-11-15 14:30:00', 'YYYY-MM-DD HH24:MI:SS'), 800, 1, 'Arrivée près du Panthéon');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (12, '20 Place François Rude', 'Dijon', '21000', to_timestamp('2024-11-15 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), 500, 0, 'Arrivée au cœur du centre-ville');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (13, '12 Rue de Grenelle', 'Paris', '75007', to_timestamp('2024-11-15 15:30:00', 'YYYY-MM-DD HH24:MI:SS'), 1500, 1, 'Arrivée à proximité du musée d\Orsay');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (14, '9 Place de la Bourse', 'Bordeaux', '33000', to_timestamp('2024-11-15 16:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1200, 1, 'Arrivée au centre de Bordeaux');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (15, '7 Rue de la Vieille-Draperie', 'Nancy', '54000', to_timestamp('2024-11-15 16:30:00', 'YYYY-MM-DD HH24:MI:SS'), 800, 0, 'Arrivée près de la Place Stanislas');
+
 
 INSERT INTO Heure (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (1, '08:00:00', 'matin', 'AM', 0, '08:00:00', 'CET', '06:00:00');
