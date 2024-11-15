@@ -44,6 +44,7 @@ CREATE TABLE Depart (
     Adresse  VARCHAR2(100) ,
     Ville  VARCHAR2(50),
     Code_Postal  VARCHAR2(10),
+    Heure_Depart TIMESTAMP,
     Distance_Centre INT, -- Distance en mètres
     Zone_Urbaine Number(1,0),
     Prise_En_Charge  VARCHAR2(50) CHECK(Prise_En_Charge in ('Prise en charge', 'Annule', 'En_Attente')),
@@ -70,6 +71,7 @@ CREATE TABLE Arrivee(
     Adresse  VARCHAR2(100) ,
     Ville  VARCHAR2(50),
     Code_Postal  VARCHAR2(10),
+    Heure_Arrivee TIMESTAMP,
     Distance_Centre INT, -- Distance en mètres
     Zone_Urbaine Number(1,0),
     Description_Arrivee  VARCHAR2(255)
