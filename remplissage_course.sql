@@ -94,24 +94,39 @@ INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zon
 INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
 (15, '24 Place Stanislas', 'Nancy', '54000', 800, 0, 'Prise en charge', 'Centre historique de Nancy');
 
-/*
+
 INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Couleur, Immatriculation, Statut) VALUES
-(1, 'Toyota', 'Corolla', 2020, 'Berline', 'Blanc', 'AB-123-CD', 'Disponible'),
-(2, 'Peugeot', '308', 2018, 'Hatchback', 'Rouge', 'EF-456-GH', 'En_Cours'),
-(3, 'BMW', 'X5', 2021, 'SUV', 'Noir', 'IJ-789-KL', 'Disponible'),
-(4, 'Renault', 'Clio', 2019, 'Citadine', 'Bleu', 'MN-012-OP', 'En_Cours'),
-(5, 'Mercedes', 'Classe A', 2022, 'Berline', 'Gris', 'QR-345-ST', 'Disponible'),
-(6, 'Audi', 'A4', 2021, 'Berline', 'Blanc', 'UV-678-WX', 'En_Cours'),
-(7, 'Ford', 'Fiesta', 2017, 'Citadine', 'Jaune', 'YZ-901-AB', 'Disponible'),
-(8, 'Volvo', 'XC90', 2020, 'SUV', 'Vert', 'CD-234-EF', 'En_Cours'),
-(9, 'Opel', 'Corsa', 2016, 'Citadine', 'Orange', 'GH-567-IJ', 'Disponible'),
-(10, 'Hyundai', 'Tucson', 2019, 'SUV', 'Violet', 'KL-890-MN', 'En_Cours'),
-(11, 'Peugeot', '3008', 2020, 'SUV', 'Gris', 'OP-123-QR', 'Disponible'),
-(12, 'Kia', 'Rio', 2018, 'Hatchback', 'Bleu', 'ST-456-UV', 'En_Cours'),
-(13, 'Citroën', 'C3', 2022, 'Citadine', 'Blanc', 'WX-789-YZ', 'Disponible'),
-(14, 'Mazda', 'CX-5', 2021, 'SUV', 'Rouge', 'AB-012-CD', 'En_Cours'),
+(1, 'Toyota', 'Corolla', 2020, 'Berline', 'Blanc', 'AB-123-CD', 'Disponible');
+INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Couleur, Immatriculation, Statut) VALUES
+(2, 'Peugeot', '308', 2018, 'Hatchback', 'Rouge', 'EF-456-GH', 'En_Cours');
+INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Couleur, Immatriculation, Statut) VALUES
+(3, 'BMW', 'X5', 2021, 'SUV', 'Noir', 'IJ-789-KL', 'Disponible');
+INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Couleur, Immatriculation, Statut) VALUES
+(4, 'Renault', 'Clio', 2019, 'Citadine', 'Bleu', 'MN-012-OP', 'En_Cours');
+INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Couleur, Immatriculation, Statut) VALUES
+(5, 'Mercedes', 'Classe A', 2022, 'Berline', 'Gris', 'QR-345-ST', 'Disponible');
+INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Couleur, Immatriculation, Statut) VALUES
+(6, 'Audi', 'A4', 2021, 'Berline', 'Blanc', 'UV-678-WX', 'En_Cours');
+INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Couleur, Immatriculation, Statut) VALUES
+(7, 'Ford', 'Fiesta', 2017, 'Citadine', 'Jaune', 'YZ-901-AB', 'Disponible');
+INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Couleur, Immatriculation, Statut) VALUES
+(8, 'Volvo', 'XC90', 2020, 'SUV', 'Vert', 'CD-234-EF', 'En_Cours');
+INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Couleur, Immatriculation, Statut) VALUES
+(9, 'Opel', 'Corsa', 2016, 'Citadine', 'Orange', 'GH-567-IJ', 'Disponible');
+INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Couleur, Immatriculation, Statut) VALUES
+(10, 'Hyundai', 'Tucson', 2019, 'SUV', 'Violet', 'KL-890-MN', 'En_Cours');
+INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Couleur, Immatriculation, Statut) VALUES
+(11, 'Peugeot', '3008', 2020, 'SUV', 'Gris', 'OP-123-QR', 'Disponible');
+INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Couleur, Immatriculation, Statut) VALUES
+(12, 'Kia', 'Rio', 2018, 'Hatchback', 'Bleu', 'ST-456-UV', 'En_Cours');
+INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Couleur, Immatriculation, Statut) VALUES
+(13, 'Citroën', 'C3', 2022, 'Citadine', 'Blanc', 'WX-789-YZ', 'Disponible');
+INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Couleur, Immatriculation, Statut) VALUES
+(14, 'Mazda', 'CX-5', 2021, 'SUV', 'Rouge', 'AB-012-CD', 'En_Cours');
+INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Couleur, Immatriculation, Statut) VALUES
 (15, 'Nissan', 'Juke', 2020, 'SUV', 'Vert', 'EF-345-GH', 'Disponible');
 
+/*
 INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, ID_Vehicule) VALUES
 (1, '15 Rue de Rivoli', 'Paris', '75001', '2024-11-14 08:15:00', 1),
 (2, '22 Avenue des Champs-Élysées', 'Paris', '75008', '2024-11-14 08:45:00', 2),
