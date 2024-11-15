@@ -62,6 +62,8 @@ INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, 
 (15, 'Ali', 'Aisha', TO_DATE('2022-07-15', 'yyyy-mm-dd'), '1314151617', 'B', '0123456806', 'aisha.ali@example.com', 'actif', 'Dubai');
 
 
+UPDATE Depart SET Zone_Urbaine = 1 WHERE Zone_Urbaine = TRUE;
+UPDATE Depart SET Zone_Urbaine = 0 WHERE Zone_Urbaine = FALSE;
 INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
 (1, '10 Rue de la Paix', 'Paris', '75002', 1000, TRUE, 'Prise en charge', 'Proche de la place Vendôme');
 INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
