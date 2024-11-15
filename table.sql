@@ -2,11 +2,11 @@ DROP TABLE Client;
 DROP TABLE Chauffeur;
 DROP TABLE  Depart;
 DROP TABLE  Vehicule;
-DROP TABLE  Arrive;
+DROP TABLE  Arrivee;
 DROP TABLE  Heure;
 DROP TABLE  Dates;
 DROP TABLE Meteo;
-DROP TABLE fait_COURSE;
+DROP TABLE Course;
 
 -- Création des tables de dimensions
 
@@ -118,7 +118,7 @@ CREATE TABLE Meteo (
 );
 
 -- Création de la table fait_COURSE
-CREATE TABLE fait_COURSE (
+CREATE TABLE Course(
     ID_DATE INT, -- Référence vers la dimension Trajet
     ID_ARRIVEE INT, -- Référence vers la dimension Arrivee
     ID_DEPART INT, -- Référence vers la dimension Depart
