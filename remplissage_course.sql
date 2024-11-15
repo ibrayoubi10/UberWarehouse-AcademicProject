@@ -1,5 +1,7 @@
-INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point) VALUES
-(1, 'Dupont', 'Alice', 34, 'F', 'VIP', 'Français', 'alice.dupont@example.com', '0123456789', 120),
+
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(1, 'Dupont', 'Alice', 34, 'F', 'VIP', 'Français', 'alice.dupont@example.com', '0123456789', 120);
+/*
 (2, 'Martin', 'Pierre', 29, 'H', 'Standard', 'Français', 'pierre.martin@example.com', '0123456790', 50),
 (3, 'Smith', 'John', 45, 'H', 'Premium', 'Anglais', 'john.smith@example.com', '0123456791', 95),
 (4, 'Durand', 'Marie', 40, 'F', 'VIP', 'Français', 'marie.durand@example.com', '0123456792', 110),
@@ -14,7 +16,9 @@ INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Prefe
 (13, 'Kumar', 'Anil', 42, 'H', 'Premium', 'Hindi', 'anil.kumar@example.com', '0123456801', 75),
 (14, 'Omar', 'Youssef', 37, 'H', 'VIP', 'Arabe', 'youssef.omar@example.com', '0123456802', 115),
 (15, 'Nguyen', 'Linh', 27, 'F', 'Standard', 'Vietnamien', 'linh.nguyen@example.com', '0123456803', 35);
+*/ 
 
+/*
 INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
 (1, 'Bernard', 'Luc', '2020-01-15', '1234567890', 'B', '0123456792', 'luc.bernard@example.com', 'actif', 'Paris'),
 (2, 'Legrand', 'Sophie', '2018-07-10', '0987654321', 'B', '0123456793', 'sophie.legrand@example.com', 'actif', 'Marseille'),
@@ -150,3 +154,4 @@ INSERT INTO fait_COURSE (
 (9, 9, 9, 9, 10, 9, 9, 9, 45.00, 11000, 30, 3, 'Demande', 4, 'PROMO25', NULL, 21.00, 3.9),
 (10, 10, 10, 10, 12, 10, 10, 10, 38.00, 9500, 22, 2, 'Termine', 7, 'PROMO5', NULL, 19.75, 4.2);
 
+*/ 
