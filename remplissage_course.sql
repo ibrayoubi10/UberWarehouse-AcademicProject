@@ -62,38 +62,37 @@ INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, 
 (15, 'Ali', 'Aisha', TO_DATE('2022-07-15', 'yyyy-mm-dd'), '1314151617', 'B', '0123456806', 'aisha.ali@example.com', 'actif', 'Dubai');
 
 
-UPDATE Depart SET Zone_Urbaine = 1 WHERE Zone_Urbaine = TRUE;
-UPDATE Depart SET Zone_Urbaine = 0 WHERE Zone_Urbaine = FALSE;
+
 INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(1, '10 Rue de la Paix', 'Paris', '75002', 1000, TRUE, 'Prise en charge', 'Proche de la place Vendôme');
+(1, '10 Rue de la Paix', 'Paris', '75002', 1000, 1, 'Prise en charge', 'Proche de la place Vendôme');
 INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(2, '25 Avenue du Prado', 'Marseille', '13006', 2000, TRUE, 'En_Attente', 'Centre ville');
+(2, '25 Avenue du Prado', 'Marseille', '13006', 2000, 1, 'En_Attente', 'Centre ville');
 INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(3, '5 Boulevard des Belges', 'Lyon', '69006', 3000, FALSE, 'Annule', 'Quartier résidentiel');
+(3, '5 Boulevard des Belges', 'Lyon', '69006', 3000, 0, 'Annule', 'Quartier résidentiel');
 INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(4, '12 Rue du Bac', 'Paris', '75007', 1500, TRUE, 'Prise en charge', 'Près de la Tour Eiffel');
+(4, '12 Rue du Bac', 'Paris', '75007', 1500, 1, 'Prise en charge', 'Près de la Tour Eiffel');
 INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(5, '50 Rue Nationale', 'Lille', '59800', 500, TRUE, 'Prise en charge', 'Proche de la gare Lille Flandres');
+(5, '50 Rue Nationale', 'Lille', '59800', 500, 1, 'Prise en charge', 'Proche de la gare Lille Flandres');
 INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(6, '8 Rue de Rivoli', 'Paris', '75004', 1800, TRUE, 'En_Attente', 'Près de l’Hôtel de Ville');
+(6, '8 Rue de Rivoli', 'Paris', '75004', 1800, 1, 'En_Attente', 'Près de l’Hôtel de Ville');
 INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(7, '3 Place Bellecour', 'Lyon', '69002', 2700, TRUE, 'Annule', 'Centre de Lyon');
+(7, '3 Place Bellecour', 'Lyon', '69002', 2700, 1, 'Annule', 'Centre de Lyon');
 INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(8, '14 Cours Mirabeau', 'Aix-en-Provence', '13100', 3200, TRUE, 'Prise en charge', 'Près de la Fontaine de la Rotonde');
+(8, '14 Cours Mirabeau', 'Aix-en-Provence', '13100', 3200, 1, 'Prise en charge', 'Près de la Fontaine de la Rotonde');
 INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(9, '22 Rue Espariat', 'Marseille', '13001', 1900, TRUE, 'En_Attente', 'Centre historique');
+(9, '22 Rue Espariat', 'Marseille', '13001', 1900, 1, 'En_Attente', 'Centre historique');
 INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(10, '7 Avenue Montaigne', 'Paris', '75008', 1400, TRUE, 'Prise en charge', 'Proche des Champs-Élysées');
+(10, '7 Avenue Montaigne', 'Paris', '75008', 1400, 1, 'Prise en charge', 'Proche des Champs-Élysées');
 INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(11, '9 Rue du Louvre', 'Paris', '75001', 900, TRUE, 'Annule', 'Près du musée du Louvre');
+(11, '9 Rue du Louvre', 'Paris', '75001', 900, 1, 'Annule', 'Près du musée du Louvre');
 INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(12, '30 Rue de la Liberté', 'Dijon', '21000', 400, FALSE, 'Prise en charge', 'Centre de Dijon');
+(12, '30 Rue de la Liberté', 'Dijon', '21000', 400, 0, 'Prise en charge', 'Centre de Dijon');
 INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(13, '6 Rue Saint-Dominique', 'Paris', '75007', 1300, TRUE, 'En_Attente', 'Près des Invalides');
+(13, '6 Rue Saint-Dominique', 'Paris', '75007', 1300, 1, 'En_Attente', 'Près des Invalides');
 INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(14, '3 Rue Sainte-Catherine', 'Bordeaux', '33000', 1200, TRUE, 'Prise en charge', 'Centre de Bordeaux');
+(14, '3 Rue Sainte-Catherine', 'Bordeaux', '33000', 1200, 1, 'Prise en charge', 'Centre de Bordeaux');
 INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(15, '24 Place Stanislas', 'Nancy', '54000', 800, FALSE, 'Prise en charge', 'Centre historique de Nancy');
+(15, '24 Place Stanislas', 'Nancy', '54000', 800, 0, 'Prise en charge', 'Centre historique de Nancy');
 
 /*
 INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Couleur, Immatriculation, Statut) VALUES
@@ -131,21 +130,21 @@ INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, ID_
 (15, '17 Rue du Général Leclerc', 'Bordeaux', '33000', '2024-11-14 14:00:00', 15);
 
 INSERT INTO Heure (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
-(1, '08:00:00', 'matin', 'AM', FALSE, '08:00:00', 'CET', '06:00:00'),
-(2, '09:30:00', 'matin', 'AM', TRUE, '09:30:00', 'CET', '07:30:00'),
-(3, '12:00:00', 'apres-midi', 'PM', TRUE, '12:00:00', 'CET', '10:00:00'),
-(4, '13:15:00', 'apres-midi', 'PM', FALSE, '13:15:00', 'CET', '11:15:00'),
-(5, '16:00:00', 'apres-midi', 'PM', TRUE, '16:00:00', 'CET', '14:00:00'),
-(6, '17:30:00', 'soir', 'PM', FALSE, '17:30:00', 'CET', '15:30:00'),
-(7, '19:00:00', 'soir', 'PM', TRUE, '19:00:00', 'CET', '17:00:00'),
-(8, '21:00:00', 'soir', 'PM', TRUE, '21:00:00', 'CET', '19:00:00'),
-(9, '22:45:00', 'nuit', 'PM', FALSE, '22:45:00', 'CET', '20:45:00'),
-(10, '00:15:00', 'nuit', 'AM', FALSE, '00:15:00', 'CET', '22:15:00'),
-(11, '02:00:00', 'nuit', 'AM', TRUE, '02:00:00', 'CET', '00:00:00'),
-(12, '03:30:00', 'nuit', 'AM', FALSE, '03:30:00', 'CET', '01:30:00'),
-(13, '05:00:00', 'matin', 'AM', TRUE, '05:00:00', 'CET', '03:00:00'),
-(14, '06:30:00', 'matin', 'AM', FALSE, '06:30:00', 'CET', '04:30:00'),
-(15, '07:45:00', 'matin', 'AM', TRUE, '07:45:00', 'CET', '05:45:00');
+(1, '08:00:00', 'matin', 'AM', 0, '08:00:00', 'CET', '06:00:00'),
+(2, '09:30:00', 'matin', 'AM', 1, '09:30:00', 'CET', '07:30:00'),
+(3, '12:00:00', 'apres-midi', 'PM', 1, '12:00:00', 'CET', '10:00:00'),
+(4, '13:15:00', 'apres-midi', 'PM', 0, '13:15:00', 'CET', '11:15:00'),
+(5, '16:00:00', 'apres-midi', 'PM', 1, '16:00:00', 'CET', '14:00:00'),
+(6, '17:30:00', 'soir', 'PM', 0, '17:30:00', 'CET', '15:30:00'),
+(7, '19:00:00', 'soir', 'PM', 1, '19:00:00', 'CET', '17:00:00'),
+(8, '21:00:00', 'soir', 'PM', 1, '21:00:00', 'CET', '19:00:00'),
+(9, '22:45:00', 'nuit', 'PM', 0, '22:45:00', 'CET', '20:45:00'),
+(10, '00:15:00', 'nuit', 'AM', 0, '00:15:00', 'CET', '22:15:00'),
+(11, '02:00:00', 'nuit', 'AM', 1, '02:00:00', 'CET', '00:00:00'),
+(12, '03:30:00', 'nuit', 'AM', 0, '03:30:00', 'CET', '01:30:00'),
+(13, '05:00:00', 'matin', 'AM', 1, '05:00:00', 'CET', '03:00:00'),
+(14, '06:30:00', 'matin', 'AM', 0, '06:30:00', 'CET', '04:30:00'),
+(15, '07:45:00', 'matin', 'AM', 1, '07:45:00', 'CET', '05:45:00');
 
 INSERT INTO Meteo (ID_METEO, Date, Temperature, Humidite, Precipitations, Vent_Vitesse, Vent_Direction, Condition_Meteo, Pression_Atmospherique, Indice_UV) VALUES
 (1, '2024-11-14', 15.3, 65, 0.0, 5.2, 'Nord', 'Ensoleillé', 1013.5, 3),
@@ -165,21 +164,21 @@ INSERT INTO Meteo (ID_METEO, Date, Temperature, Humidite, Precipitations, Vent_V
 (15, '2024-11-14', 18.7, 64, 0.0, 6.3, 'Ouest', 'Ensoleillé', 1014.5, 5);
 
 INSERT INTO Date (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
-(1, '2024-11-14', 14, 11, 2024, 'semaine', 4, 'jeudi', 46, FALSE, FALSE, 'Aucune particularité'),
-(2, '2024-11-13', 13, 11, 2024, 'semaine', 4, 'mercredi', 46, FALSE, FALSE, 'Aucune particularité'),
-(3, '2024-11-12', 12, 11, 2024, 'semaine', 4, 'mardi', 46, FALSE, FALSE, 'Aucune particularité'),
-(4, '2024-11-11', 11, 11, 2024, 'ferie', 4, 'lundi', 46, FALSE, TRUE, 'Jour férié - Armistice'),
-(5, '2024-11-10', 10, 11, 2024, 'weekend', 4, 'dimanche', 45, TRUE, FALSE, 'Aucune particularité'),
-(6, '2024-11-09', 9, 11, 2024, 'weekend', 4, 'samedi', 45, TRUE, FALSE, 'Aucune particularité'),
-(7, '2024-11-08', 8, 11, 2024, 'semaine', 4, 'vendredi', 45, FALSE, FALSE, 'Aucune particularité'),
-(8, '2024-11-07', 7, 11, 2024, 'semaine', 4, 'jeudi', 45, FALSE, FALSE, 'Aucune particularité'),
-(9, '2024-11-06', 6, 11, 2024, 'semaine', 4, 'mercredi', 45, FALSE, FALSE, 'Aucune particularité'),
-(10, '2024-11-05', 5, 11, 2024, 'semaine', 4, 'mardi', 45, FALSE, FALSE, 'Aucune particularité'),
-(11, '2024-11-04', 4, 11, 2024, 'semaine', 4, 'lundi', 45, FALSE, FALSE, 'Aucune particularité'),
-(12, '2024-11-03', 3, 11, 2024, 'weekend', 4, 'dimanche', 44, TRUE, FALSE, 'Aucune particularité'),
-(13, '2024-11-02', 2, 11, 2024, 'weekend', 4, 'samedi', 44, TRUE, FALSE, 'Aucune particularité'),
-(14, '2024-11-01', 1, 11, 2024, 'ferie', 4, 'vendredi', 44, FALSE, TRUE, 'Jour férié - Toussaint'),
-(15, '2024-10-31', 31, 10, 2024, 'semaine', 4, 'jeudi', 44, FALSE, FALSE, 'Aucune particularité');
+(1, '2024-11-14', 14, 11, 2024, 'semaine', 4, 'jeudi', 46, 0, 0, 'Aucune particularité'),
+(2, '2024-11-13', 13, 11, 2024, 'semaine', 4, 'mercredi', 46, 0, 0, 'Aucune particularité'),
+(3, '2024-11-12', 12, 11, 2024, 'semaine', 4, 'mardi', 46, 0, 0, 'Aucune particularité'),
+(4, '2024-11-11', 11, 11, 2024, 'ferie', 4, 'lundi', 46, 0, 1, 'Jour férié - Armistice'),
+(5, '2024-11-10', 10, 11, 2024, 'weekend', 4, 'dimanche', 45, 1, 0, 'Aucune particularité'),
+(6, '2024-11-09', 9, 11, 2024, 'weekend', 4, 'samedi', 45, 1, 0, 'Aucune particularité'),
+(7, '2024-11-08', 8, 11, 2024, 'semaine', 4, 'vendredi', 45, 0, 0, 'Aucune particularité'),
+(8, '2024-11-07', 7, 11, 2024, 'semaine', 4, 'jeudi', 45, 0, 0, 'Aucune particularité'),
+(9, '2024-11-06', 6, 11, 2024, 'semaine', 4, 'mercredi', 45, 0, 0, 'Aucune particularité'),
+(10, '2024-11-05', 5, 11, 2024, 'semaine', 4, 'mardi', 45, 0, 0, 'Aucune particularité'),
+(11, '2024-11-04', 4, 11, 2024, 'semaine', 4, 'lundi', 45, 0, 0, 'Aucune particularité'),
+(12, '2024-11-03', 3, 11, 2024, 'weekend', 4, 'dimanche', 44, 1, 0, 'Aucune particularité'),
+(13, '2024-11-02', 2, 11, 2024, 'weekend', 4, 'samedi', 44, 1, 0, 'Aucune particularité'),
+(14, '2024-11-01', 1, 11, 2024, 'ferie', 4, 'vendredi', 44, 0, 1, 'Jour férié - Toussaint'),
+(15, '2024-10-31', 31, 10, 2024, 'semaine', 4, 'jeudi', 44, 0, 0, 'Aucune particularité');
 
 INSERT INTO fait_COURSE (
     ID_DATE, ID_ARRIVEE, ID_DEPART, ID_CLIENT, ID_HEURE, ID_CHAUFFEUR, ID_VEHICULE, ID_METEO, 
