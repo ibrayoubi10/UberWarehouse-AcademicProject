@@ -120,7 +120,7 @@ CREATE TABLE Meteo (
 );
 
 -- Création de la table fait_COURSE
-/*
+
 CREATE TABLE Course (
     ID_DATE INT, 
     ID_ARRIVEE INT, 
@@ -153,5 +153,5 @@ CREATE TABLE Course (
     FOREIGN KEY (ID_VEHICULE) REFERENCES Vehicule(ID_Vehicule),
     FOREIGN KEY (ID_METEO) REFERENCES Meteo(ID_METEO)
 );
-*/ 
+
 
