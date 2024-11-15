@@ -118,28 +118,27 @@ CREATE TABLE Meteo (
 );
 
 -- Création de la table fait_COURSE
-CREATE TABLE Course(
-    ID_DATE INT, -- Référence vers la dimension Trajet
-    ID_ARRIVEE INT, -- Référence vers la dimension Arrivee
-    ID_DEPART INT, -- Référence vers la dimension Depart
-    ID_CLIENT INT, -- Référence vers la dimension Client
-    ID_HEURE INT, -- Référence vers la dimension Heure
-    ID_CHAUFFEUR INT, -- Référence vers la dimension Chauffeur
-    ID_VEHICULE INT, -- Référence vers la dimension Vehicule
-    ID_METEO INT, -- Référence vers la dimension Meteo
+CREATE TABLE Course (
+    ID_DATE INT, 
+    ID_ARRIVEE INT, 
+    ID_DEPART INT, 
+    ID_CLIENT INT, 
+    ID_HEURE INT, 
+    ID_CHAUFFEUR INT, 
+    ID_VEHICULE INT, 
+    ID_METEO INT,
 
-    Prix Number(10,2), -- Prix total de la course
-    Distance_Parcourue Number(10,2), -- Distance parcourue en m
-    Duree_Du_Trajet INT, -- Durée du trajet en minutes
-    Nombre_Passagers INT, -- Nombre de passagers
-    Statut_Course  VARCHAR2(20) CHECK(Statut_Course IN('Demande', 'Confirmation', 'Prise_en_Charge', 'Termine')), -- Statut de la course
-    Temps_dattente_client INT, -- Temps d'attente du client en minutes
-    Code_Promo  VARCHAR2(10), -- Code promotionnel utilisé
-    Motif_Annulation  VARCHAR2(255), -- Motif d'annulation de la course
-    Revenue_moyen_par_course Number(10,2), -- Revenu moyen par course
-    Indice_Satisfaction_Client Number(10,2), -- Indice de satisfaction du client
+    Prix NUMBER(10,2),
+    Distance_Parcourue NUMBER(10,2),
+    Duree_Du_Trajet INT,
+    Nombre_Passagers INT,
+    Statut_Course VARCHAR2(20) CHECK(Statut_Course IN('Demande', 'Confirmation', 'Prise_en_Charge', 'Termine')),
+    Temps_dattente_client INT,
+    Code_Promo VARCHAR2(10),
+    Motif_Annulation VARCHAR2(255),
+    Revenue_moyen_par_course NUMBER(10,2),
+    Indice_Satisfaction_Client NUMBER(10,2),
 
-    -- Définition de la clé primaire composite
     PRIMARY KEY (ID_DATE, ID_ARRIVEE, ID_DEPART, ID_CLIENT, ID_HEURE, ID_CHAUFFEUR, ID_VEHICULE, ID_METEO),
 
     FOREIGN KEY (ID_DATE) REFERENCES Dates(ID_DATE),
@@ -151,3 +150,4 @@ CREATE TABLE Course(
     FOREIGN KEY (ID_VEHICULE) REFERENCES Vehicule(ID_Vehicule),
     FOREIGN KEY (ID_METEO) REFERENCES Meteo(ID_METEO)
 );
+
