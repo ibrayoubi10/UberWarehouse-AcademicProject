@@ -1,4 +1,4 @@
-DROP TABLE Course;
+DROP TABLE Course CASCADE CONSTRAINTS;
 
 -- Création de la table fait_COURSE
 CREATE TABLE Course (
