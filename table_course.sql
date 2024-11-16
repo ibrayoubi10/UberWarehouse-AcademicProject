@@ -2,7 +2,7 @@ DROP TABLE Course CASCADE CONSTRAINTS;
 
 -- Création de la table fait_COURSE
 CREATE TABLE Course (
-    ID_COURSE INT,
+    ID_COURSE INT, -- attribut degenere pour identifier la course
     ID_DATE INT, 
     ID_ARRIVEE INT, 
     ID_DEPART INT, 
@@ -69,11 +69,6 @@ CREATE TABLE Course (
         Prix, Distance_Parcourue, Duree_Du_Trajet, nombre_passagers, Statut_Course, Temps_dattente_client, 
         Code_Promo, Motif_Annulation, Revenue_moyen_par_course, Indice_Satisfaction_Client) VALUES
     (7, 7, 7, 7, 7, 13, 15, 7, 7, 7, 35.00, 8000, 2, 3, 'Confirmation', 10, 'PROMO30', NULL, 18.25, 4.6);
-    INSERT INTO Course (
-        ID_COURSE, ID_DATE, ID_ARRIVEE, ID_DEPART, ID_CLIENT, ID_HEURE_DEPART, ID_HEURE_ARRIVEE, ID_CHAUFFEUR, ID_VEHICULE, ID_METEO, 
-        Prix, Distance_Parcourue, Duree_Du_Trajet, nombre_passagers, Statut_Course, Temps_dattente_client, 
-        Code_Promo, Motif_Annulation, Revenue_moyen_par_course, Indice_Satisfaction_Client) VALUES
-    (8, 8, 8, 8, 8, 15, 18, 8, 8, 8, 50.00, 12000, 3, 4, 'Prise_en_Charge', 15, NULL, 'Problème véhicule', 22.50, 4.7);
     INSERT INTO Course (
         ID_COURSE, ID_DATE, ID_ARRIVEE, ID_DEPART, ID_CLIENT, ID_HEURE_DEPART, ID_HEURE_ARRIVEE, ID_CHAUFFEUR, ID_VEHICULE, ID_METEO, 
         Prix, Distance_Parcourue, Duree_Du_Trajet, nombre_passagers, Statut_Course, Temps_dattente_client, 
