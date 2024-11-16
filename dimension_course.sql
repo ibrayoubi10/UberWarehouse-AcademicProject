@@ -43,7 +43,6 @@ CREATE TABLE Depart (
     Adresse  VARCHAR2(100) ,
     Ville  VARCHAR2(50),
     Code_Postal  VARCHAR2(10),
-    Heure_Depart TIMESTAMP,
     Distance_Centre INT, -- Distance en mètres
     Zone_Urbaine Number(1,0),
     Prise_En_Charge  VARCHAR2(50) CHECK(Prise_En_Charge in ('Prise en charge', 'Annule', 'En_Attente')),
@@ -70,15 +69,25 @@ CREATE TABLE Arrivee(
     Adresse  VARCHAR2(100) ,
     Ville  VARCHAR2(50),
     Code_Postal  VARCHAR2(10),
-    Heure_Arrivee TIMESTAMP,
     Distance_Centre INT, -- Distance en mètres
     Zone_Urbaine Number(1,0),
     Description_Arrivee  VARCHAR2(255)
 );
 
 --Done
-CREATE TABLE Heure (
-    ID_HEURE INT PRIMARY KEY,
+CREATE TABLE Heure_Arrivee(
+    ID_HEURE_ARRIVEE INT PRIMARY KEY,
+    Heure_Complete VARCHAR2(8) ,
+    Periode_Journee  VARCHAR2(15) CHECK (Periode_Journee IN ('matin', 'apres-midi', 'soir', 'nuit')),
+    AM_PM  VARCHAR2(10) CHECK (AM_PM IN ('AM', 'PM')),
+    Heure_Pointe Number(1,0), 
+    Heure_Format24h VARCHAR2(8), 
+    Fuseau_Horaire  VARCHAR2(10),
+    Heure_UTC VARCHAR2(8)
+);
+
+CREATE TABLE Heure_Depart(
+    ID_HEURE_DEPART INT PRIMARY KEY,
     Heure_Complete VARCHAR2(8) ,
     Periode_Journee  VARCHAR2(15) CHECK (Periode_Journee IN ('matin', 'apres-midi', 'soir', 'nuit')),
     AM_PM  VARCHAR2(10) CHECK (AM_PM IN ('AM', 'PM')),
@@ -182,36 +191,37 @@ INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, 
 INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
 (15, 'Ali', 'Aisha', TO_DATE('2022-07-15', 'yyyy-mm-dd'), '1314151617', 'B', '0123456806', 'aisha.ali@example.com', 'actif', 'Dubai');
 
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Heure_Depart, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(1, '10 Rue de la Paix', 'Paris', '75002', TO_TIMESTAMP('2024-11-15 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1000, 1, 'Prise en charge', 'Proche de la place Vendôme');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Heure_Depart, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(2, '25 Avenue du Prado', 'Marseille', '13006', TO_TIMESTAMP('2024-11-15 09:30:00', 'YYYY-MM-DD HH24:MI:SS'), 2000, 1, 'En_Attente', 'Centre ville');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Heure_Depart, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(3, '5 Boulevard des Belges', 'Lyon', '69006', TO_TIMESTAMP('2024-11-15 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), 3000, 0, 'Annule', 'Quartier résidentiel');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Heure_Depart, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(4, '12 Rue du Bac', 'Paris', '75007', TO_TIMESTAMP('2024-11-15 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1500, 1, 'Prise en charge', 'Près de la Tour Eiffel');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Heure_Depart, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(5, '50 Rue Nationale', 'Lille', '59800', TO_TIMESTAMP('2024-11-15 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), 500, 1, 'Prise en charge', 'Proche de la gare Lille Flandres');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Heure_Depart, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(6, '8 Rue de Rivoli', 'Paris', '75004', TO_TIMESTAMP('2024-11-15 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1800, 1, 'En_Attente', 'Près de l’Hôtel de Ville');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Heure_Depart, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(7, '3 Place Bellecour', 'Lyon', '69002', TO_TIMESTAMP('2024-11-15 16:30:00', 'YYYY-MM-DD HH24:MI:SS'), 2700, 1, 'Annule', 'Centre de Lyon');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Heure_Depart, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(8, '14 Cours Mirabeau', 'Aix-en-Provence', '13100', TO_TIMESTAMP('2024-11-15 17:00:00', 'YYYY-MM-DD HH24:MI:SS'), 3200, 1, 'Prise en charge', 'Près de la Fontaine de la Rotonde');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Heure_Depart, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(9, '22 Rue Espariat', 'Marseille', '13001', TO_TIMESTAMP('2024-11-15 18:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1900, 1, 'En_Attente', 'Centre historique');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Heure_Depart, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(10, '7 Avenue Montaigne', 'Paris', '75008', TO_TIMESTAMP('2024-11-15 19:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1400, 1, 'Prise en charge', 'Proche des Champs-Élysées');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Heure_Depart, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(11, '9 Rue du Louvre', 'Paris', '75001', TO_TIMESTAMP('2024-11-15 20:30:00', 'YYYY-MM-DD HH24:MI:SS'), 900, 1, 'Annule', 'Près du musée du Louvre');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Heure_Depart, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(12, '30 Rue de la Liberté', 'Dijon', '21000', TO_TIMESTAMP('2024-11-15 21:00:00', 'YYYY-MM-DD HH24:MI:SS'), 400, 0, 'Prise en charge', 'Centre de Dijon');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Heure_Depart, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(13, '6 Rue Saint-Dominique', 'Paris', '75007', TO_TIMESTAMP('2024-11-15 22:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1300, 1, 'En_Attente', 'Près des Invalides');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Heure_Depart, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(14, '3 Rue Sainte-Catherine', 'Bordeaux', '33000', TO_TIMESTAMP('2024-11-15 23:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1200, 1, 'Prise en charge', 'Centre de Bordeaux');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Heure_Depart, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(15, '24 Place Stanislas', 'Nancy', '54000', TO_TIMESTAMP('2024-11-15 23:30:00', 'YYYY-MM-DD HH24:MI:SS'), 800, 0, 'Prise en charge', 'Centre historique de Nancy');
+
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(1, '10 Rue de la Paix', 'Paris', '75002', 1000, 1, 'Prise en charge', 'Proche de la place Vendôme');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(2, '25 Avenue du Prado', 'Marseille', '13006', 2000, 1, 'En_Attente', 'Centre ville');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(3, '5 Boulevard des Belges', 'Lyon', '69006', 3000, 0, 'Annule', 'Quartier résidentiel');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(4, '12 Rue du Bac', 'Paris', '75007', 1500, 1, 'Prise en charge', 'Près de la Tour Eiffel');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(5, '50 Rue Nationale', 'Lille', '59800', 500, 1, 'Prise en charge', 'Proche de la gare Lille Flandres');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(6, '8 Rue de Rivoli', 'Paris', '75004', 1800, 1, 'En_Attente', 'Près de l’Hôtel de Ville');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(7, '3 Place Bellecour', 'Lyon', '69002', 2700, 1, 'Annule', 'Centre de Lyon');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(8, '14 Cours Mirabeau', 'Aix-en-Provence', '13100', 3200, 1, 'Prise en charge', 'Près de la Fontaine de la Rotonde');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(9, '22 Rue Espariat', 'Marseille', '13001', 1900, 1, 'En_Attente', 'Centre historique');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(10, '7 Avenue Montaigne', 'Paris', '75008', 1400, 1, 'Prise en charge', 'Proche des Champs-Élysées');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(11, '9 Rue du Louvre', 'Paris', '75001', 900, 1, 'Annule', 'Près du musée du Louvre');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(12, '30 Rue de la Liberté', 'Dijon', '21000', 400, 0, 'Prise en charge', 'Centre de Dijon');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(13, '6 Rue Saint-Dominique', 'Paris', '75007', 1300, 1, 'En_Attente', 'Près des Invalides');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(14, '3 Rue Sainte-Catherine', 'Bordeaux', '33000', 1200, 1, 'Prise en charge', 'Centre de Bordeaux');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(15, '24 Place Stanislas', 'Nancy', '54000', 800, 0, 'Prise en charge', 'Centre historique de Nancy');
 
 INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Etat_Vehicule, Km_Parcourus, Derniere_Revision, Consommation, Assurance_Valide) VALUES
 (1, 'Toyota', 'Corolla', 2019, 'Essence', 'Excellent', 30000, TO_DATE('2023-05-15', 'YYYY-MM-DD'), 6.5, 1);
@@ -244,69 +254,98 @@ INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Etat_Ve
 INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Etat_Vehicule, Km_Parcourus, Derniere_Revision, Consommation, Assurance_Valide) VALUES
 (15, 'Mazda', 'CX-5', 2020, 'Essence', 'Excellent', 28000, TO_DATE('2023-06-09', 'YYYY-MM-DD'), 7.1, 1);
 
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (1, '22 Rue de la République', 'Paris', '75003', 1500, 1, 'Arrivée près du Marais');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (2, '14 Rue de la Canebière', 'Marseille', '13001', 1000, 1, 'Arrivée à proximité du Vieux-Port');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (3, '8 Place des Terreaux', 'Lyon', '69001', 2000, 0, 'Arrivée dans le quartier historique');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (4, '16 Avenue des Champs-Élysées', 'Paris', '75008', 1000, 1, 'Arrivée au cœur de Paris');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (5, '30 Boulevard de la Liberté', 'Lille', '59000', 500, 1, 'Arrivée à proximité de la gare Lille Flandres');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (6, '5 Rue de la Concorde', 'Paris', '75008', 1800, 1, 'Arrivée près de l’Hôtel de Ville');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (7, '10 Rue de la République', 'Lyon', '69002', 2200, 1, 'Arrivée dans le quartier des Brotteaux');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (8, '25 Rue d\Italie', 'Aix-en-Provence', '13100', 3000, 1, 'Arrivée proche du Cours Mirabeau');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (9, '17 Rue de la Palud', 'Marseille', '13006', 1600, 1, 'Arrivée dans le centre historique');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (10, '6 Rue de Rivoli', 'Paris', '75001', 1200, 1, 'Arrivée au bord de la Seine');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (11, '4 Rue de la Montagne Sainte-Geneviève', 'Paris', '75005', 800, 1, 'Arrivée près du Panthéon');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (12, '20 Place François Rude', 'Dijon', '21000', 500, 0, 'Arrivée au cœur du centre-ville');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (13, '12 Rue de Grenelle', 'Paris', '75007', 1500, 1, 'Arrivée à proximité du musée d\Orsay');
 INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (1, '22 Rue de la République', 'Paris', '75003', to_timestamp('2024-11-15 09:30:00', 'YYYY-MM-DD HH24:MI:SS'), 1500, 1, 'Arrivée près du Marais');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (2, '14 Rue de la Canebière', 'Marseille', '13001', to_timestamp('2024-11-15 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1000, 1, 'Arrivée à proximité du Vieux-Port');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (3, '8 Place des Terreaux', 'Lyon', '69001', to_timestamp('2024-11-15 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), 2000, 0, 'Arrivée dans le quartier historique');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (4, '16 Avenue des Champs-Élysées', 'Paris', '75008', to_timestamp('2024-11-15 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1000, 1, 'Arrivée au cœur de Paris');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (5, '30 Boulevard de la Liberté', 'Lille', '59000', to_timestamp('2024-11-15 11:20:00', 'YYYY-MM-DD HH24:MI:SS'), 500, 1, 'Arrivée à proximité de la gare Lille Flandres');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (6, '5 Rue de la Concorde', 'Paris', '75008', to_timestamp('2024-11-15 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1800, 1, 'Arrivée près de l’Hôtel de Ville');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (7, '10 Rue de la République', 'Lyon', '69002', to_timestamp('2024-11-15 12:30:00', 'YYYY-MM-DD HH24:MI:SS'), 2200, 1, 'Arrivée dans le quartier des Brotteaux');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (8, '25 Rue d\Italie', 'Aix-en-Provence', '13100', to_timestamp('2024-11-15 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), 3000, 1, 'Arrivée proche du Cours Mirabeau');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (9, '17 Rue de la Palud', 'Marseille', '13006', to_timestamp('2024-11-15 13:30:00', 'YYYY-MM-DD HH24:MI:SS'), 1600, 1, 'Arrivée dans le centre historique');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (10, '6 Rue de Rivoli', 'Paris', '75001', to_timestamp('2024-11-15 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1200, 1, 'Arrivée au bord de la Seine');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (11, '4 Rue de la Montagne Sainte-Geneviève', 'Paris', '75005', to_timestamp('2024-11-15 14:30:00', 'YYYY-MM-DD HH24:MI:SS'), 800, 1, 'Arrivée près du Panthéon');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (12, '20 Place François Rude', 'Dijon', '21000', to_timestamp('2024-11-15 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), 500, 0, 'Arrivée au cœur du centre-ville');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (13, '12 Rue de Grenelle', 'Paris', '75007', to_timestamp('2024-11-15 15:30:00', 'YYYY-MM-DD HH24:MI:SS'), 1500, 1, 'Arrivée à proximité du musée d\Orsay');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (14, '9 Place de la Bourse', 'Bordeaux', '33000', to_timestamp('2024-11-15 16:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1200, 1, 'Arrivée au centre de Bordeaux');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (15, '7 Rue de la Vieille-Draperie', 'Nancy', '54000', to_timestamp('2024-11-15 16:30:00', 'YYYY-MM-DD HH24:MI:SS'), 800, 0, 'Arrivée près de la Place Stanislas');
+VALUES (14, '9 Place de la Bourse', 'Bordeaux', '33000', 1200, 1, 'Arrivée au centre de Bordeaux');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
+VALUES (15, '7 Rue de la Vieille-Draperie', 'Nancy', '54000', 800, 0, 'Arrivée près de la Place Stanislas');
 
+INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(1, '08:00:00', 'matin', 'AM', 1, '08:00', 'CET', '07:00');
+INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(2, '12:30:00', 'apres-midi', 'PM', 0, '12:30', 'CET', '11:30');
+INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(3, '17:45:00', 'soir', 'PM', 1, '17:45', 'CET', '16:45');
+INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(4, '23:15:00', 'nuit', 'PM', 0, '23:15', 'CET', '22:15');
+INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(5, '06:30:00', 'matin', 'AM', 1, '06:30', 'CET', '05:30');
+INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(6, '14:00:00', 'apres-midi', 'PM', 0, '14:00', 'CET', '13:00');
+INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(7, '19:30:00', 'soir', 'PM', 1, '19:30', 'CET', '18:30');
+INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(8, '22:00:00', 'nuit', 'PM', 0, '22:00', 'CET', '21:00');
+INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(9, '07:15:00', 'matin', 'AM', 1, '07:15', 'CET', '06:15');
+INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(10, '13:45:00', 'apres-midi', 'PM', 0, '13:45', 'CET', '12:45');
+INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(11, '18:00:00', 'soir', 'PM', 1, '18:00', 'CET', '17:00');
+INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(12, '21:30:00', 'nuit', 'PM', 0, '21:30', 'CET', '20:30');
+INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(13, '05:45:00', 'matin', 'AM', 1, '05:45', 'CET', '04:45');
+INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(14, '15:30:00', 'apres-midi', 'PM', 0, '15:30', 'CET', '14:30');
+INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(15, '20:15:00', 'soir', 'PM', 1, '20:15', 'CET', '19:15');
 
-INSERT INTO Heure (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
-(1, '08:00:00', 'matin', 'AM', 0, '08:00:00', 'CET', '06:00:00');
-INSERT INTO Heure (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
-(2, '09:30:00', 'matin', 'AM', 1, '09:30:00', 'CET', '07:30:00');
-INSERT INTO Heure (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
-(3, '12:00:00', 'apres-midi', 'PM', 1, '12:00:00', 'CET', '10:00:00');
-INSERT INTO Heure (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
-(4, '13:15:00', 'apres-midi', 'PM', 0, '13:15:00', 'CET', '11:15:00');
-INSERT INTO Heure (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
-(5, '16:00:00', 'apres-midi', 'PM', 1, '16:00:00', 'CET', '14:00:00');
-INSERT INTO Heure (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
-(6, '17:30:00', 'soir', 'PM', 0, '17:30:00', 'CET', '15:30:00');
-INSERT INTO Heure (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
-(7, '19:00:00', 'soir', 'PM', 1, '19:00:00', 'CET', '17:00:00');
-INSERT INTO Heure (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
-(8, '21:00:00', 'soir', 'PM', 1, '21:00:00', 'CET', '19:00:00');
-INSERT INTO Heure (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
-(9, '22:45:00', 'nuit', 'PM', 0, '22:45:00', 'CET', '20:45:00');
-INSERT INTO Heure (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
-(10, '00:15:00', 'nuit', 'AM', 0, '00:15:00', 'CET', '22:15:00');
-INSERT INTO Heure (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
-(11, '02:00:00', 'nuit', 'AM', 1, '02:00:00', 'CET', '00:00:00');
-INSERT INTO Heure (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
-(12, '03:30:00', 'nuit', 'AM', 0, '03:30:00', 'CET', '01:30:00');
-INSERT INTO Heure (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
-(13, '05:00:00', 'matin', 'AM', 1, '05:00:00', 'CET', '03:00:00');
-INSERT INTO Heure (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
-(14, '06:30:00', 'matin', 'AM', 0, '06:30:00', 'CET', '04:30:00');
-INSERT INTO Heure (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
-(15, '07:45:00', 'matin', 'AM', 1, '07:45:00', 'CET', '05:45:00');
-
+INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(1, '08:30:00', 'matin', 'AM', 1, '08:30', 'CET', '07:30');
+INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(2, '13:00:00', 'apres-midi', 'PM', 0, '13:00', 'CET', '12:00');
+INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(3, '18:15:00', 'soir', 'PM', 1, '18:15', 'CET', '17:15');
+INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(4, '23:45:00', 'nuit', 'PM', 0, '23:45', 'CET', '22:45');
+INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(5, '07:00:00', 'matin', 'AM', 1, '07:00', 'CET', '06:00');
+INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(6, '14:30:00', 'apres-midi', 'PM', 0, '14:30', 'CET', '13:30');
+INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(7, '20:00:00', 'soir', 'PM', 1, '20:00', 'CET', '19:00');
+INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(8, '22:30:00', 'nuit', 'PM', 0, '22:30', 'CET', '21:30');
+INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(9, '07:45:00', 'matin', 'AM', 1, '07:45', 'CET', '06:45');
+INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(10, '13:15:00', 'apres-midi', 'PM', 0, '13:15', 'CET', '12:15');
+INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(11, '18:45:00', 'soir', 'PM', 1, '18:45', 'CET', '17:45');
+INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(12, '21:00:00', 'nuit', 'PM', 0, '21:00', 'CET', '20:00');
+INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(13, '06:15:00', 'matin', 'AM', 1, '06:15', 'CET', '05:15');
+INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(14, '15:45:00', 'apres-midi', 'PM', 0, '15:45', 'CET', '14:45');
+INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+(15, '20:30:00', 'soir', 'PM', 1, '20:30', 'CET', '19:30');
 
 INSERT INTO Meteo (ID_METEO, Date_Meteo, Temperature, Humidite, Precipitations, Vent_Vitesse, Vent_Direction, Condition_Meteo, Pression_Atmospherique, Indice_UV) VALUES
 (1, TO_DATE('2024-11-14', 'YYYY-MM-DD'), 15.3, 65, 0.0, 5.2, 'Nord', 'Ensoleillé', 1013.5, 3);
@@ -338,8 +377,6 @@ INSERT INTO Meteo (ID_METEO, Date_Meteo, Temperature, Humidite, Precipitations, 
 (14, TO_DATE('2024-11-14', 'YYYY-MM-DD'), 14.9, 72, 0.0, 4.6, 'Est', 'Ciel clair', 1012.7, 4);
 INSERT INTO Meteo (ID_METEO, Date_Meteo, Temperature, Humidite, Precipitations, Vent_Vitesse, Vent_Direction, Condition_Meteo, Pression_Atmospherique, Indice_UV) VALUES
 (15, TO_DATE('2024-11-14', 'YYYY-MM-DD'), 18.7, 64, 0.0, 6.3, 'Ouest', 'Ensoleillé', 1014.5, 5);
-
-
 
 INSERT INTO Dates(ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (1, TO_DATE('2024-11-14', 'YYYY-MM-DD'), 14, 11, 2024, 'semaine', 4, 'jeudi', 46, 0, 0, 'Aucune particularité');
