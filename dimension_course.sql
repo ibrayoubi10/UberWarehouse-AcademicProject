@@ -280,7 +280,7 @@ INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Z
 VALUES (12, '20 Place François Rude', 'Dijon', '21000', 500, 0, 'Arrivée au cœur du centre-ville');
 INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
 VALUES (13, '12 Rue de Grenelle', 'Paris', '75007', 1500, 1, 'Arrivée à proximité du musée d\Orsay');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, Heure_Arrivee, distance_centre, Zone_Urbaine, Description_Arrivee) 
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
 VALUES (14, '9 Place de la Bourse', 'Bordeaux', '33000', 1200, 1, 'Arrivée au centre de Bordeaux');
 INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
 VALUES (15, '7 Rue de la Vieille-Draperie', 'Nancy', '54000', 800, 0, 'Arrivée près de la Place Stanislas');
@@ -342,7 +342,7 @@ INSERT INTO Heure_Arrivee (ID_HEURE_ARRIVEE, Heure_Complete, Periode_Journee, AM
 (12, '21:00:00', 'nuit', 'PM', 0, '21:00', 'CET', '20:00');
 INSERT INTO Heure_Arrivee (ID_HEURE_ARRIVEE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (13, '06:15:00', 'matin', 'AM', 1, '06:15', 'CET', '05:15');
-INSERT INTO Heure_Arrivee (ID_HID_HEURE_ARRIVEEEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Arrivee (ID_HEURE_ARRIVEE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (14, '15:45:00', 'apres-midi', 'PM', 0, '15:45', 'CET', '14:45');
 INSERT INTO Heure_Arrivee (ID_HEURE_ARRIVEE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (15, '20:30:00', 'soir', 'PM', 1, '20:30', 'CET', '19:30');
