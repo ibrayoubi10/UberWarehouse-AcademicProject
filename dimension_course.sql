@@ -130,6 +130,7 @@ CREATE TABLE Meteo (
 
 --dimension avec remplissage des données
 
+
 INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
 (1, 'Dupont', 'Alice', 34, 'F', 'VIP', 'Français', 'alice.dupont@example.com', '0123456789', 120);
 INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
@@ -160,37 +161,137 @@ INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Prefe
 (14, 'Omar', 'Youssef', 37, 'H', 'VIP', 'Arabe', 'youssef.omar@example.com', '0123456802', 115);
 INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
 (15, 'Nguyen', 'Linh', 27, 'F', 'Standard', 'Vietnamien', 'linh.nguyen@example.com', '0123456803', 35);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(16, 'Lee', 'Min', 33, 'H', 'Premium', 'Coréen', 'min.lee@example.com', '0123456804', 90),
+(17, 'Chen', 'Wei', 40, 'H', 'VIP', 'Chinois', 'wei.chen@example.com', '0123456805', 120),
+(18, 'Patel', 'Priya', 29, 'F', 'Standard', 'Hindi', 'priya.patel@example.com', '0123456806', 50),
+(19, 'Moore', 'James', 44, 'H', 'Premium', 'Anglais', 'james.moore@example.com', '0123456807', 95),
+(20, 'Müller', 'Sofia', 37, 'F', 'VIP', 'Allemand', 'sofia.mueller@example.com', '0123456808', 115),
+(21, 'Fernandez', 'Luis', 31, 'H', 'Standard', 'Espagnol', 'luis.fernandez@example.com', '0123456809', 40),
+(22, 'Nakamura', 'Sakura', 28, 'F', 'Standard', 'Japonais', 'sakura.nakamura@example.com', '0123456810', 60),
+(23, 'Singh', 'Raj', 46, 'H', 'Premium', 'Hindi', 'raj.singh@example.com', '0123456811', 80),
+(24, 'White', 'Olivia', 36, 'F', 'VIP', 'Anglais', 'olivia.white@example.com', '0123456812', 100),
+(25, 'Kimura', 'Hiroshi', 39, 'H', 'Premium', 'Japonais', 'hiroshi.kimura@example.com', '0123456813', 85),
+(26, 'Zhao', 'Lian', 42, 'F', 'VIP', 'Chinois', 'lian.zhao@example.com', '0123456814', 130),
+(27, 'Hassan', 'Amina', 34, 'F', 'Standard', 'Arabe', 'amina.hassan@example.com', '0123456815', 55),
+(28, 'Ivanov', 'Dmitry', 50, 'H', 'VIP', 'Russe', 'dmitry.ivanov@example.com', '0123456816', 120),
+(29, 'Hansen', 'Nina', 32, 'F', 'Premium', 'Danois', 'nina.hansen@example.com', '0123456817', 90),
+(30, 'Anderson', 'Lucas', 38, 'H', 'Standard', 'Anglais', 'lucas.anderson@example.com', '0123456818', 45),
+(31, 'Garcia', 'Maria', 26, 'F', 'Standard', 'Espagnol', 'maria.garcia@example.com', '0123456819', 35),
+(32, 'Rodriguez', 'Jorge', 43, 'H', 'Premium', 'Espagnol', 'jorge.rodriguez@example.com', '0123456820', 75),
+(33, 'Park', 'Jiwoo', 29, 'F', 'VIP', 'Coréen', 'jiwoo.park@example.com', '0123456821', 110),
+(34, 'Nguyen', 'Tuan', 35, 'H', 'Standard', 'Vietnamien', 'tuan.nguyen@example.com', '0123456822', 50),
+(35, 'Brown', 'Sophia', 30, 'F', 'Premium', 'Anglais', 'sophia.brown@example.com', '0123456823', 85),
+(36, 'Mehmet', 'Ali', 41, 'H', 'VIP', 'Turc', 'ali.mehmet@example.com', '0123456824', 125),
+(37, 'Takahashi', 'Yuki', 28, 'F', 'Standard', 'Japonais', 'yuki.takahashi@example.com', '0123456825', 40),
+(38, 'López', 'Isabella', 45, 'F', 'Premium', 'Espagnol', 'isabella.lopez@example.com', '0123456826', 95),
+(39, 'Davis', 'William', 33, 'H', 'Standard', 'Anglais', 'william.davis@example.com', '0123456827', 50),
+(40, 'Martinez', 'Lucia', 39, 'F', 'VIP', 'Espagnol', 'lucia.martinez@example.com', '0123456828', 120),
+(41, 'Gonzalez', 'Carlos', 47, 'H', 'Premium', 'Espagnol', 'carlos.gonzalez@example.com', '0123456829', 90),
+(42, 'Novak', 'Milan', 31, 'H', 'Standard', 'Tchèque', 'milan.novak@example.com', '0123456830', 55),
+(43, 'Schneider', 'Klara', 38, 'F', 'VIP', 'Allemand', 'klara.schneider@example.com', '0123456831', 100),
+(44, 'Wang', 'Chen', 29, 'H', 'Premium', 'Chinois', 'chen.wang@example.com', '0123456832', 70),
+(45, 'Kumar', 'Seema', 36, 'F', 'Standard', 'Hindi', 'seema.kumar@example.com', '0123456833', 35),
+(46, 'Ahmed', 'Omar', 49, 'H', 'VIP', 'Arabe', 'omar.ahmed@example.com', '0123456834', 110),
+(47, 'Petrov', 'Natalia', 34, 'F', 'Premium', 'Russe', 'natalia.petrov@example.com', '0123456835', 85),
+(48, 'Ricci', 'Marco', 40, 'H', 'Standard', 'Italien', 'marco.ricci@example.com', '0123456836', 60),
+(49, 'Carvalho', 'Joana', 27, 'F', 'VIP', 'Portugais', 'joana.carvalho@example.com', '0123456837', 105),
+(50, 'Blanc', 'Étienne', 44, 'H', 'Premium', 'Français', 'etienne.blanc@example.com', '0123456838', 95);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(51, 'Gomez', 'Elena', 31, 'F', 'Standard', 'Espagnol', 'elena.gomez@example.com', '0123456839', 50),
+(52, 'Jensen', 'Erik', 28, 'H', 'Premium', 'Danois', 'erik.jensen@example.com', '0123456840', 75),
+(53, 'Silva', 'Ana', 35, 'F', 'VIP', 'Portugais', 'ana.silva@example.com', '0123456841', 120),
+(54, 'Evans', 'Chris', 38, 'H', 'Standard', 'Anglais', 'chris.evans@example.com', '0123456842', 40),
+(55, 'Bauer', 'Laura', 42, 'F', 'Premium', 'Allemand', 'laura.bauer@example.com', '0123456843', 85),
+(56, 'Dubois', 'Henri', 33, 'H', 'VIP', 'Français', 'henri.dubois@example.com', '0123456844', 110),
+(57, 'Fischer', 'Julia', 30, 'F', 'Standard', 'Allemand', 'julia.fischer@example.com', '0123456845', 60),
+(58, 'O’Connor', 'Sean', 46, 'H', 'Premium', 'Anglais', 'sean.oconnor@example.com', '0123456846', 95),
+(59, 'Kovács', 'Árpád', 41, 'H', 'VIP', 'Hongrois', 'arpad.kovacs@example.com', '0123456847', 115),
+(60, 'Meier', 'Stefan', 39, 'H', 'Standard', 'Allemand', 'stefan.meier@example.com', '0123456848', 35),
+(61, 'Yang', 'Li', 29, 'F', 'Premium', 'Chinois', 'li.yang@example.com', '0123456849', 75),
+(62, 'Vargas', 'Pedro', 32, 'H', 'Standard', 'Espagnol', 'pedro.vargas@example.com', '0123456850', 50),
+(63, 'Hernandez', 'Lucia', 27, 'F', 'VIP', 'Espagnol', 'lucia.hernandez@example.com', '0123456851', 125),
+(64, 'Weber', 'Maximilian', 36, 'H', 'Premium', 'Allemand', 'maximilian.weber@example.com', '0123456852', 90),
+(65, 'Abe', 'Haruto', 44, 'H', 'VIP', 'Japonais', 'haruto.abe@example.com', '0123456853', 105),
+(66, 'Pereira', 'Carlos', 38, 'H', 'Standard', 'Portugais', 'carlos.pereira@example.com', '0123456854', 40),
+(67, 'Khan', 'Aisha', 31, 'F', 'Premium', 'Urdu', 'aisha.khan@example.com', '0123456855', 80),
+(68, 'Stewart', 'Alex', 29, 'H', 'VIP', 'Anglais', 'alex.stewart@example.com', '0123456856', 95),
+(69, 'Chang', 'Mei-Lin', 45, 'F', 'Standard', 'Chinois', 'mei-lin.chang@example.com', '0123456857', 30),
+(70, 'Rossi', 'Giulia', 34, 'F', 'Premium', 'Italien', 'giulia.rossi@example.com', '0123456858', 85),
+(71, 'Takahashi', 'Keiko', 37, 'F', 'VIP', 'Japonais', 'keiko.takahashi@example.com', '0123456859', 110),
+(72, 'Moreno', 'Diego', 50, 'H', 'Standard', 'Espagnol', 'diego.moreno@example.com', '0123456860', 60),
+(73, 'Nielsen', 'Sofie', 25, 'F', 'Premium', 'Danois', 'sofie.nielsen@example.com', '0123456861', 90),
+(74, 'Rahman', 'Zara', 33, 'F', 'VIP', 'Bengali', 'zara.rahman@example.com', '0123456862', 100),
+(75, 'Kowalski', 'Jan', 39, 'H', 'Standard', 'Polonais', 'jan.kowalski@example.com', '0123456863', 45),
+(76, 'Bianchi', 'Francesco', 31, 'H', 'Premium', 'Italien', 'francesco.bianchi@example.com', '0123456864', 70),
+(77, 'Huang', 'Ling', 29, 'F', 'VIP', 'Chinois', 'ling.huang@example.com', '0123456865', 115),
+(78, 'Jovanovic', 'Milos', 44, 'H', 'Standard', 'Serbe', 'milos.jovanovic@example.com', '0123456866', 35),
+(79, 'Popescu', 'Elena', 32, 'F', 'Premium', 'Roumain', 'elena.popescu@example.com', '0123456867', 80),
+(80, 'Singh', 'Aarav', 40, 'H', 'VIP', 'Hindi', 'aarav.singh@example.com', '0123456868', 125),
+(81, 'Ali', 'Fatima', 36, 'F', 'Standard', 'Arabe', 'fatima.ali@example.com', '0123456869', 50),
+(82, 'Brown', 'Emma', 28, 'F', 'Premium', 'Anglais', 'emma.brown@example.com', '0123456870', 95),
+(83, 'Santos', 'Joao', 47, 'H', 'VIP', 'Portugais', 'joao.santos@example.com', '0123456871', 120),
+(84, 'Smith', 'Sophia', 25, 'F', 'Standard', 'Anglais', 'sophia.smith@example.com', '0123456872', 30),
+(85, 'Lee', 'Jin', 45, 'H', 'Premium', 'Coréen', 'jin.lee@example.com', '0123456873', 75),
+(86, 'Okafor', 'Chidi', 38, 'H', 'VIP', 'Igbo', 'chidi.okafor@example.com', '0123456874', 95),
+(87, 'Ivanov', 'Olga', 29, 'F', 'Standard', 'Russe', 'olga.ivanov@example.com', '0123456875', 40),
+(88, 'Nakamura', 'Hana', 27, 'F', 'Premium', 'Japonais', 'hana.nakamura@example.com', '0123456876', 85),
+(89, 'Garcia', 'Antonio', 31, 'H', 'VIP', 'Espagnol', 'antonio.garcia@example.com', '0123456877', 100),
+(90, 'Williams', 'John', 34, 'H', 'Standard', 'Anglais', 'john.williams@example.com', '0123456878', 45),
+(91, 'Kim', 'Yuna', 33, 'F', 'Premium', 'Coréen', 'yuna.kim@example.com', '0123456879', 90),
+(92, 'Fernandez', 'Isabel', 39, 'F', 'VIP', 'Espagnol', 'isabel.fernandez@example.com', '0123456880', 115),
+(93, 'Weiss', 'Leon', 35, 'H', 'Standard', 'Allemand', 'leon.weiss@example.com', '0123456881', 35),
+(94, 'Wang', 'Feng', 29, 'H', 'Premium', 'Chinois', 'feng.wang@example.com', '0123456882', 80),
+(95, 'Jones', 'Elizabeth', 28, 'F', 'VIP', 'Anglais', 'elizabeth.jones@example.com', '0123456883', 110),
+(96, 'Takahashi', 'Ken', 42, 'H', 'Standard', 'Japonais', 'ken.takahashi@example.com', '0123456884', 50),
+(97, 'Perez', 'Rosa', 34, 'F', 'Premium', 'Espagnol', 'rosa.perez@example.com', '0123456885', 75),
+(98, 'Hansen', 'Emma', 30, 'F', 'VIP', 'Danois', 'emma.hansen@example.com', '0123456886', 25);
+
+
+
 
 INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
-(1, 'Bernard', 'Luc', TO_DATE('2023-01-01', 'yyyy-mm-dd'), '1234567890', 'B', '0123456792', 'luc.bernard@example.com', 'actif', 'Paris');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
-(2, 'Legrand', 'Sophie', TO_DATE('2018-07-10', 'yyyy-mm-dd'), '0987654321', 'B', '0123456793', 'sophie.legrand@example.com', 'actif', 'Marseille');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
-(3, 'Lambert', 'Paul', TO_DATE('2019-03-22', 'yyyy-mm-dd'), '1122334455', 'B', '0123456794', 'paul.lambert@example.com', 'inactif', 'Lyon');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
-(4, 'Nguyen', 'Van', TO_DATE('2022-02-18', 'yyyy-mm-dd'), '2233445566', 'B', '0123456795', 'van.nguyen@example.com', 'actif', 'Paris');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
-(5, 'Rossi', 'Giulia', TO_DATE('2021-09-10', 'yyyy-mm-dd'), '3344556677', 'B', '0123456796', 'giulia.rossi@example.com', 'actif', 'Milan');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
-(6, 'Wilson', 'Mark', TO_DATE('2019-11-15', 'yyyy-mm-dd'), '4455667788', 'B', '0123456797', 'mark.wilson@example.com', 'inactif', 'Londres');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
-(7, 'Müller', 'Laura', TO_DATE('2021-03-28', 'yyyy-mm-dd'), '5566778899', 'B', '0123456798', 'laura.muller@example.com', 'actif', 'Berlin');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
-(8, 'Hernandez', 'Miguel', TO_DATE('2020-06-30', 'yyyy-mm-dd'), '6677889900', 'B', '0123456799', 'miguel.hernandez@example.com', 'inactif', 'Madrid');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
-(9, 'Chen', 'Li', TO_DATE('2020-05-12', 'yyyy-mm-dd'), '7788990011', 'B', '0123456800', 'li.chen@example.com', 'actif', 'Shanghai');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
-(10, 'Garcia', 'Luis', TO_DATE('2017-12-05', 'yyyy-mm-dd'), '8899001122', 'B', '0123456801', 'luis.garcia@example.com', 'actif', 'Barcelona');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
-(11, 'Johnson', 'Sara', TO_DATE('2018-04-18', 'yyyy-mm-dd'), '9900112233', 'B', '0123456802', 'sara.johnson@example.com', 'actif', 'New York');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
-(12, 'Patel', 'Amit', TO_DATE('2021-08-01', 'yyyy-mm-dd'), '1011121314', 'B', '0123456803', 'amit.patel@example.com', 'actif', 'Mumbai');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
-(13, 'Brown', 'Emily', TO_DATE('2019-05-05', 'yyyy-mm-dd'), '1112131415', 'B', '0123456804', 'emily.brown@example.com', 'inactif', 'Sydney');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
-(14, 'Davis', 'Jake', TO_DATE('2018-10-24', 'yyyy-mm-dd'), '1213141516', 'B', '0123456805', 'jake.davis@example.com', 'actif', 'Chicago');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
-(15, 'Ali', 'Aisha', TO_DATE('2022-07-15', 'yyyy-mm-dd'), '1314151617', 'B', '0123456806', 'aisha.ali@example.com', 'actif', 'Dubai');
+(1, 'Lemoine', 'Pierre', '2015-06-12', '123456789012', 'B', '0612345678', 'pierre.lemoine@example.com', 'Actif', 'Paris'),
+(2, 'Durand', 'Jean', '2016-03-05', '123456789013', 'B', '0612345679', 'jean.durand@example.com', 'Actif', 'Lyon'),
+(3, 'Lemoine', 'Claire', '2017-07-19', '123456789014', 'B', '0612345680', 'claire.lemoine@example.com', 'Actif', 'Marseille'),
+(4, 'Dupont', 'Michel', '2018-02-28', '123456789015', 'B', '0612345681', 'michel.dupont@example.com', 'Actif', 'Toulouse'),
+(5, 'Martin', 'Sophie', '2015-11-12', '123456789016', 'B', '0612345682', 'sophie.martin@example.com', 'Actif', 'Nice'),
+(6, 'Caron', 'Louis', '2019-09-22', '123456789017', 'B', '0612345683', 'louis.caron@example.com', 'Actif', 'Lille'),
+(7, 'Bouchard', 'Isabelle', '2018-01-15', '123456789018', 'B', '0612345684', 'isabelle.bouchard@example.com', 'Actif', 'Bordeaux'),
+(8, 'Thomas', 'Julien', '2017-08-21', '123456789019', 'B', '0612345685', 'julien.thomas@example.com', 'Actif', 'Nantes'),
+(9, 'Blanc', 'Rémi', '2020-04-02', '123456789020', 'B', '0612345686', 'remi.blanc@example.com', 'Actif', 'Strasbourg'),
+(10, 'Roussel', 'Camille', '2019-05-13', '123456789021', 'B', '0612345687', 'camille.roussel@example.com', 'Actif', 'Montpellier'),
+(11, 'Leclerc', 'Victor', '2018-10-30', '123456789022', 'B', '0612345688', 'victor.leclerc@example.com', 'Actif', 'Lyon'),
+(12, 'Girard', 'Hélène', '2017-12-07', '123456789023', 'B', '0612345689', 'helene.girard@example.com', 'Actif', 'Toulouse'),
+(13, 'Gauthier', 'Thomas', '2016-06-25', '123456789024', 'B', '0612345690', 'thomas.gauthier@example.com', 'Actif', 'Paris'),
+(14, 'Deschamps', 'Mélanie', '2015-03-03', '123456789025', 'B', '0612345691', 'melanie.deschamps@example.com', 'Actif', 'Marseille'),
+(15, 'Fournier', 'Antoine', '2021-01-18', '123456789026', 'B', '0612345692', 'antoine.fournier@example.com', 'Actif', 'Nice'),
+(16, 'Meyer', 'Sébastien', '2017-11-01', '123456789027', 'B', '0612345693', 'sebastien.meyer@example.com', 'Actif', 'Lille'),
+(17, 'Pires', 'David', '2020-06-16', '123456789028', 'B', '0612345694', 'david.pires@example.com', 'Actif', 'Bordeaux'),
+(18, 'Leclercq', 'Caroline', '2018-04-20', '123456789029', 'B', '0612345695', 'caroline.leclercq@example.com', 'Actif', 'Nantes'),
+(19, 'Charpentier', 'Julien', '2019-10-11', '123456789030', 'B', '0612345696', 'julien.charpentier@example.com', 'Actif', 'Strasbourg'),
+(20, 'Lemoine', 'Alice', '2021-02-03', '123456789031', 'B', '0612345697', 'alice.lemoine@example.com', 'Actif', 'Montpellier'),
+(21, 'Lemoine', 'François', '2015-12-25', '123456789032', 'B', '0612345698', 'francois.lemoine@example.com', 'Actif', 'Paris'),
+(22, 'Henri', 'Claire', '2020-08-21', '123456789033', 'B', '0612345699', 'claire.henri@example.com', 'Actif', 'Lyon'),
+(23, 'Morel', 'Emilie', '2018-11-10', '123456789034', 'B', '0612345700', 'emilie.morel@example.com', 'Actif', 'Marseille'),
+(24, 'Richard', 'Bernard', '2017-07-13', '123456789035', 'B', '0612345701', 'bernard.richard@example.com', 'Actif', 'Toulouse'),
+(25, 'Lucas', 'Isabelle', '2019-03-18', '123456789036', 'B', '0612345702', 'isabelle.lucas@example.com', 'Actif', 'Nice'),
+(26, 'Sanchez', 'François', '2020-07-22', '123456789037', 'B', '0612345703', 'francois.sanchez@example.com', 'Actif', 'Lille'),
+(27, 'Pires', 'Ana', '2018-05-28', '123456789038', 'B', '0612345704', 'ana.pires@example.com', 'Actif', 'Bordeaux'),
+(28, 'Marchand', 'Aurélie', '2019-04-19', '123456789039', 'B', '0612345705', 'aurelie.marchand@example.com', 'Actif', 'Nantes'),
+(29, 'Clement', 'Mélissa', '2021-05-15', '123456789040', 'B', '0612345706', 'melissa.clement@example.com', 'Actif', 'Strasbourg'),
+(30, 'Dupuis', 'Thierry', '2017-09-07', '123456789041', 'B', '0612345707', 'thierry.dupuis@example.com', 'Actif', 'Montpellier'),
+(31, 'Gomez', 'Julien', '2015-08-25', '123456789042', 'B', '0612345708', 'julien.gomez@example.com', 'Actif', 'Paris'),
+(32, 'Joubert', 'Aurore', '2016-12-18', '123456789043', 'B', '0612345709', 'aurore.joubert@example.com', 'Actif', 'Lyon'),
+(33, 'Pape', 'Omar', '2020-01-07', '123456789044', 'B', '0612345710', 'omar.pape@example.com', 'Actif', 'Marseille'),
+(34, 'Martinez', 'Lina', '2019-08-16', '123456789045', 'B', '0612345711', 'lina.martinez@example.com', 'Actif', 'Toulouse'),
+(35, 'Dumont', 'Valérie', '2018-10-03', '123456789046', 'B', '0612345712', 'valerie.dumont@example.com', 'Actif', 'Nice'),
+(36, 'Lambert', 'Sophie', '2020-09-01', '123456789047', 'B', '0612345713', 'sophie.lambert@example.com', 'Actif', 'Lille'),
+(37, 'Fontaine', 'Élise', '2017-11-23', '123456789048', 'B', '0612345714', 'elise.fontaine@example.com', 'Actif', 'Bordeaux'),
+(38, 'Maillard', 'Jacques', '2016-06-11', '123456789049', 'B', '0612345715', 'jacques.maillard@example.com', 'Actif', 'Nantes'),
+(39, 'Vargas', 'Livia', '2018-03-06', '123456789050', 'B', '0612345716', 'livia.vargas@example.com', 'Actif', 'Strasbourg'),
+(40, 'Lemoine', 'Thierry', '2017-04-22', '123456789051', 'B', '0612345717', 'thierry.lemoine@example.com', 'Actif', 'Montpellier');
+
 
 
 INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
@@ -223,6 +324,93 @@ INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zon
 (14, '3 Rue Sainte-Catherine', 'Bordeaux', '33000', 1200, 1, 'Prise en charge', 'Centre de Bordeaux');
 INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
 (15, '24 Place Stanislas', 'Nancy', '54000', 800, 0, 'Prise en charge', 'Centre historique de Nancy');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
+(16, '15 Rue de la République', 'Lyon', '69002', 500, 1, 'Prise en charge', 'Près de la gare Lyon Part-Dieu'),
+(17, '40 Boulevard de la Liberté', 'Lille', '59000', 600, 1, 'En_Attente', 'Proche du centre commercial Euralille'),
+(18, '12 Rue Montorgueil', 'Paris', '75001', 800, 1, 'Annule', 'Quartier historique du Marais'),
+(19, '1 Place du Capitole', 'Toulouse', '31000', 1500, 1, 'Prise en charge', 'Place centrale de Toulouse'),
+(20, '9 Rue de Verdun', 'Marseille', '13001', 1000, 1, 'En_Attente', 'Quartier des Antiquaires'),
+(21, '18 Avenue Jean Médecin', 'Nice', '06000', 1200, 1, 'Prise en charge', 'Centre-ville, proche de la Promenade des Anglais'),
+(22, '25 Boulevard Saint-Germain', 'Paris', '75005', 1200, 1, 'Annule', 'Quartier Latin'),
+(23, '5 Rue de la Charité', 'Lyon', '69002', 900, 1, 'Prise en charge', 'Près de l’Opéra de Lyon'),
+(24, '14 Rue de la Gare', 'Strasbourg', '67000', 1500, 1, 'En_Attente', 'Près de la gare TGV'),
+(25, '3 Place de la République', 'Paris', '75003', 800, 1, 'Prise en charge', 'Centre de Paris, proche du Centre Pompidou'),
+(26, '2 Rue des Écoles', 'Paris', '75005', 1300, 1, 'Annule', 'Quartier universitaire'),
+(27, '6 Rue de lUniversité', 'Bordeaux', '33000', 600, 1, 'En_Attente', 'Quartier historique de Bordeaux'),
+(28, '8 Avenue de la Gare', 'Marseille', '13003', 1800, 0, 'Prise en charge', 'Proche du Vieux-Port'),
+(29, '22 Rue de la Paix', 'Paris', '75002', 500, 1, 'Prise en charge', 'Quartier des grands magasins'),
+(30, '11 Rue des Frères Lumière', 'Lyon', '69008', 2500, 0, 'Annule', 'Quartier résidentiel'),
+(31, '20 Rue de Lyon', 'Paris', '75012', 2000, 1, 'Prise en charge', 'Proche de la Gare de Lyon'),
+(32, '3 Place de la Bourse', 'Bordeaux', '33000', 900, 0, 'En_Attente', 'Près de la place de la Bourse'),
+(33, '7 Rue de la Vieille Draperie', 'Lille', '59000', 1400, 1, 'Prise en charge', 'Quartier historique'),
+(34, '24 Rue Gambetta', 'Marseille', '13005', 1000, 1, 'En_Attente', 'Quartier des Chartreux'),
+(35, '5 Boulevard Victor Hugo', 'Toulouse', '31000', 1600, 0, 'Prise en charge', 'Proche de la place Wilson'),
+(36, '10 Rue de la Croix-Rousse', 'Lyon', '69004', 1100, 1, 'Annule', 'Quartier de la Croix-Rousse'),
+(37, '8 Boulevard Jean Jaurès', 'Paris', '75019', 1200, 0, 'Prise en charge', 'Quartier Belleville'),
+(38, '12 Place dItalie', 'Paris', '75013', 1500, 1, 'Prise en charge', 'Proche de la Bibliothèque François-Mitterrand'),
+(39, '15 Rue des Trois Frères', 'Nice', '06000', 1700, 1, 'En_Attente', 'Vieux-Nice'),
+(40, '21 Rue de la République', 'Marseille', '13002', 1900, 1, 'Annule', 'Quartier du Panier'),
+(41, '13 Rue Danton', 'Paris', '75006', 600, 1, 'Prise en charge', 'Quartier Saint-Germain-des-Prés'),
+(42, '9 Place de lOpéra', 'Paris', '75009', 500, 1, 'Annule', 'Proche de l’Opéra Garnier'),
+(43, '2 Rue de la Poste', 'Lille', '59800', 1100, 1, 'Prise en charge', 'Proche de la gare Lille Europe'),
+(44, '10 Rue Saint-Antoine', 'Paris', '75011', 1400, 1, 'En_Attente', 'Quartier Bastille'),
+(45, '3 Rue Raspail', 'Paris', '75007', 1000, 1, 'Prise en charge', 'Proche du Musée dOrsay'),
+(46, '16 Rue de la République', 'Marseille', '13002', 800, 0, 'Annule', 'Proche du Vieux-Port'),
+(47, '14 Rue de la Paix', 'Paris', '75002', 400, 1, 'Prise en charge', 'Proche des Grands Boulevards'),
+(48, '1 Place Victor Hugo', 'Bordeaux', '33000', 1000, 1, 'En_Attente', 'Proche de la gare Saint-Jean'),
+(49, '5 Boulevard Montmartre', 'Paris', '75002', 1500, 1, 'Prise en charge', 'Quartier Montmartre'),
+(50, '3 Rue de la Vieille Ville', 'Lyon', '69005', 800, 1, 'En_Attente', 'Proche de la basilique de Fourvière'),
+(51, '10 Rue de la Digue', 'Strasbourg', '67000', 1100, 0, 'Prise en charge', 'Proche de la cathédrale'),
+(52, '22 Rue Sainte-Catherine', 'Bordeaux', '33000', 2000, 1, 'Annule', 'Quartier des Chartrons'),
+(53, '15 Rue de la Fontaine', 'Marseille', '13003', 1300, 0, 'Prise en charge', 'Quartier des Réformés'),
+(54, '9 Rue de la Liberté', 'Toulouse', '31000', 1800, 1, 'Prise en charge', 'Centre-ville de Toulouse'),
+(55, '4 Place de la Madeleine', 'Paris', '75008', 700, 1, 'Annule', 'Proche de l’église de la Madeleine'),
+(56, '19 Boulevard de la Corderie', 'Lyon', '69007', 2000, 1, 'Prise en charge', 'Proche du Parc de la Tête d’Or'),
+(57, '12 Rue du Faubourg Saint-Antoine', 'Paris', '75011', 1600, 1, 'En_Attente', 'Près du marché d’Aligre'),
+(58, '3 Place des Vosges', 'Paris', '75003', 600, 1, 'Prise en charge', 'Quartier Le Marais'),
+(59, '7 Rue de Paris', 'Aix-en-Provence', '13100', 2000, 0, 'En_Attente', 'Centre historique'),
+(60, '5 Avenue de la République', 'Paris', '75011', 900, 1, 'Prise en charge', 'Quartier du Marais'),
+(61, '17 Rue du Colonel Fabien', 'Paris', '75010', 1000, 0, 'Prise en charge', 'Quartier du Canal Saint-Martin'),
+(62, '3 Rue du Commerce', 'Paris', '75015', 800, 1, 'Annule', 'Proche de la Tour Montparnasse'),
+(63, '9 Place de la Concorde', 'Paris', '75008', 400, 1, 'Prise en charge', 'Proche du Jardin des Tuileries'),
+(64, '2 Rue de la Montagne Sainte-Geneviève', 'Paris', '75005', 1000, 0, 'En_Attente', 'Quartier du Panthéon'),
+(65, '10 Rue des Canuts', 'Lyon', '69004', 3000, 1, 'Prise en charge', 'Proche de la Croix-Rousse'),
+(66, '4 Rue de la Montagne', 'Strasbourg', '67000', 2000, 1, 'En_Attente', 'Quartier de la Petite France'),
+(67, '18 Rue de la République', 'Marseille', '13006', 800, 1, 'Prise en charge', 'Près de la gare Saint-Charles'),
+(68, '8 Rue d’Antibes', 'Cannes', '06400', 1200, 0, 'Annule', 'Proche de la Croisette'),
+(69, '5 Rue Victor Hugo', 'Toulouse', '31000', 1600, 1, 'Prise en charge', 'Quartier Carmes'),
+(70, '14 Boulevard de la Villette', 'Paris', '75010', 700, 1, 'Annule', 'Près du parc des Buttes-Chaumont'),
+(71, '17 Rue de lIndépendance', 'Nice', '06000', 900, 0, 'Prise en charge', 'Quartier de la Libération'),
+(72, '11 Rue de l’Église', 'Nantes', '44000', 1200, 1, 'En_Attente', 'Quartier de l’île de Nantes'),
+(73, '19 Rue du Faubourg', 'Paris', '75011', 1300, 1, 'Prise en charge', 'Proche du Père Lachaise'),
+(74, '6 Boulevard de la Mer', 'Marseille', '13007', 800, 1, 'Prise en charge', 'Proche de l’Estaque'),
+(75, '2 Rue de la Libération', 'Aix-en-Provence', '13100', 900, 0, 'En_Attente', 'Près du Palais des Congrès'),
+(76, '10 Avenue de l’Opéra', 'Paris', '75001', 500, 1, 'Prise en charge', 'Près du Musée du Louvre'),
+(77, '3 Rue d’Alger', 'Paris', '75001', 1000, 1, 'Prise en charge', 'Près de la Comédie-Française'),
+(78, '12 Rue de la Douane', 'Bordeaux', '33000', 1500, 1, 'Annule', 'Quartier de la Bastide'),
+(79, '7 Boulevard Victor Hugo', 'Lille', '59000', 1700, 1, 'Prise en charge', 'Proche de la place de la République'),
+(80, '1 Place Jean Jaurès', 'Paris', '75019', 500, 1, 'Prise en charge', 'Proche de la Cité des Sciences'),
+(81, '16 Avenue de la Liberté', 'Nice', '06000', 900, 1, 'En_Attente', 'Quartier du port'),
+(82, '12 Rue des Pyramides', 'Paris', '75001', 1200, 1, 'Annule', 'Proche du jardin des Tuileries'),
+(83, '6 Rue des Chênes', 'Strasbourg', '67000', 700, 1, 'Prise en charge', 'Proche du parc de l’Orangerie'),
+(84, '10 Rue de la Gare', 'Nantes', '44000', 2000, 0, 'Prise en charge', 'Proche de la gare SNCF'),
+(85, '7 Rue de la Loire', 'Tours', '37000', 1000, 1, 'Annule', 'Proche du pont Wilson'),
+(86, '1 Place de l’Opéra', 'Paris', '75009', 700, 1, 'En_Attente', 'Quartier des Grands Boulevards'),
+(87, '9 Rue de la Place', 'Marseille', '13001', 900, 0, 'Prise en charge', 'Proche du Vieux-Port'),
+(88, '4 Place Carnot', 'Lyon', '69002', 800, 1, 'Annule', 'Proche de la gare de Lyon Perrache'),
+(89, '13 Rue des Boulets', 'Paris', '75011', 1300, 1, 'En_Attente', 'Quartier de la Bastille'),
+(90, '12 Rue du Poids de l’Huile', 'Marseille', '13001', 2000, 0, 'Prise en charge', 'Quartier du Panier'),
+(91, '11 Rue du Quatre Septembre', 'Paris', '75002', 1000, 0, 'En_Attente', 'Proche de l’Opéra Garnier'),
+(92, '8 Place des Terreaux', 'Lyon', '69001', 1200, 1, 'Prise en charge', 'Quartier historique'),
+(93, '14 Rue des Champs', 'Paris', '75008', 800, 0, 'Annule', 'Proche des Champs-Élysées'),
+(94, '20 Rue de la Croix', 'Nantes', '44000', 1500, 1, 'Prise en charge', 'Proche de l’île de Nantes'),
+(95, '10 Rue de la Bourse', 'Marseille', '13001', 700, 0, 'Prise en charge', 'Quartier du Vieux-Port'),
+(96, '3 Avenue de Paris', 'Versailles', '78000', 1300, 1, 'Annule', 'Proche du Château de Versailles'),
+(97, '4 Rue de la Liberté', 'Strasbourg', '67000', 1600, 0, 'En_Attente', 'Quartier de la Petite France'),
+(98, '16 Rue de lYser', 'Paris', '75010', 1000, 1, 'Prise en charge', 'Proche du Canal Saint-Martin'),
+(99, '7 Rue de la Pomme', 'Marseille', '13001', 900, 1, 'Prise en charge', 'Quartier du Panier'),
+(100, '3 Rue du Marché', 'Lyon', '69002', 1500, 1, 'Prise en charge', 'Proche de la place des Terreaux');
+
 
 INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Etat_Vehicule, Km_Parcourus, Derniere_Revision, Consommation, Assurance_Valide) VALUES (1, 'Chevrolet', 'Cruze', 2022, 'Diesel', 'Excellent', 18193, TO_DATE('2023-12-16', 'YYYY-MM-DD'), 5.5, 0);
 INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Etat_Vehicule, Km_Parcourus, Derniere_Revision, Consommation, Assurance_Valide) VALUES (2, 'Chevrolet', 'Cruze', 2023, 'Diesel', 'Excellent', 21080, TO_DATE('2023-07-21', 'YYYY-MM-DD'), 7.7, 1);
