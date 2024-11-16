@@ -30,3 +30,54 @@ CREATE TABLE Course (
     FOREIGN KEY (ID_VEHICULE) REFERENCES Vehicule(ID_VEHICULE),
     FOREIGN KEY (ID_METEO) REFERENCES Meteo(ID_METEO)
     );
+
+    INSERT INTO Course (
+        ID_COURSE, ID_DATE, ID_ARRIVEE, ID_DEPART, ID_CLIENT, ID_HEURE, ID_CHAUFFEUR, ID_VEHICULE, ID_METEO, 
+        Prix, Distance_Parcourue, Duree_Du_Trajet, nombre_passagers, Statut_Course, Temps_dattente_client, 
+        Code_Promo, Motif_Annulation, Revenue_moyen_par_course, Indice_Satisfaction_Client) VALUES
+    (1, 1, 1, 1, 1, 1, 1, 1, 1, 25.50, 5000, 15, 2, 'Termine', 5, 'PROMO10', NULL, 12.75, 4.5);
+    INSERT INTO Course (
+        ID_COURSE, ID_DATE, ID_ARRIVEE, ID_DEPART, ID_CLIENT, ID_HEURE, ID_CHAUFFEUR, ID_VEHICULE, ID_METEO, 
+        Prix, Distance_Parcourue, Duree_Du_Trajet, nombre_passagers, Statut_Course, Temps_dattente_client, 
+        Code_Promo, Motif_Annulation, Revenue_moyen_par_course, Indice_Satisfaction_Client) VALUES
+    (2, 2, 2, 2, 2, 3, 2, 2, 2, 30.00, 7000, 20, 1, 'Confirmation', 8, 'PROMO20', NULL, 15.00, 3.8);
+    INSERT INTO Course (
+        ID_COURSE, ID_DATE, ID_ARRIVEE, ID_DEPART, ID_CLIENT, ID_HEURE, ID_CHAUFFEUR, ID_VEHICULE, ID_METEO, 
+        Prix, Distance_Parcourue, Duree_Du_Trajet, nombre_passagers, Statut_Course, Temps_dattente_client, 
+        Code_Promo, Motif_Annulation, Revenue_moyen_par_course, Indice_Satisfaction_Client) VALUES
+    (3, 3, 3, 3, 3, 5, 3, 3, 3, 18.75, 3000, 10, 3, 'Prise_en_Charge', 12, NULL, 'Annulation client', 10.50, 4.0);
+    INSERT INTO Course (
+        ID_COURSE, ID_DATE, ID_ARRIVEE, ID_DEPART, ID_CLIENT, ID_HEURE, ID_CHAUFFEUR, ID_VEHICULE, ID_METEO, 
+        Prix, Distance_Parcourue, Duree_Du_Trajet, nombre_passagers, Statut_Course, Temps_dattente_client, 
+        Code_Promo, Motif_Annulation, Revenue_moyen_par_course, Indice_Satisfaction_Client) VALUES
+    (4, 4, 4, 4, 4, 7, 4, 4, 4, 40.00, 10000, 30, 4, 'Termine', 4, 'PROMO15', NULL, 20.00, 4.8);
+    INSERT INTO Course (
+        ID_COURSE, ID_DATE, ID_ARRIVEE, ID_DEPART, ID_CLIENT, ID_HEURE, ID_CHAUFFEUR, ID_VEHICULE, ID_METEO, 
+        Prix, Distance_Parcourue, Duree_Du_Trajet, nombre_passagers, Statut_Course, Temps_dattente_client, 
+        Code_Promo, Motif_Annulation, Revenue_moyen_par_course, Indice_Satisfaction_Client) VALUES
+    (5, 5, 5, 5, 5, 9, 5, 5, 5, 22.50, 4500, 12, 1, 'Demande', 2, NULL, 'Motif inconnu', 11.00, 3.5);
+    INSERT INTO Course (
+        ID_COURSE, ID_DATE, ID_ARRIVEE, ID_DEPART, ID_CLIENT, ID_HEURE, ID_CHAUFFEUR, ID_VEHICULE, ID_METEO, 
+        Prix, Distance_Parcourue, Duree_Du_Trajet, nombre_passagers, Statut_Course, Temps_dattente_client, 
+        Code_Promo, Motif_Annulation, Revenue_moyen_par_course, Indice_Satisfaction_Client) VALUES
+    (6, 6, 6, 6, 6, 11, 6, 6, 6, 28.00, 6000, 18, 2, 'Termine', 6, NULL, NULL, 14.00, 4.3);
+    INSERT INTO Course (
+        ID_COURSE, ID_DATE, ID_ARRIVEE, ID_DEPART, ID_CLIENT, ID_HEURE, ID_CHAUFFEUR, ID_VEHICULE, ID_METEO, 
+        Prix, Distance_Parcourue, Duree_Du_Trajet, nombre_passagers, Statut_Course, Temps_dattente_client, 
+        Code_Promo, Motif_Annulation, Revenue_moyen_par_course, Indice_Satisfaction_Client) VALUES
+    (7, 7, 7, 7, 7, 13, 7, 7, 7, 35.00, 8000, 25, 3, 'Confirmation', 10, 'PROMO30', NULL, 18.25, 4.6);
+    INSERT INTO Course (
+        ID_COURSE, ID_DATE, ID_ARRIVEE, ID_DEPART, ID_CLIENT, ID_HEURE, ID_CHAUFFEUR, ID_VEHICULE, ID_METEO, 
+        Prix, Distance_Parcourue, Duree_Du_Trajet, nombre_passagers, Statut_Course, Temps_dattente_client, 
+        Code_Promo, Motif_Annulation, Revenue_moyen_par_course, Indice_Satisfaction_Client) VALUES
+    (8, 8, 8, 8, 8, 15, 8, 8, 8, 50.00, 12000, 35, 4, 'Prise_en_Charge', 15, NULL, 'Problème véhicule', 22.50, 4.7);
+    INSERT INTO Course (
+        ID_COURSE, ID_DATE, ID_ARRIVEE, ID_DEPART, ID_CLIENT, ID_HEURE, ID_CHAUFFEUR, ID_VEHICULE, ID_METEO, 
+        Prix, Distance_Parcourue, Duree_Du_Trajet, nombre_passagers, Statut_Course, Temps_dattente_client, 
+        Code_Promo, Motif_Annulation, Revenue_moyen_par_course, Indice_Satisfaction_Client) VALUES
+    (9, 9, 9, 9, 9, 10, 9, 9, 9, 45.00, 11000, 30, 3, 'Demande', 4, 'PROMO25', NULL, 21.00, 3.9);
+    INSERT INTO Course (
+        ID_COURSE, ID_DATE, ID_ARRIVEE, ID_DEPART, ID_CLIENT, ID_HEURE, ID_CHAUFFEUR, ID_VEHICULE, ID_METEO, 
+        Prix, Distance_Parcourue, Duree_Du_Trajet, nombre_passagers, Statut_Course, Temps_dattente_client, 
+        Code_Promo, Motif_Annulation, Revenue_moyen_par_course, Indice_Satisfaction_Client) VALUES
+    (10, 10, 10, 10, 10, 12, 10, 10, 10, 38.00, 9500, 22, 2, 'Termine', 7, 'PROMO5', NULL, 19.75, 4.2);
