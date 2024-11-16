@@ -1,37 +1,32 @@
 from faker import Faker
 import random
 
-faker = Faker("fr_FR")  # Générer des données françaises
+faker = Faker('fr_FR')  # Générer des données adaptées à la France
 
-# List of sample cities with their postal codes
-cities = [
-    ("Paris", "75000"), ("Marseille", "13000"), ("Lyon", "69000"), 
-    ("Lille", "59000"), ("Bordeaux", "33000"), ("Toulouse", "31000"),
-    ("Nantes", "44000"), ("Nice", "06000"), ("Strasbourg", "67000"), 
-    ("Montpellier", "34000")
-]
+# Statuts possibles pour les chauffeurs
+statuts = ['Actif', 'Inactif', 'Suspendu']
 
-descriptions = [
-    "Arrivée au centre-ville", "Arrivée dans un quartier résidentiel", 
-    "Arrivée à proximité d'une gare", "Arrivée dans une zone industrielle",
-    "Arrivée proche d'un monument historique", "Arrivée près d'un centre commercial"
-]
+# Zones principales possibles
+zones_principales = ['Paris', 'Lyon', 'Marseille', 'Toulouse', 'Nice', 'Lille', 'Bordeaux', 'Nantes']
 
-# Generate 100 insert statements
-with open("insert_arrivee.sql", "w") as file:
-    for i in range(1, 101):
-        # Randomly select city and postal code
-        city, postal_code = random.choice(cities)
-        address = faker.street_address()
-        distance_centre = random.randint(100, 5000)  # Distance in meters
-        zone_urbaine = random.choice([0, 1])  # Urban zone or not
-        description = random.choice(descriptions)
+# Générer 40 chauffeurs
+with open("insert_chauffeur.sql", "w") as file:
+    for i in range(1, 41):
+        nom = faker.last_name()  # Nom du chauffeur
+        prenom = faker.first_name()  # Prénom du chauffeur
+        date_embauche = faker.date_between(start_date='-10y', end_date='-1y')  # Date d'embauche
+        numero_permis = faker.unique.numerify('###########')  # Numéro de permis (12 chiffres)
+        type_permis = random.choice(['B', 'C', 'D'])  # Type de permis
+        telephone = faker.phone_number()[:10]  # Numéro de téléphone
+        email = faker.unique.email()  # Email unique
+        statut = random.choice(statuts)  # Statut aléatoire
+        zone_principale = random.choice(zones_principales)  # Zone principale aléatoire
 
-        # SQL insert statement
-        sql = (f"INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) "
-               f"VALUES ({i}, '{address}', '{city}', '{postal_code}', {distance_centre}, {zone_urbaine}, '{description}');")
+        # Générer une instruction SQL
+        sql = (f"INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) "
+               f"VALUES ({i}, '{nom}', '{prenom}', '{date_embauche}', '{numero_permis}', '{type_permis}', '{telephone}', '{email}', '{statut}', '{zone_principale}');")
         
-        # Write to file
+        # Écrire dans le fichier
         file.write(sql + "\n")
 
-print("100 INSERT statements have been written to 'insert_arrivee.sql'.")
+print("40 INSERT statements pour la table Chauffeur ont été générés dans 'insert_chauffeur.sql'.")

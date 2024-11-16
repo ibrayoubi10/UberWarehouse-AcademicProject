@@ -130,7 +130,6 @@ CREATE TABLE Meteo (
 
 --dimension avec remplissage des données
 
-
 INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
 (1, 'Dupont', 'Alice', 34, 'F', 'VIP', 'Français', 'alice.dupont@example.com', '0123456789', 120);
 INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
@@ -162,254 +161,320 @@ INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Prefe
 INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
 (15, 'Nguyen', 'Linh', 27, 'F', 'Standard', 'Vietnamien', 'linh.nguyen@example.com', '0123456803', 35);
 INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
-(16, 'Lee', 'Min', 33, 'H', 'Premium', 'Coréen', 'min.lee@example.com', '0123456804', 90),
-(17, 'Chen', 'Wei', 40, 'H', 'VIP', 'Chinois', 'wei.chen@example.com', '0123456805', 120),
-(18, 'Patel', 'Priya', 29, 'F', 'Standard', 'Hindi', 'priya.patel@example.com', '0123456806', 50),
-(19, 'Moore', 'James', 44, 'H', 'Premium', 'Anglais', 'james.moore@example.com', '0123456807', 95),
-(20, 'Müller', 'Sofia', 37, 'F', 'VIP', 'Allemand', 'sofia.mueller@example.com', '0123456808', 115),
-(21, 'Fernandez', 'Luis', 31, 'H', 'Standard', 'Espagnol', 'luis.fernandez@example.com', '0123456809', 40),
-(22, 'Nakamura', 'Sakura', 28, 'F', 'Standard', 'Japonais', 'sakura.nakamura@example.com', '0123456810', 60),
-(23, 'Singh', 'Raj', 46, 'H', 'Premium', 'Hindi', 'raj.singh@example.com', '0123456811', 80),
-(24, 'White', 'Olivia', 36, 'F', 'VIP', 'Anglais', 'olivia.white@example.com', '0123456812', 100),
-(25, 'Kimura', 'Hiroshi', 39, 'H', 'Premium', 'Japonais', 'hiroshi.kimura@example.com', '0123456813', 85),
-(26, 'Zhao', 'Lian', 42, 'F', 'VIP', 'Chinois', 'lian.zhao@example.com', '0123456814', 130),
-(27, 'Hassan', 'Amina', 34, 'F', 'Standard', 'Arabe', 'amina.hassan@example.com', '0123456815', 55),
-(28, 'Ivanov', 'Dmitry', 50, 'H', 'VIP', 'Russe', 'dmitry.ivanov@example.com', '0123456816', 120),
-(29, 'Hansen', 'Nina', 32, 'F', 'Premium', 'Danois', 'nina.hansen@example.com', '0123456817', 90),
-(30, 'Anderson', 'Lucas', 38, 'H', 'Standard', 'Anglais', 'lucas.anderson@example.com', '0123456818', 45),
-(31, 'Garcia', 'Maria', 26, 'F', 'Standard', 'Espagnol', 'maria.garcia@example.com', '0123456819', 35),
-(32, 'Rodriguez', 'Jorge', 43, 'H', 'Premium', 'Espagnol', 'jorge.rodriguez@example.com', '0123456820', 75),
-(33, 'Park', 'Jiwoo', 29, 'F', 'VIP', 'Coréen', 'jiwoo.park@example.com', '0123456821', 110),
-(34, 'Nguyen', 'Tuan', 35, 'H', 'Standard', 'Vietnamien', 'tuan.nguyen@example.com', '0123456822', 50),
-(35, 'Brown', 'Sophia', 30, 'F', 'Premium', 'Anglais', 'sophia.brown@example.com', '0123456823', 85),
-(36, 'Mehmet', 'Ali', 41, 'H', 'VIP', 'Turc', 'ali.mehmet@example.com', '0123456824', 125),
-(37, 'Takahashi', 'Yuki', 28, 'F', 'Standard', 'Japonais', 'yuki.takahashi@example.com', '0123456825', 40),
-(38, 'López', 'Isabella', 45, 'F', 'Premium', 'Espagnol', 'isabella.lopez@example.com', '0123456826', 95),
-(39, 'Davis', 'William', 33, 'H', 'Standard', 'Anglais', 'william.davis@example.com', '0123456827', 50),
-(40, 'Martinez', 'Lucia', 39, 'F', 'VIP', 'Espagnol', 'lucia.martinez@example.com', '0123456828', 120),
-(41, 'Gonzalez', 'Carlos', 47, 'H', 'Premium', 'Espagnol', 'carlos.gonzalez@example.com', '0123456829', 90),
-(42, 'Novak', 'Milan', 31, 'H', 'Standard', 'Tchèque', 'milan.novak@example.com', '0123456830', 55),
-(43, 'Schneider', 'Klara', 38, 'F', 'VIP', 'Allemand', 'klara.schneider@example.com', '0123456831', 100),
-(44, 'Wang', 'Chen', 29, 'H', 'Premium', 'Chinois', 'chen.wang@example.com', '0123456832', 70),
-(45, 'Kumar', 'Seema', 36, 'F', 'Standard', 'Hindi', 'seema.kumar@example.com', '0123456833', 35),
-(46, 'Ahmed', 'Omar', 49, 'H', 'VIP', 'Arabe', 'omar.ahmed@example.com', '0123456834', 110),
-(47, 'Petrov', 'Natalia', 34, 'F', 'Premium', 'Russe', 'natalia.petrov@example.com', '0123456835', 85),
-(48, 'Ricci', 'Marco', 40, 'H', 'Standard', 'Italien', 'marco.ricci@example.com', '0123456836', 60),
-(49, 'Carvalho', 'Joana', 27, 'F', 'VIP', 'Portugais', 'joana.carvalho@example.com', '0123456837', 105),
-(50, 'Blanc', 'Étienne', 44, 'H', 'Premium', 'Français', 'etienne.blanc@example.com', '0123456838', 95);
+(16, 'Lee', 'Min', 33, 'H', 'Premium', 'Coréen', 'min.lee@example.com', '0123456804', 90);
 INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
-(51, 'Gomez', 'Elena', 31, 'F', 'Standard', 'Espagnol', 'elena.gomez@example.com', '0123456839', 50),
-(52, 'Jensen', 'Erik', 28, 'H', 'Premium', 'Danois', 'erik.jensen@example.com', '0123456840', 75),
-(53, 'Silva', 'Ana', 35, 'F', 'VIP', 'Portugais', 'ana.silva@example.com', '0123456841', 120),
-(54, 'Evans', 'Chris', 38, 'H', 'Standard', 'Anglais', 'chris.evans@example.com', '0123456842', 40),
-(55, 'Bauer', 'Laura', 42, 'F', 'Premium', 'Allemand', 'laura.bauer@example.com', '0123456843', 85),
-(56, 'Dubois', 'Henri', 33, 'H', 'VIP', 'Français', 'henri.dubois@example.com', '0123456844', 110),
-(57, 'Fischer', 'Julia', 30, 'F', 'Standard', 'Allemand', 'julia.fischer@example.com', '0123456845', 60),
-(58, 'O’Connor', 'Sean', 46, 'H', 'Premium', 'Anglais', 'sean.oconnor@example.com', '0123456846', 95),
-(59, 'Kovács', 'Árpád', 41, 'H', 'VIP', 'Hongrois', 'arpad.kovacs@example.com', '0123456847', 115),
-(60, 'Meier', 'Stefan', 39, 'H', 'Standard', 'Allemand', 'stefan.meier@example.com', '0123456848', 35),
-(61, 'Yang', 'Li', 29, 'F', 'Premium', 'Chinois', 'li.yang@example.com', '0123456849', 75),
-(62, 'Vargas', 'Pedro', 32, 'H', 'Standard', 'Espagnol', 'pedro.vargas@example.com', '0123456850', 50),
-(63, 'Hernandez', 'Lucia', 27, 'F', 'VIP', 'Espagnol', 'lucia.hernandez@example.com', '0123456851', 125),
-(64, 'Weber', 'Maximilian', 36, 'H', 'Premium', 'Allemand', 'maximilian.weber@example.com', '0123456852', 90),
-(65, 'Abe', 'Haruto', 44, 'H', 'VIP', 'Japonais', 'haruto.abe@example.com', '0123456853', 105),
-(66, 'Pereira', 'Carlos', 38, 'H', 'Standard', 'Portugais', 'carlos.pereira@example.com', '0123456854', 40),
-(67, 'Khan', 'Aisha', 31, 'F', 'Premium', 'Urdu', 'aisha.khan@example.com', '0123456855', 80),
-(68, 'Stewart', 'Alex', 29, 'H', 'VIP', 'Anglais', 'alex.stewart@example.com', '0123456856', 95),
-(69, 'Chang', 'Mei-Lin', 45, 'F', 'Standard', 'Chinois', 'mei-lin.chang@example.com', '0123456857', 30),
-(70, 'Rossi', 'Giulia', 34, 'F', 'Premium', 'Italien', 'giulia.rossi@example.com', '0123456858', 85),
-(71, 'Takahashi', 'Keiko', 37, 'F', 'VIP', 'Japonais', 'keiko.takahashi@example.com', '0123456859', 110),
-(72, 'Moreno', 'Diego', 50, 'H', 'Standard', 'Espagnol', 'diego.moreno@example.com', '0123456860', 60),
-(73, 'Nielsen', 'Sofie', 25, 'F', 'Premium', 'Danois', 'sofie.nielsen@example.com', '0123456861', 90),
-(74, 'Rahman', 'Zara', 33, 'F', 'VIP', 'Bengali', 'zara.rahman@example.com', '0123456862', 100),
-(75, 'Kowalski', 'Jan', 39, 'H', 'Standard', 'Polonais', 'jan.kowalski@example.com', '0123456863', 45),
-(76, 'Bianchi', 'Francesco', 31, 'H', 'Premium', 'Italien', 'francesco.bianchi@example.com', '0123456864', 70),
-(77, 'Huang', 'Ling', 29, 'F', 'VIP', 'Chinois', 'ling.huang@example.com', '0123456865', 115),
-(78, 'Jovanovic', 'Milos', 44, 'H', 'Standard', 'Serbe', 'milos.jovanovic@example.com', '0123456866', 35),
-(79, 'Popescu', 'Elena', 32, 'F', 'Premium', 'Roumain', 'elena.popescu@example.com', '0123456867', 80),
-(80, 'Singh', 'Aarav', 40, 'H', 'VIP', 'Hindi', 'aarav.singh@example.com', '0123456868', 125),
-(81, 'Ali', 'Fatima', 36, 'F', 'Standard', 'Arabe', 'fatima.ali@example.com', '0123456869', 50),
-(82, 'Brown', 'Emma', 28, 'F', 'Premium', 'Anglais', 'emma.brown@example.com', '0123456870', 95),
-(83, 'Santos', 'Joao', 47, 'H', 'VIP', 'Portugais', 'joao.santos@example.com', '0123456871', 120),
-(84, 'Smith', 'Sophia', 25, 'F', 'Standard', 'Anglais', 'sophia.smith@example.com', '0123456872', 30),
-(85, 'Lee', 'Jin', 45, 'H', 'Premium', 'Coréen', 'jin.lee@example.com', '0123456873', 75),
-(86, 'Okafor', 'Chidi', 38, 'H', 'VIP', 'Igbo', 'chidi.okafor@example.com', '0123456874', 95),
-(87, 'Ivanov', 'Olga', 29, 'F', 'Standard', 'Russe', 'olga.ivanov@example.com', '0123456875', 40),
-(88, 'Nakamura', 'Hana', 27, 'F', 'Premium', 'Japonais', 'hana.nakamura@example.com', '0123456876', 85),
-(89, 'Garcia', 'Antonio', 31, 'H', 'VIP', 'Espagnol', 'antonio.garcia@example.com', '0123456877', 100),
-(90, 'Williams', 'John', 34, 'H', 'Standard', 'Anglais', 'john.williams@example.com', '0123456878', 45),
-(91, 'Kim', 'Yuna', 33, 'F', 'Premium', 'Coréen', 'yuna.kim@example.com', '0123456879', 90),
-(92, 'Fernandez', 'Isabel', 39, 'F', 'VIP', 'Espagnol', 'isabel.fernandez@example.com', '0123456880', 115),
-(93, 'Weiss', 'Leon', 35, 'H', 'Standard', 'Allemand', 'leon.weiss@example.com', '0123456881', 35),
-(94, 'Wang', 'Feng', 29, 'H', 'Premium', 'Chinois', 'feng.wang@example.com', '0123456882', 80),
-(95, 'Jones', 'Elizabeth', 28, 'F', 'VIP', 'Anglais', 'elizabeth.jones@example.com', '0123456883', 110),
-(96, 'Takahashi', 'Ken', 42, 'H', 'Standard', 'Japonais', 'ken.takahashi@example.com', '0123456884', 50),
-(97, 'Perez', 'Rosa', 34, 'F', 'Premium', 'Espagnol', 'rosa.perez@example.com', '0123456885', 75),
-(98, 'Hansen', 'Emma', 30, 'F', 'VIP', 'Danois', 'emma.hansen@example.com', '0123456886', 25);
+(17, 'Ivanov', 'Alexei', 40, 'H', 'VIP', 'Russe', 'alexei.ivanov@example.com', '0123456805', 125);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(18, 'Khan', 'Fatima', 29, 'F', 'Standard', 'Ourdou', 'fatima.khan@example.com', '0123456806', 50);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(19, 'Chen', 'Wei', 26, 'H', 'Standard', 'Chinois', 'wei.chen@example.com', '0123456807', 40);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(20, 'Garcia', 'Luis', 35, 'H', 'Premium', 'Espagnol', 'luis.garcia@example.com', '0123456808', 70);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(21, 'Ali', 'Zahra', 30, 'F', 'Standard', 'Arabe', 'zahra.ali@example.com', '0123456809', 60);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(22, 'Patel', 'Raj', 28, 'H', 'Premium', 'Hindi', 'raj.patel@example.com', '0123456810', 75);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(23, 'Nguyen', 'Thao', 24, 'F', 'Standard', 'Vietnamien', 'thao.nguyen@example.com', '0123456811', 50);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(24, 'Taylor', 'James', 47, 'H', 'VIP', 'Anglais', 'james.taylor@example.com', '0123456812', 140);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(25, 'Kowalski', 'Anna', 33, 'F', 'Premium', 'Polonais', 'anna.kowalski@example.com', '0123456813', 85);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(26, 'Hansen', 'Ole', 51, 'H', 'VIP', 'Danois', 'ole.hansen@example.com', '0123456814', 130);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(27, 'Dubois', 'Chloe', 22, 'F', 'Standard', 'Français', 'chloe.dubois@example.com', '0123456815', 35);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(28, 'Smith', 'Robert', 46, 'H', 'Premium', 'Anglais', 'robert.smith@example.com', '0123456816', 100);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(29, 'Nakamura', 'Aiko', 39, 'F', 'VIP', 'Japonais', 'aiko.nakamura@example.com', '0123456817', 120);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(30, 'Fernandez', 'Juan', 31, 'H', 'Standard', 'Espagnol', 'juan.fernandez@example.com', '0123456818', 55);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(31, 'Lemoine', 'Claire', 45, 'F', 'Premium', 'Français', 'claire.lemoine@example.com', '0123456819', 90);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(32, 'Tan', 'Li', 26, 'H', 'Standard', 'Chinois', 'li.tan@example.com', '0123456820', 40);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(33, 'Mohamed', 'Aisha', 35, 'F', 'VIP', 'Arabe', 'aisha.mohamed@example.com', '0123456821', 115);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(34, 'Rossi', 'Marco', 29, 'H', 'Standard', 'Italien', 'marco.rossi@example.com', '0123456822', 50);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(35, 'Jensen', 'Sophie', 38, 'F', 'Premium', 'Danois', 'sophie.jensen@example.com', '0123456823', 80);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(36, 'Martinez', 'Jose', 44, 'H', 'VIP', 'Espagnol', 'jose.martinez@example.com', '0123456824', 130);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(37, 'Meier', 'Lena', 41, 'F', 'Premium', 'Allemand', 'lena.meier@example.com', '0123456825', 95);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(38, 'Ahmed', 'Omar', 34, 'H', 'Standard', 'Arabe', 'omar.ahmed@example.com', '0123456826', 65);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(39, 'Fischer', 'Erik', 52, 'H', 'VIP', 'Allemand', 'erik.fischer@example.com', '0123456827', 145);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(40, 'Zhang', 'Yue', 25, 'F', 'Standard', 'Chinois', 'yue.zhang@example.com', '0123456828', 30);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(41, 'Hernandez', 'Miguel', 37, 'H', 'Premium', 'Espagnol', 'miguel.hernandez@example.com', '0123456829', 85);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(42, 'Wilson', 'Sophia', 28, 'F', 'Standard', 'Anglais', 'sophia.wilson@example.com', '0123456830', 50);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(43, 'Liu', 'Hao', 33, 'H', 'VIP', 'Chinois', 'hao.liu@example.com', '0123456831', 125);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(44, 'Bakr', 'Layla', 41, 'F', 'Premium', 'Arabe', 'layla.bakr@example.com', '0123456832', 90);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(45, 'Novak', 'Ivan', 50, 'H', 'VIP', 'Croate', 'ivan.novak@example.com', '0123456833', 140);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(46, 'Santos', 'Carla', 30, 'F', 'Standard', 'Portugais', 'carla.santos@example.com', '0123456834', 55);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(47, 'Kaur', 'Simran', 26, 'F', 'Standard', 'Panjabi', 'simran.kaur@example.com', '0123456835', 40);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(48, 'Jones', 'Ethan', 34, 'H', 'Premium', 'Anglais', 'ethan.jones@example.com', '0123456836', 80);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(49, 'Bauer', 'Klaus', 48, 'H', 'VIP', 'Allemand', 'klaus.bauer@example.com', '0123456837', 135);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(50, 'Singh', 'Arjun', 27, 'H', 'Standard', 'Hindi', 'arjun.singh@example.com', '0123456838', 45);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(51, 'Carter', 'Emily', 29, 'F', 'Standard', 'Anglais', 'emily.carter@example.com', '0123456839', 60);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(52, 'Moreau', 'Lucas', 35, 'H', 'Premium', 'Français', 'lucas.moreau@example.com', '0123456840', 75);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(53, 'Tanaka', 'Sakura', 40, 'F', 'VIP', 'Japonais', 'sakura.tanaka@example.com', '0123456841', 120);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(54, 'Zimmer', 'Marta', 46, 'F', 'Premium', 'Allemand', 'marta.zimmer@example.com', '0123456842', 95);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(55, 'OConnor', 'Sean', 32, 'H', 'Standard', 'Anglais', 'sean.oconnor@example.com', '0123456843', 65);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(56, 'Martinez', 'Isabel', 37, 'F', 'Standard', 'Espagnol', 'isabel.martinez@example.com', '0123456844', 50);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(57, 'Kim', 'Eun', 31, 'F', 'Premium', 'Coréen', 'eun.kim@example.com', '0123456845', 85);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(58, 'Gupta', 'Vikram', 44, 'H', 'VIP', 'Hindi', 'vikram.gupta@example.com', '0123456846', 130);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(59, 'Yilmaz', 'Elif', 39, 'F', 'Premium', 'Turc', 'elif.yilmaz@example.com', '0123456847', 100);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(60, 'Miller', 'Jack', 42, 'H', 'Standard', 'Anglais', 'jack.miller@example.com', '0123456848', 60);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(61, 'Ahmed', 'Nora', 25, 'F', 'Standard', 'Arabe', 'nora.ahmed@example.com', '0123456849', 40);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(62, 'Rossi', 'Giulia', 31, 'F', 'Premium', 'Italien', 'giulia.rossi@example.com', '0123456850', 85);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(63, 'Silva', 'Joao', 29, 'H', 'VIP', 'Portugais', 'joao.silva@example.com', '0123456851', 115);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(64, 'Li', 'Feng', 27, 'H', 'Standard', 'Chinois', 'feng.li@example.com', '0123456852', 45);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(65, 'Brown', 'Jessica', 36, 'F', 'Standard', 'Anglais', 'jessica.brown@example.com', '0123456853', 50);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(66, 'Ivanov', 'Olga', 34, 'F', 'Premium', 'Russe', 'olga.ivanov@example.com', '0123456854', 75);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(67, 'Garcia', 'Alejandro', 49, 'H', 'VIP', 'Espagnol', 'alejandro.garcia@example.com', '0123456855', 140);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(68, 'Chowdhury', 'Ayesha', 28, 'F', 'Standard', 'Bengali', 'ayesha.chowdhury@example.com', '0123456856', 40);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(69, 'Okafor', 'Emeka', 35, 'H', 'Premium', 'Igbo', 'emeka.okafor@example.com', '0123456857', 85);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(70, 'Williams', 'Chloe', 27, 'F', 'Standard', 'Anglais', 'chloe.williams@example.com', '0123456858', 50);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(71, 'Duarte', 'Manuel', 41, 'H', 'VIP', 'Portugais', 'manuel.duarte@example.com', '0123456859', 120);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(72, 'Zhang', 'Wei', 33, 'H', 'Standard', 'Chinois', 'wei.zhang@example.com', '0123456860', 60);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(73, 'Hassan', 'Aliya', 30, 'F', 'Standard', 'Arabe', 'aliya.hassan@example.com', '0123456861', 45);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(74, 'Kowalski', 'Tomasz', 48, 'H', 'Premium', 'Polonais', 'tomasz.kowalski@example.com', '0123456862', 95);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(75, 'Petrov', 'Dimitri', 52, 'H', 'VIP', 'Russe', 'dimitri.petrov@example.com', '0123456863', 145);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(76, 'Khan', 'Aamir', 29, 'H', 'Standard', 'Ourdou', 'aamir.khan@example.com', '0123456864', 50);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(77, 'Nguyen', 'Thanh', 37, 'H', 'Premium', 'Vietnamien', 'thanh.nguyen@example.com', '0123456865', 80);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(78, 'Meier', 'Anna', 31, 'F', 'Standard', 'Allemand', 'anna.meier@example.com', '0123456866', 55);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(79, 'Sharma', 'Priya', 27, 'F', 'Standard', 'Hindi', 'priya.sharma@example.com', '0123456867', 45);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(80, 'Rodriguez', 'Maria', 34, 'F', 'Premium', 'Espagnol', 'maria.rodriguez@example.com', '0123456868', 90);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(81, 'Kim', 'Jiwoo', 39, 'F', 'VIP', 'Coréen', 'jiwoo.kim@example.com', '0123456869', 125);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(82, 'Davies', 'Oliver', 28, 'H', 'Standard', 'Anglais', 'oliver.davies@example.com', '0123456870', 40);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(83, 'Singh', 'Rohit', 32, 'H', 'Premium', 'Hindi', 'rohit.singh@example.com', '0123456871', 85);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(84, 'Nakamura', 'Haruto', 35, 'H', 'Standard', 'Japonais', 'haruto.nakamura@example.com', '0123456872', 55);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(85, 'Santos', 'Luiza', 44, 'F', 'VIP', 'Portugais', 'luiza.santos@example.com', '0123456873', 135);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(86, 'Ahmed', 'Kareem', 38, 'H', 'Premium', 'Arabe', 'kareem.ahmed@example.com', '0123456874', 100);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(87, 'Francois', 'Julien', 26, 'H', 'Standard', 'Français', 'julien.francois@example.com', '0123456875', 45);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(88, 'Carter', 'Ella', 29, 'F', 'Standard', 'Anglais', 'ella.carter@example.com', '0123456876', 50);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(89, 'Garcia', 'Jose', 47, 'H', 'VIP', 'Espagnol', 'jose.garcia@example.com', '0123456877', 140);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(90, 'Mendes', 'Sofia', 36, 'F', 'Premium', 'Portugais', 'sofia.mendes@example.com', '0123456878', 85);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(91, 'Johnson', 'James', 33, 'H', 'Standard', 'Anglais', 'james.johnson@example.com', '0123456879', 55);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(92, 'Boucher', 'Claire', 38, 'F', 'Standard', 'Français', 'claire.boucher@example.com', '0123456880', 60);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(93, 'Fischer', 'Lukas', 50, 'H', 'VIP', 'Allemand', 'lukas.fischer@example.com', '0123456881', 150);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(94, 'Kobayashi', 'Sakura', 31, 'F', 'Standard', 'Japonais', 'sakura.kobayashi@example.com', '0123456882', 45);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(95, 'Hassan', 'Yasir', 42, 'H', 'Premium', 'Arabe', 'yasir.hassan@example.com', '0123456883', 95);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(96, 'Borges', 'Miguel', 37, 'H', 'Standard', 'Portugais', 'miguel.borges@example.com', '0123456884', 60);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(97, 'Dupont', 'Marie', 25, 'F', 'Standard', 'Français', 'marie.dupont@example.com', '0123456885', 40);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(98, 'Smith', 'John', 34, 'H', 'Premium', 'Anglais', 'john.smith@example.com', '0123456886', 85);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(99, 'Chen', 'Mei', 29, 'F', 'Standard', 'Chinois', 'mei.chen@example.com', '0123456887', 50);
+INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
+(100, 'Garcia', 'Carlos', 41, 'H', 'VIP', 'Espagnol', 'carlos.garcia@example.com', '0123456888', 120);
 
 
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (1, 'Pierre', 'Diane', '2021-08-11', '79975772438', 'B', '+33 (0)4 9', 'sylvie83@example.org', 'Inactif', 'Marseille');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (2, 'Dumas', 'Alice', '2021-02-22', '89885694824', 'B', '+33 4 79 0', 'alice63@example.org', 'Inactif', 'Paris');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (3, 'Legros', 'Tristan', '2018-02-09', '27465000916', 'C', '06 37 80 8', 'lucepereira@example.net', 'Suspendu', 'Nantes');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (4, 'Bailly', 'Nathalie', '2022-03-01', '95304430232', 'D', '+33 3 86 1', 'manon38@example.com', 'Actif', 'Lille');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (5, 'Legrand', 'Zacharie', '2015-02-09', '40398497986', 'B', '0223867905', 'luc93@example.net', 'Suspendu', 'Marseille');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (6, 'Pons', 'Richard', '2018-05-09', '59615669701', 'D', '+33 1 69 8', 'grosraymond@example.org', 'Inactif', 'Bordeaux');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (7, 'Gautier', 'Alexandre', '2015-10-11', '11987448635', 'B', '+33 (0)2 1', 'alphonsegiraud@example.com', 'Inactif', 'Toulouse');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (8, 'Blanchard', 'Adélaïde', '2017-01-15', '16050413889', 'D', '+33 (0)4 4', 'de-oliveiravictor@example.com', 'Inactif', 'Lyon');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (9, 'Camus', 'Timothée', '2016-02-21', '67997527180', 'C', '01 80 79 9', 'alainpierre@example.net', 'Suspendu', 'Nantes');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (10, 'Roger', 'Céline', '2019-07-14', '66833704616', 'D', '+33 (0)6 3', 'jeannormand@example.net', 'Actif', 'Toulouse');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (11, 'Poirier', 'Alain', '2022-11-16', '66132948951', 'C', '+33 1 40 1', 'eugene42@example.org', 'Suspendu', 'Marseille');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (12, 'Paris', 'Aurore', '2016-08-01', '63785493757', 'C', '+33 (0)2 2', 'philippe43@example.net', 'Inactif', 'Lille');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (13, 'Clerc', 'Noémi', '2015-11-15', '96804220728', 'C', '01 64 51 5', 'marcphilippe@example.com', 'Inactif', 'Lyon');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (14, 'Joseph', 'Aimé', '2017-02-15', '39352468715', 'B', '+33 4 50 8', 'daniel22@example.net', 'Suspendu', 'Lyon');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (15, 'Legrand', 'Michel', '2018-09-12', '69330009634', 'D', '0594229074', 'laureroche@example.net', 'Actif', 'Lille');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (16, 'Moulin', 'Guillaume', '2017-05-06', '62910507957', 'B', '0632986276', 'yjacquet@example.org', 'Actif', 'Toulouse');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (17, 'Lebrun', 'Thérèse', '2017-03-10', '42731460607', 'C', '0633536022', 'victorauger@example.net', 'Inactif', 'Marseille');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (18, 'Hoareau', 'Colette', '2018-10-09', '76392758688', 'C', '+33 (0)1 4', 'genevievegomez@example.com', 'Suspendu', 'Lille');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (19, 'Bonnin', 'Aurore', '2021-12-29', '09942220467', 'D', '0490698059', 'marinepichon@example.com', 'Suspendu', 'Marseille');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (20, 'Muller', 'Denise', '2017-03-02', '12914533591', 'C', '+33 (0)4 8', 'pierre92@example.net', 'Inactif', 'Marseille');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (21, 'Morin', 'Martin', '2018-02-25', '39288153440', 'C', '0558725722', 'guillonbertrand@example.net', 'Inactif', 'Paris');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (22, 'Jacquet', 'Michel', '2017-09-12', '95384821393', 'C', '0389434206', 'leducmichelle@example.org', 'Actif', 'Nantes');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (23, 'Vidal', 'Gilles', '2019-02-14', '77607456243', 'D', '0156926998', 'renaultsuzanne@example.org', 'Actif', 'Lyon');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (24, 'Roche', 'Sabine', '2017-12-01', '23681888122', 'D', '04 97 71 8', 'lauremaury@example.org', 'Suspendu', 'Bordeaux');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (25, 'Rocher', 'Denis', '2022-08-02', '68989599352', 'B', '0173631729', 'ybernier@example.org', 'Inactif', 'Marseille');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (26, 'Lejeune', 'Valentine', '2016-06-29', '38769841683', 'B', '+33 (0)2 4', 'imartineau@example.org', 'Suspendu', 'Nantes');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (27, 'Riou', 'Éric', '2018-01-14', '00346265904', 'D', '03 67 54 6', 'bouchetelodie@example.net', 'Inactif', 'Toulouse');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (28, 'Schmitt', 'Christine', '2021-12-17', '62191885148', 'B', '0565581157', 'sabine20@example.com', 'Inactif', 'Marseille');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (29, 'Peltier', 'Zacharie', '2023-08-16', '94091574435', 'D', '+33 5 64 0', 'danieldupont@example.org', 'Suspendu', 'Bordeaux');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (30, 'Perrot', 'Joseph', '2021-09-28', '26242703953', 'D', '03 21 50 9', 'fontainehenri@example.com', 'Suspendu', 'Nice');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (31, 'Renaud', 'Adélaïde', '2017-04-15', '30826886825', 'C', '+33 (0)6 5', 'marchandjulien@example.com', 'Inactif', 'Lille');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (32, 'Rodriguez', 'Stéphanie', '2019-09-25', '27005251273', 'D', '+33 (0)2 3', 'inesmarin@example.com', 'Suspendu', 'Marseille');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (33, 'Becker', 'Céline', '2022-11-03', '49988925176', 'D', '0627209968', 'lorraine93@example.org', 'Suspendu', 'Toulouse');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (34, 'Perrot', 'Matthieu', '2015-08-25', '25886150286', 'C', '01 30 23 9', 'lefortthierry@example.org', 'Actif', 'Nantes');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (35, 'Robert', 'Olivie', '2019-11-28', '70950491909', 'D', '+33 4 26 2', 'hdevaux@example.com', 'Actif', 'Toulouse');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (36, 'Lévy', 'Michel', '2022-01-22', '33875602860', 'B', '0146899795', 'chantal35@example.net', 'Suspendu', 'Paris');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (37, 'Voisin', 'Raymond', '2021-05-24', '73670915085', 'C', '0648905957', 'michellemarechal@example.org', 'Actif', 'Toulouse');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (38, 'Moreau', 'Denise', '2015-09-29', '37875314451', 'D', '+33 (0)6 4', 'sophie28@example.net', 'Suspendu', 'Marseille');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (39, 'Maillet', 'Inès', '2022-02-27', '75513081167', 'C', '03 90 64 2', 'odetteadam@example.net', 'Suspendu', 'Lyon');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (40, 'Pruvost', 'Pierre', '2023-07-22', '08091027023', 'B', '03 71 53 2', 'corinnerichard@example.com', 'Inactif', 'Toulouse');
 
 
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES
-(1, 'Lemoine', 'Pierre', '2015-06-12', '123456789012', 'B', '0612345678', 'pierre.lemoine@example.com', 'Actif', 'Paris'),
-(2, 'Durand', 'Jean', '2016-03-05', '123456789013', 'B', '0612345679', 'jean.durand@example.com', 'Actif', 'Lyon'),
-(3, 'Lemoine', 'Claire', '2017-07-19', '123456789014', 'B', '0612345680', 'claire.lemoine@example.com', 'Actif', 'Marseille'),
-(4, 'Dupont', 'Michel', '2018-02-28', '123456789015', 'B', '0612345681', 'michel.dupont@example.com', 'Actif', 'Toulouse'),
-(5, 'Martin', 'Sophie', '2015-11-12', '123456789016', 'B', '0612345682', 'sophie.martin@example.com', 'Actif', 'Nice'),
-(6, 'Caron', 'Louis', '2019-09-22', '123456789017', 'B', '0612345683', 'louis.caron@example.com', 'Actif', 'Lille'),
-(7, 'Bouchard', 'Isabelle', '2018-01-15', '123456789018', 'B', '0612345684', 'isabelle.bouchard@example.com', 'Actif', 'Bordeaux'),
-(8, 'Thomas', 'Julien', '2017-08-21', '123456789019', 'B', '0612345685', 'julien.thomas@example.com', 'Actif', 'Nantes'),
-(9, 'Blanc', 'Rémi', '2020-04-02', '123456789020', 'B', '0612345686', 'remi.blanc@example.com', 'Actif', 'Strasbourg'),
-(10, 'Roussel', 'Camille', '2019-05-13', '123456789021', 'B', '0612345687', 'camille.roussel@example.com', 'Actif', 'Montpellier'),
-(11, 'Leclerc', 'Victor', '2018-10-30', '123456789022', 'B', '0612345688', 'victor.leclerc@example.com', 'Actif', 'Lyon'),
-(12, 'Girard', 'Hélène', '2017-12-07', '123456789023', 'B', '0612345689', 'helene.girard@example.com', 'Actif', 'Toulouse'),
-(13, 'Gauthier', 'Thomas', '2016-06-25', '123456789024', 'B', '0612345690', 'thomas.gauthier@example.com', 'Actif', 'Paris'),
-(14, 'Deschamps', 'Mélanie', '2015-03-03', '123456789025', 'B', '0612345691', 'melanie.deschamps@example.com', 'Actif', 'Marseille'),
-(15, 'Fournier', 'Antoine', '2021-01-18', '123456789026', 'B', '0612345692', 'antoine.fournier@example.com', 'Actif', 'Nice'),
-(16, 'Meyer', 'Sébastien', '2017-11-01', '123456789027', 'B', '0612345693', 'sebastien.meyer@example.com', 'Actif', 'Lille'),
-(17, 'Pires', 'David', '2020-06-16', '123456789028', 'B', '0612345694', 'david.pires@example.com', 'Actif', 'Bordeaux'),
-(18, 'Leclercq', 'Caroline', '2018-04-20', '123456789029', 'B', '0612345695', 'caroline.leclercq@example.com', 'Actif', 'Nantes'),
-(19, 'Charpentier', 'Julien', '2019-10-11', '123456789030', 'B', '0612345696', 'julien.charpentier@example.com', 'Actif', 'Strasbourg'),
-(20, 'Lemoine', 'Alice', '2021-02-03', '123456789031', 'B', '0612345697', 'alice.lemoine@example.com', 'Actif', 'Montpellier'),
-(21, 'Lemoine', 'François', '2015-12-25', '123456789032', 'B', '0612345698', 'francois.lemoine@example.com', 'Actif', 'Paris'),
-(22, 'Henri', 'Claire', '2020-08-21', '123456789033', 'B', '0612345699', 'claire.henri@example.com', 'Actif', 'Lyon'),
-(23, 'Morel', 'Emilie', '2018-11-10', '123456789034', 'B', '0612345700', 'emilie.morel@example.com', 'Actif', 'Marseille'),
-(24, 'Richard', 'Bernard', '2017-07-13', '123456789035', 'B', '0612345701', 'bernard.richard@example.com', 'Actif', 'Toulouse'),
-(25, 'Lucas', 'Isabelle', '2019-03-18', '123456789036', 'B', '0612345702', 'isabelle.lucas@example.com', 'Actif', 'Nice'),
-(26, 'Sanchez', 'François', '2020-07-22', '123456789037', 'B', '0612345703', 'francois.sanchez@example.com', 'Actif', 'Lille'),
-(27, 'Pires', 'Ana', '2018-05-28', '123456789038', 'B', '0612345704', 'ana.pires@example.com', 'Actif', 'Bordeaux'),
-(28, 'Marchand', 'Aurélie', '2019-04-19', '123456789039', 'B', '0612345705', 'aurelie.marchand@example.com', 'Actif', 'Nantes'),
-(29, 'Clement', 'Mélissa', '2021-05-15', '123456789040', 'B', '0612345706', 'melissa.clement@example.com', 'Actif', 'Strasbourg'),
-(30, 'Dupuis', 'Thierry', '2017-09-07', '123456789041', 'B', '0612345707', 'thierry.dupuis@example.com', 'Actif', 'Montpellier'),
-(31, 'Gomez', 'Julien', '2015-08-25', '123456789042', 'B', '0612345708', 'julien.gomez@example.com', 'Actif', 'Paris'),
-(32, 'Joubert', 'Aurore', '2016-12-18', '123456789043', 'B', '0612345709', 'aurore.joubert@example.com', 'Actif', 'Lyon'),
-(33, 'Pape', 'Omar', '2020-01-07', '123456789044', 'B', '0612345710', 'omar.pape@example.com', 'Actif', 'Marseille'),
-(34, 'Martinez', 'Lina', '2019-08-16', '123456789045', 'B', '0612345711', 'lina.martinez@example.com', 'Actif', 'Toulouse'),
-(35, 'Dumont', 'Valérie', '2018-10-03', '123456789046', 'B', '0612345712', 'valerie.dumont@example.com', 'Actif', 'Nice'),
-(36, 'Lambert', 'Sophie', '2020-09-01', '123456789047', 'B', '0612345713', 'sophie.lambert@example.com', 'Actif', 'Lille'),
-(37, 'Fontaine', 'Élise', '2017-11-23', '123456789048', 'B', '0612345714', 'elise.fontaine@example.com', 'Actif', 'Bordeaux'),
-(38, 'Maillard', 'Jacques', '2016-06-11', '123456789049', 'B', '0612345715', 'jacques.maillard@example.com', 'Actif', 'Nantes'),
-(39, 'Vargas', 'Livia', '2018-03-06', '123456789050', 'B', '0612345716', 'livia.vargas@example.com', 'Actif', 'Strasbourg'),
-(40, 'Lemoine', 'Thierry', '2017-04-22', '123456789051', 'B', '0612345717', 'thierry.lemoine@example.com', 'Actif', 'Montpellier');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (1, '32, rue Blot', 'PerrinVille', '93936', 4129, 1, 'En_Attente', 'Fumée consentir valeur besoin calmer.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (2, '31, rue de Perrier', 'FaivreBourg', '58767', 3468, 1, 'En_Attente', 'Entrer fond dernier ailleurs rassurer vif.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (3, '9, chemin Lucie Pelletier', 'Besnard-sur-Moreau', '75902', 2947, 0, 'Annule', 'Être plusieurs gris il raconter raconter.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (4, '11, chemin Édith Bodin', 'Bertrand-sur-Perrot', '47575', 3948, 1, 'En_Attente', 'Connaissance secours presque éclater.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (5, '10, avenue de Boutin', 'Pages', '16440', 2189, 0, 'Prise en charge', 'Presser sou eaux surtout tapis.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (6, '107, boulevard de Marin', 'Joubert', '04581', 2003, 1, 'Annule', 'Également savoir porte bon toute année.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (7, '77, rue Thibault Lévêque', 'Sainte Dominique-la-Forêt', '45423', 2851, 0, 'En_Attente', 'Retirer prochain chacun prière entrer.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (8, 'boulevard de Bouchet', 'Moreau', '72217', 4460, 0, 'En_Attente', 'Table sombre fumée plan.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (9, '58, boulevard Bertin', 'Boulangernec', '77199', 3472, 0, 'En_Attente', 'Intention lire dimanche huit.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (10, '12, rue Lefebvre', 'MartinBourg', '72294', 4663, 0, 'En_Attente', 'Donner long rouge deviner odeur.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (11, '8, boulevard de Brun', 'Fernandes-sur-Mer', '31584', 1875, 1, 'En_Attente', 'Course bruit poésie ajouter penser révolution.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (12, '66, rue de Hoarau', 'Becker-les-Bains', '46846', 4708, 0, 'Prise en charge', 'Anglais le armer quatre point sang grâce.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (13, '3, rue Denise Couturier', 'BodinVille', '63769', 1095, 0, 'Annule', 'François joue nombre chaîne trésor froid.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (14, '474, boulevard Alexandrie Letellier', 'Denis', '60425', 2728, 1, 'Prise en charge', 'Sentiment douceur soin propos.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (15, '6, rue Brunet', 'Salmon', '61688', 2460, 1, 'Prise en charge', 'Porter fille parole ça créer entendre petit.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (16, '382, avenue Valérie Legendre', 'Besson', '89801', 1451, 0, 'En_Attente', 'Environ peuple bord.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (17, '34, boulevard Pruvost', 'Saint Louis-sur-Mer', '58959', 3938, 0, 'Annule', 'Pointe raison pouvoir fait front.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (18, '8, chemin Louise Albert', 'Bernardnec', '41863', 569, 0, 'Prise en charge', 'Le venir erreur jardin ennemi permettre.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (19, '82, rue Charles Menard', 'Dijouxboeuf', '79958', 3511, 1, 'Annule', 'Vent envie veille mot entretenir.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (20, '246, chemin Barthelemy', 'ClercVille', '78417', 3622, 1, 'Prise en charge', 'Grand prochain maintenir mais.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (21, '8, chemin Nicolas Pierre', 'Turpin', '60573', 4787, 0, 'Annule', 'Lui résultat discussion soleil ni toucher.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (22, 'chemin Jacquot', 'Mary', '93341', 3023, 0, 'Annule', 'Lourd situation humain pauvre tendre.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (23, '559, rue Alice Courtois', 'Colindan', '37693', 2673, 0, 'En_Attente', 'Minute année secret plein avenir étouffer.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (24, '26, avenue Humbert', 'Martineau', '97356', 2850, 1, 'Prise en charge', 'Air forêt deviner désert le absolu risquer abri.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (25, '37, avenue Stéphane Jacob', 'BuissonVille', '62165', 2367, 0, 'Annule', 'Société l un mourir folie.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (26, '3, chemin Thérèse Cohen', 'Grondin-sur-Lopez', '47242', 2261, 1, 'Annule', 'Espèce approcher occuper demain.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (27, '34, boulevard Julien Morel', 'Bourgeois', '73213', 4366, 0, 'Prise en charge', 'Haute mal mode rester retirer saint route.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (28, '841, rue de Delattre', 'Fontaine', '66371', 3032, 1, 'En_Attente', 'Savoir fortune nerveux compagnie.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (29, '303, rue Thérèse Dubois', 'DurandBourg', '18352', 546, 0, 'Annule', 'Rester drame pays quinze enfant.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (30, 'avenue Hélène Chauveau', 'Sainte Thibaultnec', '10245', 720, 0, 'En_Attente', 'Faveur soleil bras aventure.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (31, 'rue Antoine', 'Lemoine-sur-Mer', '17663', 1152, 0, 'En_Attente', 'Deux faire quatre chacun.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (32, '14, avenue Alexandre Thomas', 'Cohen', '13830', 3324, 0, 'Prise en charge', 'Demi consentir poursuivre roi.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (33, '976, chemin Leroy', 'Tanguy-sur-Garcia', '25579', 2192, 0, 'Prise en charge', 'Ordre chemin question comprendre vie.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (34, '57, chemin de Renaud', 'Lopes-sur-Mer', '37686', 555, 1, 'Annule', 'Nombreux mal violent loin étudier.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (35, '56, chemin Boulanger', 'Saint ClaudeBourg', '14431', 2831, 1, 'En_Attente', 'An taille comprendre jaune.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (36, '45, chemin de Richard', 'BoulayBourg', '95624', 3884, 1, 'Prise en charge', 'Appel papa cause dehors santé français précieux.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (37, 'rue de Boyer', 'Sainte Patriciaboeuf', '05344', 3645, 1, 'Annule', 'Même visite demande armer auquel valoir du.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (38, '93, rue Augustin Martin', 'Guillou', '76968', 2353, 0, 'En_Attente', 'Loup placer en exemple recueillir occasion nord.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (39, '16, rue Monique Paul', 'Leroux', '22435', 1658, 1, 'En_Attente', 'Impossible voisin longtemps petit.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (40, 'boulevard de Coste', 'Mace', '02980', 3381, 1, 'Prise en charge', 'Feuille quel placer.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (41, '7, chemin de Hoareau', 'Mahe-les-Bains', '51685', 3575, 1, 'En_Attente', 'Folie été marche clair gouvernement poésie.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (42, '46, rue de Bonneau', 'Saint Chantal', '21456', 2761, 1, 'En_Attente', 'Fer abattre condamner direction.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (43, 'boulevard Laroche', 'Baron', '05871', 2067, 1, 'Annule', 'Prêt ennemi véritable.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (44, '66, boulevard Audrey Dumont', 'De Sousa-sur-Lejeune', '23573', 3047, 1, 'Prise en charge', 'Corps ensemble pur violent.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (45, '383, rue Bertin', 'Colin-sur-Noël', '45171', 4937, 0, 'En_Attente', 'Recherche printemps descendre.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (46, '97, boulevard Grenier', 'Bigot', '41985', 4994, 1, 'Prise en charge', 'Sec derrière trou quant à roi dès.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (47, '112, avenue Pires', 'Saint Marguerite-les-Bains', '59456', 3053, 1, 'En_Attente', 'Comment fort céder contre retomber folie ancien.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (48, 'chemin Nicole Teixeira', 'Vallet', '58797', 3920, 0, 'Annule', 'Fumer désirer pourquoi chasse.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (49, '489, boulevard Victoire Klein', 'Legrand', '71750', 1693, 0, 'Annule', 'Interrompre science fait goût notre malade ici.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (50, '144, avenue Christelle Guilbert', 'Loiseau-la-Forêt', '30659', 1288, 1, 'Prise en charge', 'Abandonner toucher salut début groupe donc.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (51, '69, rue Nathalie Louis', 'Rodriguez', '48434', 4919, 1, 'En_Attente', 'Après côte titre habitude rire avance public.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (52, '90, avenue de Delattre', 'Bonnet-les-Bains', '87695', 3321, 1, 'Annule', 'Tout travail voir permettre.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (53, '68, avenue Adrienne Courtois', 'Lacroix', '17149', 2334, 0, 'En_Attente', 'Doux autrefois gouvernement ainsi préparer.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (54, '142, boulevard de Barre', 'Berger', '01618', 4054, 1, 'Prise en charge', 'Rompre guère pouvoir plan étaler.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (55, '7, boulevard de Brun', 'RenaultBourg', '58420', 1775, 1, 'Annule', 'Perdu court table présent.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (56, 'boulevard de Guilbert', 'Thibault', '49600', 1727, 1, 'Prise en charge', 'Lumière cou caresser dépasser.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (57, '8, rue David Foucher', 'Martin-sur-Lesage', '81155', 2690, 0, 'En_Attente', 'Mais absolu lien possible prononcer.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (58, '67, boulevard de Bonnet', 'De Sousa-sur-Torres', '33233', 1773, 1, 'Prise en charge', 'Port voir fruit français espoir lutte.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (59, '4, boulevard Roche', 'PaulVille', '97696', 814, 0, 'Annule', 'Voie conscience patron pendre.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (60, 'boulevard Pascal', 'Delannoy-sur-Blot', '47550', 1496, 1, 'En_Attente', 'Jardin jaune herbe froid déjà oui même commander.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (61, '80, chemin de Sauvage', 'Carre-sur-Mer', '46882', 2226, 1, 'Prise en charge', 'Sonner fine retomber.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (62, '96, avenue Gilles', 'Perrin-sur-Rousseau', '97357', 4633, 1, 'En_Attente', 'Public eaux parler matière.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (63, '46, chemin Vaillant', 'Pagesnec', '87770', 3956, 0, 'Prise en charge', 'Rideau lit faible.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (64, '45, rue Susan Renaud', 'Dupuisboeuf', '77965', 728, 1, 'En_Attente', 'Tête déchirer complètement second ouvrage chose.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (65, '637, chemin Vincent Delorme', 'Jacob', '79587', 2135, 1, 'Prise en charge', 'Droit peine jouer plaine.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (66, '905, avenue Buisson', 'Michel', '60424', 1298, 0, 'Annule', 'Femme baisser maintenir coup. Cou bien encore.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (67, '2, rue de Guillaume', 'Couturierboeuf', '51349', 3915, 1, 'Annule', 'Masse plante sous dire.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (68, '10, avenue de Bruneau', 'Garnier-sur-Mer', '18599', 984, 1, 'En_Attente', 'Voir devant manier ce habiter trou jeune.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (69, 'chemin Laurent Pierre', 'Sainte Juliettedan', '46594', 4793, 0, 'En_Attente', 'Pluie bande coin où.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (70, '34, rue Roland Henry', 'Gallet', '53688', 2016, 0, 'Prise en charge', 'Paysan presser offrir respirer contre jour loi.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (71, '907, chemin Alix Costa', 'Saint Alfrednec', '87685', 4796, 1, 'Annule', 'Colon qui plaindre. Appeler ombre horizon.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (72, '21, rue Lévêque', 'Boutin-les-Bains', '09922', 4603, 1, 'Prise en charge', 'Cela précieux siège encore tête.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (73, '6, chemin Brigitte Gomez', 'Lombardnec', '56811', 2376, 0, 'En_Attente', 'Quant À pendant bien profondément.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (74, 'rue de Chartier', 'Techer', '19776', 1770, 1, 'Annule', 'Rassurer déclarer chef résistance.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (75, '409, avenue Alfred Fabre', 'Guichard', '46133', 1898, 0, 'En_Attente', 'Accent placer croire importer dernier.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (76, '49, rue Claude Costa', 'Simon', '24985', 2632, 1, 'En_Attente', 'Promener plaine prêter abandonner.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (77, '295, chemin de Blanchard', 'Potier-les-Bains', '66390', 1907, 0, 'Annule', 'Liberté fuir papa.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (78, '45, avenue Clerc', 'Sainte Anastasienec', '02696', 4653, 0, 'Prise en charge', 'Derrière même lequel jeter yeux soin moins.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (79, '94, rue Charles Barthelemy', 'Vaillantnec', '84387', 534, 1, 'Annule', 'Chemin idée trace rien horizon.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (80, '9, chemin Lelièvre', 'Delaunay', '86231', 2303, 1, 'Prise en charge', 'Course nouveau prier. Approcher suivant peser.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (81, '931, rue Susan Chevalier', 'Rodriguez', '86806', 2666, 1, 'Annule', 'Sueur vivre je certain camarade traiter.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (82, 'rue Élodie Leleu', 'Moreau', '62697', 4363, 1, 'En_Attente', 'Abattre discours comme mur juge durant.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (83, '743, boulevard Alain Rousseau', 'Da Silva', '13534', 3517, 0, 'Prise en charge', 'Présent sentiment passé.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (84, '93, rue Daniel Hamon', 'Saint Mathilde', '03632', 2514, 0, 'Annule', 'Renverser liberté champ mener précis lumière.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (85, '25, rue Roland Gonzalez', 'Sainte Henriette', '29182', 2491, 1, 'En_Attente', 'Ci siècle beauté preuve.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (86, 'rue Gabrielle Marchand', 'Sainte Auguste', '69466', 821, 1, 'Annule', 'Distinguer rejeter créer espèce dormir est.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (87, '77, rue de Maurice', 'Gérard', '52497', 4225, 0, 'En_Attente', 'Prison président ouvrage espérer objet.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (88, 'avenue de Faure', 'Saint Arnaude', '62701', 851, 1, 'Annule', 'Recevoir sembler commencement suivant suite.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (89, '44, rue Victoire Coulon', 'Sainte JoséphineVille', '63661', 4457, 1, 'En_Attente', 'Dehors attirer type charger.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (90, 'boulevard de Blanc', 'Rivière', '97346', 3781, 0, 'En_Attente', 'Aujourd Hui queue branche.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (91, '25, avenue Roger Raynaud', 'Saint Frédéric', '13891', 1831, 1, 'En_Attente', 'As demi quand désert jeune.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (92, '51, rue de Samson', 'Joubert', '28614', 4491, 0, 'Prise en charge', 'Douter moi commun sans or.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (93, '91, boulevard de Paul', 'Rémyboeuf', '80453', 1214, 1, 'En_Attente', 'Double annoncer corde trace céder jeu quartier.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (94, '330, rue Jérôme Dupré', 'Delorme', '26774', 4364, 1, 'Annule', 'Ignorer rouler convenir neuf ciel l une trace.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (95, '315, avenue Carlier', 'Denis', '62642', 544, 0, 'En_Attente', 'Passage derrière large danser.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (96, '31, avenue de Richard', 'Saint Madeleine', '90359', 982, 0, 'Prise en charge', 'Creuser me contenir problème à.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (97, '7, chemin Normand', 'Torres', '43870', 1705, 0, 'Prise en charge', 'Inconnu soir ou choisir retour.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (98, '3, chemin de Gimenez', 'Chauvin-sur-Mer', '42682', 3281, 0, 'Prise en charge', 'Signe joie naturellement seuil devenir on.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (99, '78, rue Charrier', 'Chevallierdan', '12365', 2631, 0, 'Annule', 'Cent surtout aider presser soin pitié.');
+INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (100, '3, avenue de Faure', 'Saint Pierre-sur-Mer', '97268', 2613, 1, 'Annule', 'Papier puis sol huit rapide.');
 
-
-
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(1, '10 Rue de la Paix', 'Paris', '75002', 1000, 1, 'Prise en charge', 'Proche de la place Vendôme');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(2, '25 Avenue du Prado', 'Marseille', '13006', 2000, 1, 'En_Attente', 'Centre ville');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(3, '5 Boulevard des Belges', 'Lyon', '69006', 3000, 0, 'Annule', 'Quartier résidentiel');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(4, '12 Rue du Bac', 'Paris', '75007', 1500, 1, 'Prise en charge', 'Près de la Tour Eiffel');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(5, '50 Rue Nationale', 'Lille', '59800', 500, 1, 'Prise en charge', 'Proche de la gare Lille Flandres');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(6, '8 Rue de Rivoli', 'Paris', '75004', 1800, 1, 'En_Attente', 'Près de l’Hôtel de Ville');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(7, '3 Place Bellecour', 'Lyon', '69002', 2700, 1, 'Annule', 'Centre de Lyon');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(8, '14 Cours Mirabeau', 'Aix-en-Provence', '13100', 3200, 1, 'Prise en charge', 'Près de la Fontaine de la Rotonde');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(9, '22 Rue Espariat', 'Marseille', '13001', 1900, 1, 'En_Attente', 'Centre historique');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(10, '7 Avenue Montaigne', 'Paris', '75008', 1400, 1, 'Prise en charge', 'Proche des Champs-Élysées');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(11, '9 Rue du Louvre', 'Paris', '75001', 900, 1, 'Annule', 'Près du musée du Louvre');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(12, '30 Rue de la Liberté', 'Dijon', '21000', 400, 0, 'Prise en charge', 'Centre de Dijon');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(13, '6 Rue Saint-Dominique', 'Paris', '75007', 1300, 1, 'En_Attente', 'Près des Invalides');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(14, '3 Rue Sainte-Catherine', 'Bordeaux', '33000', 1200, 1, 'Prise en charge', 'Centre de Bordeaux');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(15, '24 Place Stanislas', 'Nancy', '54000', 800, 0, 'Prise en charge', 'Centre historique de Nancy');
-INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES
-(16, '15 Rue de la République', 'Lyon', '69002', 500, 1, 'Prise en charge', 'Près de la gare Lyon Part-Dieu'),
-(17, '40 Boulevard de la Liberté', 'Lille', '59000', 600, 1, 'En_Attente', 'Proche du centre commercial Euralille'),
-(18, '12 Rue Montorgueil', 'Paris', '75001', 800, 1, 'Annule', 'Quartier historique du Marais'),
-(19, '1 Place du Capitole', 'Toulouse', '31000', 1500, 1, 'Prise en charge', 'Place centrale de Toulouse'),
-(20, '9 Rue de Verdun', 'Marseille', '13001', 1000, 1, 'En_Attente', 'Quartier des Antiquaires'),
-(21, '18 Avenue Jean Médecin', 'Nice', '06000', 1200, 1, 'Prise en charge', 'Centre-ville, proche de la Promenade des Anglais'),
-(22, '25 Boulevard Saint-Germain', 'Paris', '75005', 1200, 1, 'Annule', 'Quartier Latin'),
-(23, '5 Rue de la Charité', 'Lyon', '69002', 900, 1, 'Prise en charge', 'Près de l’Opéra de Lyon'),
-(24, '14 Rue de la Gare', 'Strasbourg', '67000', 1500, 1, 'En_Attente', 'Près de la gare TGV'),
-(25, '3 Place de la République', 'Paris', '75003', 800, 1, 'Prise en charge', 'Centre de Paris, proche du Centre Pompidou'),
-(26, '2 Rue des Écoles', 'Paris', '75005', 1300, 1, 'Annule', 'Quartier universitaire'),
-(27, '6 Rue de lUniversité', 'Bordeaux', '33000', 600, 1, 'En_Attente', 'Quartier historique de Bordeaux'),
-(28, '8 Avenue de la Gare', 'Marseille', '13003', 1800, 0, 'Prise en charge', 'Proche du Vieux-Port'),
-(29, '22 Rue de la Paix', 'Paris', '75002', 500, 1, 'Prise en charge', 'Quartier des grands magasins'),
-(30, '11 Rue des Frères Lumière', 'Lyon', '69008', 2500, 0, 'Annule', 'Quartier résidentiel'),
-(31, '20 Rue de Lyon', 'Paris', '75012', 2000, 1, 'Prise en charge', 'Proche de la Gare de Lyon'),
-(32, '3 Place de la Bourse', 'Bordeaux', '33000', 900, 0, 'En_Attente', 'Près de la place de la Bourse'),
-(33, '7 Rue de la Vieille Draperie', 'Lille', '59000', 1400, 1, 'Prise en charge', 'Quartier historique'),
-(34, '24 Rue Gambetta', 'Marseille', '13005', 1000, 1, 'En_Attente', 'Quartier des Chartreux'),
-(35, '5 Boulevard Victor Hugo', 'Toulouse', '31000', 1600, 0, 'Prise en charge', 'Proche de la place Wilson'),
-(36, '10 Rue de la Croix-Rousse', 'Lyon', '69004', 1100, 1, 'Annule', 'Quartier de la Croix-Rousse'),
-(37, '8 Boulevard Jean Jaurès', 'Paris', '75019', 1200, 0, 'Prise en charge', 'Quartier Belleville'),
-(38, '12 Place dItalie', 'Paris', '75013', 1500, 1, 'Prise en charge', 'Proche de la Bibliothèque François-Mitterrand'),
-(39, '15 Rue des Trois Frères', 'Nice', '06000', 1700, 1, 'En_Attente', 'Vieux-Nice'),
-(40, '21 Rue de la République', 'Marseille', '13002', 1900, 1, 'Annule', 'Quartier du Panier'),
-(41, '13 Rue Danton', 'Paris', '75006', 600, 1, 'Prise en charge', 'Quartier Saint-Germain-des-Prés'),
-(42, '9 Place de lOpéra', 'Paris', '75009', 500, 1, 'Annule', 'Proche de l’Opéra Garnier'),
-(43, '2 Rue de la Poste', 'Lille', '59800', 1100, 1, 'Prise en charge', 'Proche de la gare Lille Europe'),
-(44, '10 Rue Saint-Antoine', 'Paris', '75011', 1400, 1, 'En_Attente', 'Quartier Bastille'),
-(45, '3 Rue Raspail', 'Paris', '75007', 1000, 1, 'Prise en charge', 'Proche du Musée dOrsay'),
-(46, '16 Rue de la République', 'Marseille', '13002', 800, 0, 'Annule', 'Proche du Vieux-Port'),
-(47, '14 Rue de la Paix', 'Paris', '75002', 400, 1, 'Prise en charge', 'Proche des Grands Boulevards'),
-(48, '1 Place Victor Hugo', 'Bordeaux', '33000', 1000, 1, 'En_Attente', 'Proche de la gare Saint-Jean'),
-(49, '5 Boulevard Montmartre', 'Paris', '75002', 1500, 1, 'Prise en charge', 'Quartier Montmartre'),
-(50, '3 Rue de la Vieille Ville', 'Lyon', '69005', 800, 1, 'En_Attente', 'Proche de la basilique de Fourvière'),
-(51, '10 Rue de la Digue', 'Strasbourg', '67000', 1100, 0, 'Prise en charge', 'Proche de la cathédrale'),
-(52, '22 Rue Sainte-Catherine', 'Bordeaux', '33000', 2000, 1, 'Annule', 'Quartier des Chartrons'),
-(53, '15 Rue de la Fontaine', 'Marseille', '13003', 1300, 0, 'Prise en charge', 'Quartier des Réformés'),
-(54, '9 Rue de la Liberté', 'Toulouse', '31000', 1800, 1, 'Prise en charge', 'Centre-ville de Toulouse'),
-(55, '4 Place de la Madeleine', 'Paris', '75008', 700, 1, 'Annule', 'Proche de l’église de la Madeleine'),
-(56, '19 Boulevard de la Corderie', 'Lyon', '69007', 2000, 1, 'Prise en charge', 'Proche du Parc de la Tête d’Or'),
-(57, '12 Rue du Faubourg Saint-Antoine', 'Paris', '75011', 1600, 1, 'En_Attente', 'Près du marché d’Aligre'),
-(58, '3 Place des Vosges', 'Paris', '75003', 600, 1, 'Prise en charge', 'Quartier Le Marais'),
-(59, '7 Rue de Paris', 'Aix-en-Provence', '13100', 2000, 0, 'En_Attente', 'Centre historique'),
-(60, '5 Avenue de la République', 'Paris', '75011', 900, 1, 'Prise en charge', 'Quartier du Marais'),
-(61, '17 Rue du Colonel Fabien', 'Paris', '75010', 1000, 0, 'Prise en charge', 'Quartier du Canal Saint-Martin'),
-(62, '3 Rue du Commerce', 'Paris', '75015', 800, 1, 'Annule', 'Proche de la Tour Montparnasse'),
-(63, '9 Place de la Concorde', 'Paris', '75008', 400, 1, 'Prise en charge', 'Proche du Jardin des Tuileries'),
-(64, '2 Rue de la Montagne Sainte-Geneviève', 'Paris', '75005', 1000, 0, 'En_Attente', 'Quartier du Panthéon'),
-(65, '10 Rue des Canuts', 'Lyon', '69004', 3000, 1, 'Prise en charge', 'Proche de la Croix-Rousse'),
-(66, '4 Rue de la Montagne', 'Strasbourg', '67000', 2000, 1, 'En_Attente', 'Quartier de la Petite France'),
-(67, '18 Rue de la République', 'Marseille', '13006', 800, 1, 'Prise en charge', 'Près de la gare Saint-Charles'),
-(68, '8 Rue d’Antibes', 'Cannes', '06400', 1200, 0, 'Annule', 'Proche de la Croisette'),
-(69, '5 Rue Victor Hugo', 'Toulouse', '31000', 1600, 1, 'Prise en charge', 'Quartier Carmes'),
-(70, '14 Boulevard de la Villette', 'Paris', '75010', 700, 1, 'Annule', 'Près du parc des Buttes-Chaumont'),
-(71, '17 Rue de lIndépendance', 'Nice', '06000', 900, 0, 'Prise en charge', 'Quartier de la Libération'),
-(72, '11 Rue de l’Église', 'Nantes', '44000', 1200, 1, 'En_Attente', 'Quartier de l’île de Nantes'),
-(73, '19 Rue du Faubourg', 'Paris', '75011', 1300, 1, 'Prise en charge', 'Proche du Père Lachaise'),
-(74, '6 Boulevard de la Mer', 'Marseille', '13007', 800, 1, 'Prise en charge', 'Proche de l’Estaque'),
-(75, '2 Rue de la Libération', 'Aix-en-Provence', '13100', 900, 0, 'En_Attente', 'Près du Palais des Congrès'),
-(76, '10 Avenue de l’Opéra', 'Paris', '75001', 500, 1, 'Prise en charge', 'Près du Musée du Louvre'),
-(77, '3 Rue d’Alger', 'Paris', '75001', 1000, 1, 'Prise en charge', 'Près de la Comédie-Française'),
-(78, '12 Rue de la Douane', 'Bordeaux', '33000', 1500, 1, 'Annule', 'Quartier de la Bastide'),
-(79, '7 Boulevard Victor Hugo', 'Lille', '59000', 1700, 1, 'Prise en charge', 'Proche de la place de la République'),
-(80, '1 Place Jean Jaurès', 'Paris', '75019', 500, 1, 'Prise en charge', 'Proche de la Cité des Sciences'),
-(81, '16 Avenue de la Liberté', 'Nice', '06000', 900, 1, 'En_Attente', 'Quartier du port'),
-(82, '12 Rue des Pyramides', 'Paris', '75001', 1200, 1, 'Annule', 'Proche du jardin des Tuileries'),
-(83, '6 Rue des Chênes', 'Strasbourg', '67000', 700, 1, 'Prise en charge', 'Proche du parc de l’Orangerie'),
-(84, '10 Rue de la Gare', 'Nantes', '44000', 2000, 0, 'Prise en charge', 'Proche de la gare SNCF'),
-(85, '7 Rue de la Loire', 'Tours', '37000', 1000, 1, 'Annule', 'Proche du pont Wilson'),
-(86, '1 Place de l’Opéra', 'Paris', '75009', 700, 1, 'En_Attente', 'Quartier des Grands Boulevards'),
-(87, '9 Rue de la Place', 'Marseille', '13001', 900, 0, 'Prise en charge', 'Proche du Vieux-Port'),
-(88, '4 Place Carnot', 'Lyon', '69002', 800, 1, 'Annule', 'Proche de la gare de Lyon Perrache'),
-(89, '13 Rue des Boulets', 'Paris', '75011', 1300, 1, 'En_Attente', 'Quartier de la Bastille'),
-(90, '12 Rue du Poids de l’Huile', 'Marseille', '13001', 2000, 0, 'Prise en charge', 'Quartier du Panier'),
-(91, '11 Rue du Quatre Septembre', 'Paris', '75002', 1000, 0, 'En_Attente', 'Proche de l’Opéra Garnier'),
-(92, '8 Place des Terreaux', 'Lyon', '69001', 1200, 1, 'Prise en charge', 'Quartier historique'),
-(93, '14 Rue des Champs', 'Paris', '75008', 800, 0, 'Annule', 'Proche des Champs-Élysées'),
-(94, '20 Rue de la Croix', 'Nantes', '44000', 1500, 1, 'Prise en charge', 'Proche de l’île de Nantes'),
-(95, '10 Rue de la Bourse', 'Marseille', '13001', 700, 0, 'Prise en charge', 'Quartier du Vieux-Port'),
-(96, '3 Avenue de Paris', 'Versailles', '78000', 1300, 1, 'Annule', 'Proche du Château de Versailles'),
-(97, '4 Rue de la Liberté', 'Strasbourg', '67000', 1600, 0, 'En_Attente', 'Quartier de la Petite France'),
-(98, '16 Rue de lYser', 'Paris', '75010', 1000, 1, 'Prise en charge', 'Proche du Canal Saint-Martin'),
-(99, '7 Rue de la Pomme', 'Marseille', '13001', 900, 1, 'Prise en charge', 'Quartier du Panier'),
-(100, '3 Rue du Marché', 'Lyon', '69002', 1500, 1, 'Prise en charge', 'Proche de la place des Terreaux');
 
 
 INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Etat_Vehicule, Km_Parcourus, Derniere_Revision, Consommation, Assurance_Valide) VALUES (1, 'Chevrolet', 'Cruze', 2022, 'Diesel', 'Excellent', 18193, TO_DATE('2023-12-16', 'YYYY-MM-DD'), 5.5, 0);
@@ -454,36 +519,109 @@ INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Etat_Ve
 INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Etat_Vehicule, Km_Parcourus, Derniere_Revision, Consommation, Assurance_Valide) VALUES (40, 'Ford', 'Focus', 2019, 'Electrique', 'Mauvais', 51705, TO_DATE('2024-05-23', 'YYYY-MM-DD'), 0.0, 0);
 
 
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (1, '22 Rue de la République', 'Paris', '75003', 1500, 1, 'Arrivée près du Marais');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (2, '14 Rue de la Canebière', 'Marseille', '13001', 1000, 1, 'Arrivée à proximité du Vieux-Port');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (3, '8 Place des Terreaux', 'Lyon', '69001', 2000, 0, 'Arrivée dans le quartier historique');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (4, '16 Avenue des Champs-Élysées', 'Paris', '75008', 1000, 1, 'Arrivée au cœur de Paris');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (5, '30 Boulevard de la Liberté', 'Lille', '59000', 500, 1, 'Arrivée à proximité de la gare Lille Flandres');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (6, '5 Rue de la Concorde', 'Paris', '75008', 1800, 1, 'Arrivée près de l’Hôtel de Ville');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (7, '10 Rue de la République', 'Lyon', '69002', 2200, 1, 'Arrivée dans le quartier des Brotteaux');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (8, '25 Rue d\Italie', 'Aix-en-Provence', '13100', 3000, 1, 'Arrivée proche du Cours Mirabeau');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (9, '17 Rue de la Palud', 'Marseille', '13006', 1600, 1, 'Arrivée dans le centre historique');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (10, '6 Rue de Rivoli', 'Paris', '75001', 1200, 1, 'Arrivée au bord de la Seine');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (11, '4 Rue de la Montagne Sainte-Geneviève', 'Paris', '75005', 800, 1, 'Arrivée près du Panthéon');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (12, '20 Place François Rude', 'Dijon', '21000', 500, 0, 'Arrivée au cœur du centre-ville');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (13, '12 Rue de Grenelle', 'Paris', '75007', 1500, 1, 'Arrivée à proximité du musée d\Orsay');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (14, '9 Place de la Bourse', 'Bordeaux', '33000', 1200, 1, 'Arrivée au centre de Bordeaux');
-INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
-VALUES (15, '7 Rue de la Vieille-Draperie', 'Nancy', '54000', 800, 0, 'Arrivée près de la Place Stanislas');
+
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (1, '25, avenue de Guichard', 'Morel-sur-Mer', '59567', 913, 1, 'Éclater au chaîne qui.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (2, '252, chemin Parent', 'Charlesboeuf', '15821', 3391, 0, 'Secrétaire cent faux morceau. Valeur train deux.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (3, '23, rue Colas', 'Rémy', '63751', 2833, 0, 'Soit tempête président.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (4, 'rue de Garnier', 'Verdier', '32260', 4316, 0, 'Dont oh jeu race musique.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (5, '51, rue Rossi', 'Deschamps', '42342', 3801, 0, 'Pleurer français pleurer exister siège.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (6, '67, chemin de Duval', 'Thibault', '58539', 4860, 1, 'Tout train aucun ah pendant renverser sauter.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (7, 'avenue de Bouchet', 'Pinto-sur-Leroux', '61840', 3347, 0, 'Prêter fuir ignorer étonner haut.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (8, '79, chemin Alfred Vallée', 'Wagnerdan', '34678', 4161, 0, 'Approcher un vendre affaire compagnon perdu seul.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (9, '701, rue Nath Bertrand', 'Raynaud', '66643', 3143, 1, 'Port mauvais sous.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (10, '38, chemin de Moreau', 'Couturier', '23816', 934, 1, 'Là dominer fou nécessaire avis exemple matière.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (11, '40, boulevard Pineau', 'Saint Thibaut', '27665', 895, 1, 'Figurer intérieur tempête.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (12, '320, rue Madeleine Da Costa', 'Girard-les-Bains', '64329', 2323, 0, 'Reprendre frais occuper eaux drame repas taille.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (13, 'boulevard de Fleury', 'Gosselin', '72356', 4501, 0, 'Frère enfoncer dégager pain dautres.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (14, 'avenue de François', 'Lamy-sur-Mer', '10928', 3611, 0, 'Mort mode dautres recherche est importance doux.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (15, '267, chemin Sophie Boulanger', 'Mary', '85475', 2726, 0, 'Être mériter composer public.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (16, 'boulevard Gaudin', 'Henrynec', '42128', 2492, 1, 'Guère visite rire importer.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (17, 'avenue Perrot', 'Pasquier', '92499', 2086, 0, 'Étroit ouvrage arrêter mon. Terme mari se sable.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (18, '68, chemin Lecomte', 'Le Roux', '76290', 2434, 1, 'Rouler résister alors compter.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (19, '2, avenue Lemaire', 'Saint Sylvie-les-Bains', '45491', 1588, 1, 'Égal reculer raison présent.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (20, '77, boulevard de Blanc', 'JolyVille', '28702', 3915, 1, 'But étrange inspirer dormir sommeil est.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (21, '18, avenue de Poirier', 'Durand', '83909', 3938, 0, 'Habiller soulever un.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (22, '8, rue de Baron', 'Dupuis', '16413', 4127, 0, 'Cela demain dautres paix. Vers tracer nord.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (23, '590, avenue Legros', 'Bourgeois', '95231', 4991, 1, 'Voisin ouvrage rôle profond coup occasion.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (24, '35, rue Guy Delattre', 'Munoz-la-Forêt', '36942', 970, 1, 'Contenter sonner fumer.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (25, '42, boulevard Moreno', 'Saint Sylvie', '02115', 599, 1, 'Vue noir blanc propre traîner ouvert.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (26, '29, chemin de Arnaud', 'Michaud', '62525', 1963, 0, 'Élever queue comment arriver de ne.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (27, '20, chemin de Weber', 'MasseBourg', '14359', 3947, 1, 'Nous éclairer contraire petit droite mémoire.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (28, 'boulevard de Neveu', 'Le GoffVille', '12274', 4437, 0, 'Aucun écouter exprimer tombe pour semblable.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (29, 'chemin Alphonse Joubert', 'Cordier', '79892', 3693, 1, 'Habitant me donc creuser installer flamme double.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (30, '25, rue de Dupuy', 'AndreVille', '68562', 4625, 1, 'Caresser avec ça ferme or juste.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (31, 'avenue Joly', 'Laine', '73470', 4825, 0, 'Obtenir précieux plein huit creuser officier mal.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (32, '66, boulevard Labbé', 'Laportenec', '47487', 1043, 0, 'Chambre éclater car permettre raison sien.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (33, '59, avenue Gimenez', 'Munoz-sur-Mer', '36265', 3503, 0, 'Jeter sortir fer beaucoup discours début.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (34, '28, boulevard Frédérique Morin', 'Sanchezboeuf', '44261', 3681, 1, 'Chair chasser certain son accorder.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (35, '51, avenue Vidal', 'Saint IsaacBourg', '56748', 603, 1, 'Ventre terrible bataille action lieu.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (36, 'avenue de Lenoir', 'Sainte SuzanneBourg', '36271', 2812, 1, 'Confiance public désir fermer attendre troisième.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (37, '52, rue Christine Nicolas', 'Guillaume', '63186', 3548, 0, 'Refuser acheter principe large contre pleurer.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (38, '41, avenue de Voisin', 'Germain-sur-Mer', '94371', 4153, 1, 'Accord quel condamner plan peur nord.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (39, '670, boulevard Colette Arnaud', 'Monnierboeuf', '28282', 4711, 0, 'Bête volonté français nouveau.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (40, '111, rue de Ferrand', 'Valentin', '28280', 3654, 0, 'Regretter saisir engager deviner voici remercier.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (41, 'boulevard de Fernandez', 'Martineau-sur-Marques', '41570', 4161, 0, 'Paysan subir intention amener douter.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (42, '35, avenue Moulin', 'Pierre', '21810', 3646, 1, 'Inquiéter justice séparer phrase.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (43, '56, rue Jeannine Dupré', 'Sainte Laurent', '41144', 635, 1, 'Propos finir disparaître.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (44, '2, rue Aimé Morel', 'Piresnec', '73116', 3645, 0, 'Avant ferme homme mort accompagner.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (45, '21, rue Pierre Benoit', 'Lacombe', '11657', 1993, 1, 'Crier depuis combat façon mur peuple.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (46, '89, boulevard de Lemaître', 'Raymond', '16724', 4918, 1, 'Élément bon soir aujourdhui.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (47, '746, rue Dupuy', 'CouturierVille', '65422', 603, 1, 'Naître écarter particulier donc environ faveur.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (48, '167, avenue Madeleine Blanchet', 'Clerc-sur-Fleury', '73587', 3673, 1, 'Exister principe fatigue avec.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (49, 'rue Turpin', 'Sainte Sophiedan', '44575', 4593, 1, 'Yeux avoir flamme même long chat demande.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (50, '818, rue Clerc', 'Saint Laurence', '29164', 4099, 0, 'Face avis triste est élever dominer point.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (51, '585, rue de Hubert', 'Salmonnec', '45370', 1549, 0, 'Prix grave essayer doigt éteindre point.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (52, '83, boulevard Lecomte', 'Gay-sur-Legros', '11472', 1851, 0, 'Intention camarade puisque.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (53, '32, avenue Élise Olivier', 'Saint Josette', '15536', 3007, 0, 'Papa source veiller queue remarquer bon.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (54, '61, rue Bigot', 'Le Gall', '30196', 3637, 0, 'Enfin général honneur.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (55, '767, avenue Collet', 'Sainte Richard', '31711', 2829, 0, 'Possible pas fumée chose entrée rouge solitude.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (56, '49, boulevard Letellier', 'Lecoq', '15108', 2177, 1, 'Sein angoisse chair croiser lourd.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (57, 'boulevard de Blot', 'Pottierboeuf', '53490', 2385, 0, 'Tôt bout circonstance note.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (58, '693, avenue de Dijoux', 'Saint Léon-la-Forêt', '91562', 3668, 1, 'Lier soi ouvert heure témoin mine être.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (59, '2, avenue Le Gall', 'Laine', '75695', 4079, 1, 'Direction supposer intéresser porter proposer.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (60, '85, avenue de Perrot', 'Labbé', '33594', 4266, 1, 'Disposer charge signer où nuage billet.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (61, '91, chemin de Delorme', 'Sainte Jeannine-sur-Mer', '26349', 3431, 1, 'Bonheur solitude son fin plante froid.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (62, '1, boulevard Loiseau', 'Diaz-sur-Michaud', '19165', 2114, 1, 'Couleur briller saint savoir cruel.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (63, '330, avenue de Breton', 'Perrot', '73993', 1191, 1, 'Système lequel appartement établir.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (64, 'avenue Théophile Lenoir', 'Sainte Gabrielleboeuf', '34836', 2010, 0, 'Prétendre obéir savoir espoir.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (65, 'rue de Deschamps', 'Saint Patricia', '81726', 4567, 0, 'Lever beau répandre possible ne supposer.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (66, '12, rue Thibault Chevallier', 'Picard', '16958', 4105, 0, 'Souvenir rouge bord.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (67, '6, boulevard de Chauvin', 'Leblanc-sur-Mer', '39770', 3932, 1, 'Me image savoir vin. Sourire flamme hôtel front.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (68, '1, rue Claire Lejeune', 'Couturier', '94352', 1781, 0, 'Intérêt prévenir foi monter supposer asseoir.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (69, '57, avenue Noël Leleu', 'Sainte Lucie-sur-Mer', '57127', 2414, 0, 'Nuit certain passé former nerveux tel.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (70, '23, rue Frédérique Noël', 'Danielnec', '22431', 4798, 0, 'Certain planche parent cause particulier.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (71, '48, boulevard Anouk Gros', 'Sainte Augustenec', '36775', 580, 0, 'Jeune animer véritable course silence.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (72, '87, chemin de Hernandez', 'Da Silva', '91799', 4758, 1, 'Sommet entrer réserver fine.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (73, '31, boulevard Gomes', 'Fontaine', '48175', 1390, 0, 'Apporter toi garçon mille.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (74, '49, rue Yves Ramos', 'Cordier', '56647', 1901, 0, 'Inviter douze supérieur clair tuer forme plaine.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (75, '72, boulevard de Andre', 'Dubois', '28472', 4040, 1, 'Odeur quarante jambe couper.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (76, 'rue de Gautier', 'Sainte Alfred-les-Bains', '48629', 736, 0, 'Oncle haine abandonner étroit appuyer horizon.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (77, '42, rue Augustin Raynaud', 'Bouvier', '95868', 3344, 0, 'Occasion nom militaire il.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (78, 'rue de Lucas', 'Cousin', '14435', 3811, 1, 'Falloir rapidement aimer.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (79, '60, rue Lejeune', 'FrançoisVille', '72721', 3946, 1, 'Trouver affirmer île défendre odeur eaux.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (80, '14, boulevard Pelletier', 'Sainte Hortense', '75835', 3035, 0, 'Feu attacher appartement odeur.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (81, '23, rue de Fleury', 'Lévydan', '87994', 2994, 1, 'Relever pauvre verser caractère.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (82, '844, boulevard Couturier', 'Lucas-sur-Mer', '58715', 4713, 0, 'Race secrétaire neuf.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (83, '84, boulevard de Pineau', 'Navarro', '59627', 1727, 1, 'Jamais fin suffire six là bureau dépasser.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (84, '11, chemin Clerc', 'Laurentboeuf', '61317', 2728, 1, 'Disposer moment nouveau sol foi.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (85, '27, rue de Le Goff', 'Chauveau', '97347', 2442, 0, 'Caresser court or enlever plan seuil nez.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (86, '91, rue Joséphine Joly', 'Godard-sur-Mer', '36539', 1625, 1, 'Marché gauche rideau ouvrage.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (87, '89, rue Morel', 'Duval', '24207', 1899, 1, 'Parfois loi devant sentier long.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (88, '17, boulevard Benjamin Coulon', 'Imbert', '71511', 4946, 1, 'Drôle type sentir entier ordre mais.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (89, '16, chemin Besnard', 'Sainte Pauldan', '23890', 1414, 0, 'Crainte banc doucement installer lorsque.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (90, 'rue de Pages', 'Saint AudreyBourg', '90708', 1639, 0, 'Seul passage calme se erreur voix moins.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (91, '95, rue Anouk Normand', 'Saint Paulette-sur-Mer', '07226', 1588, 0, 'Apprendre type défendre liberté si croire.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (92, '92, boulevard de Martel', 'Jacob', '52676', 3525, 1, 'Puis fleur si peuple image naturellement.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (93, '4, boulevard Valentine Peron', 'GuyotBourg', '19172', 1572, 0, 'Mille papier moyen véritable élever.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (94, 'rue de Hamon', 'François', '37305', 4688, 0, 'Fier pareil à valoir.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (95, '653, rue Nathalie Blin', 'Carlier-sur-Mer', '20622', 4391, 1, 'Neuf corps repousser honneur je promettre.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (96, '767, rue Rousseau', 'Petit-la-Forêt', '04284', 3948, 0, 'Avoir chant signe ciel.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (97, 'boulevard Juliette Texier', 'Simon-sur-Mer', '92433', 1661, 1, 'Éclat ajouter ville autour aile aucun lumière.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (98, '52, chemin de Didier', 'Sainte Emmanuelle', '60976', 4678, 1, 'Connaître casser vers sortir chemin si comment.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (99, '74, avenue Margaret Delmas', 'Bruneldan', '31111', 2190, 1, 'Franc peser ressembler soin humain.');
+INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) VALUES (100, '493, chemin Dos Santos', 'Guillot-sur-Gomez', '17655', 2545, 1, 'Jusque entrée juger étroit air dos éclairer.');
+
+
 
 INSERT INTO Heure_Depart (ID_HEURE_DEPART, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (1, '08:00:00', 'matin', 'AM', 1, '08:00', 'CET', '07:00');
@@ -1076,167 +1214,114 @@ INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimest
 (43, TO_DATE('2024-10-03', 'YYYY-MM-DD'), 3, 10, 2024, 'semaine', 4, 'jeudi', 40, 0, 0, 'Aucune particularité');
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (44, TO_DATE('2024-10-02', 'YYYY-MM-DD'), 2, 10, 2024, 'semaine', 4, 'mercredi', 40, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (45, TO_DATE('2024-10-01', 'YYYY-MM-DD'), 1, 10, 2024, 'semaine', 4, 'mardi', 40, 0, 0, 'Aucune particularité');
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (46, TO_DATE('2024-09-30', 'YYYY-MM-DD'), 30, 9, 2024, 'semaine', 4, 'lundi', 39, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (47, TO_DATE('2024-09-29', 'YYYY-MM-DD'), 29, 9, 2024, 'weekend', 4, 'dimanche', 38, 1, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (48, TO_DATE('2024-09-28', 'YYYY-MM-DD'), 28, 9, 2024, 'weekend', 4, 'samedi', 38, 1, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (49, TO_DATE('2024-09-27', 'YYYY-MM-DD'), 27, 9, 2024, 'semaine', 4, 'vendredi', 38, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (50, TO_DATE('2024-09-26', 'YYYY-MM-DD'), 26, 9, 2024, 'semaine', 4, 'jeudi', 38, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (51, TO_DATE('2024-09-25', 'YYYY-MM-DD'), 25, 9, 2024, 'semaine', 4, 'mercredi', 38, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (52, TO_DATE('2024-09-24', 'YYYY-MM-DD'), 24, 9, 2024, 'semaine', 4, 'mardi', 38, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (53, TO_DATE('2024-09-23', 'YYYY-MM-DD'), 23, 9, 2024, 'semaine', 4, 'lundi', 38, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (54, TO_DATE('2024-09-22', 'YYYY-MM-DD'), 22, 9, 2024, 'weekend', 4, 'dimanche', 37, 1, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (55, TO_DATE('2024-09-21', 'YYYY-MM-DD'), 21, 9, 2024, 'weekend', 4, 'samedi', 37, 1, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (56, TO_DATE('2024-09-20', 'YYYY-MM-DD'), 20, 9, 2024, 'semaine', 4, 'vendredi', 37, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (57, TO_DATE('2024-09-19', 'YYYY-MM-DD'), 19, 9, 2024, 'semaine', 4, 'jeudi', 37, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (58, TO_DATE('2024-09-18', 'YYYY-MM-DD'), 18, 9, 2024, 'semaine', 4, 'mercredi', 37, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (59, TO_DATE('2024-09-17', 'YYYY-MM-DD'), 17, 9, 2024, 'semaine', 4, 'mardi', 37, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (60, TO_DATE('2024-09-16', 'YYYY-MM-DD'), 16, 9, 2024, 'semaine', 4, 'lundi', 37, 0, 0, 'Aucune particularité');
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (61, TO_DATE('2024-09-15', 'YYYY-MM-DD'), 15, 9, 2024, 'weekend', 4, 'dimanche', 36, 1, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (62, TO_DATE('2024-09-14', 'YYYY-MM-DD'), 14, 9, 2024, 'weekend', 4, 'samedi', 36, 1, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (63, TO_DATE('2024-09-13', 'YYYY-MM-DD'), 13, 9, 2024, 'semaine', 4, 'vendredi', 36, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (64, TO_DATE('2024-09-12', 'YYYY-MM-DD'), 12, 9, 2024, 'semaine', 4, 'jeudi', 36, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (65, TO_DATE('2024-09-11', 'YYYY-MM-DD'), 11, 9, 2024, 'semaine', 4, 'mercredi', 36, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (66, TO_DATE('2024-09-10', 'YYYY-MM-DD'), 10, 9, 2024, 'semaine', 4, 'mardi', 36, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (67, TO_DATE('2024-09-09', 'YYYY-MM-DD'), 9, 9, 2024, 'semaine', 4, 'lundi', 36, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (68, TO_DATE('2024-09-08', 'YYYY-MM-DD'), 8, 9, 2024, 'weekend', 4, 'dimanche', 35, 1, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (69, TO_DATE('2024-09-07', 'YYYY-MM-DD'), 7, 9, 2024, 'weekend', 4, 'samedi', 35, 1, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (70, TO_DATE('2024-09-06', 'YYYY-MM-DD'), 6, 9, 2024, 'semaine', 4, 'vendredi', 35, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (71, TO_DATE('2024-09-05', 'YYYY-MM-DD'), 5, 9, 2024, 'semaine', 4, 'jeudi', 35, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (72, TO_DATE('2024-09-04', 'YYYY-MM-DD'), 4, 9, 2024, 'semaine', 4, 'mercredi', 35, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (73, TO_DATE('2024-09-03', 'YYYY-MM-DD'), 3, 9, 2024, 'semaine', 4, 'mardi', 35, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (74, TO_DATE('2024-09-02', 'YYYY-MM-DD'), 2, 9, 2024, 'ferie', 4, 'lundi', 35, 0, 1, 'Jour férié - Fête du Travail');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (75, TO_DATE('2024-09-01', 'YYYY-MM-DD'), 1, 9, 2024, 'weekend', 4, 'dimanche', 34, 1, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (76, TO_DATE('2024-08-31', 'YYYY-MM-DD'), 31, 8, 2024, 'weekend', 4, 'samedi', 34, 1, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (77, TO_DATE('2024-08-30', 'YYYY-MM-DD'), 30, 8, 2024, 'semaine', 4, 'vendredi', 34, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (78, TO_DATE('2024-08-29', 'YYYY-MM-DD'), 29, 8, 2024, 'semaine', 4, 'jeudi', 34, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (79, TO_DATE('2024-08-28', 'YYYY-MM-DD'), 28, 8, 2024, 'semaine', 4, 'mercredi', 34, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (80, TO_DATE('2024-08-27', 'YYYY-MM-DD'), 27, 8, 2024, 'semaine', 4, 'mardi', 34, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (81, TO_DATE('2024-08-26', 'YYYY-MM-DD'), 26, 8, 2024, 'semaine', 4, 'lundi', 34, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (82, TO_DATE('2024-08-25', 'YYYY-MM-DD'), 25, 8, 2024, 'weekend', 4, 'dimanche', 33, 1, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (83, TO_DATE('2024-08-24', 'YYYY-MM-DD'), 24, 8, 2024, 'weekend', 4, 'samedi', 33, 1, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (84, TO_DATE('2024-08-23', 'YYYY-MM-DD'), 23, 8, 2024, 'semaine', 4, 'vendredi', 33, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (85, TO_DATE('2024-08-22', 'YYYY-MM-DD'), 22, 8, 2024, 'semaine', 4, 'jeudi', 33, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (86, TO_DATE('2024-08-21', 'YYYY-MM-DD'), 21, 8, 2024, 'semaine', 4, 'mercredi', 33, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (87, TO_DATE('2024-08-20', 'YYYY-MM-DD'), 20, 8, 2024, 'semaine', 4, 'mardi', 33, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (88, TO_DATE('2024-08-19', 'YYYY-MM-DD'), 19, 8, 2024, 'semaine', 4, 'lundi', 33, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (89, TO_DATE('2024-08-18', 'YYYY-MM-DD'), 18, 8, 2024, 'weekend', 4, 'dimanche', 32, 1, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (90, TO_DATE('2024-08-17', 'YYYY-MM-DD'), 17, 8, 2024, 'weekend', 4, 'samedi', 32, 1, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (91, TO_DATE('2024-08-16', 'YYYY-MM-DD'), 16, 8, 2024, 'semaine', 4, 'vendredi', 32, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (92, TO_DATE('2024-08-15', 'YYYY-MM-DD'), 15, 8, 2024, 'ferie', 3, 'jeudi', 32, 0, 1, 'Jour férié - Assomption');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (93, TO_DATE('2024-08-14', 'YYYY-MM-DD'), 14, 8, 2024, 'semaine', 3, 'mercredi', 32, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (94, TO_DATE('2024-08-13', 'YYYY-MM-DD'), 13, 8, 2024, 'semaine', 3, 'mardi', 32, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (95, TO_DATE('2024-08-12', 'YYYY-MM-DD'), 12, 8, 2024, 'semaine', 3, 'lundi', 32, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (96, TO_DATE('2024-08-11', 'YYYY-MM-DD'), 11, 8, 2024, 'weekend', 3, 'dimanche', 31, 1, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (97, TO_DATE('2024-08-10', 'YYYY-MM-DD'), 10, 8, 2024, 'weekend', 3, 'samedi', 31, 1, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (98, TO_DATE('2024-08-09', 'YYYY-MM-DD'), 9, 8, 2024, 'semaine', 3, 'vendredi', 31, 0, 0, 'Aucune particularité');
-
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
 (99, TO_DATE('2024-08-08', 'YYYY-MM-DD'), 8, 8, 2024, 'semaine', 3, 'jeudi', 31, 0, 0, 'Aucune particularité');
 INSERT INTO Dates (ID_DATE, Date_Complete, Jour, Mois, Annee, Type_Jour, Trimestre, Jour_Semaine, Semaine_Annee, Est_Weekend, Est_Ferie, Commentaire) VALUES
