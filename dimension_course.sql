@@ -285,66 +285,66 @@ VALUES (14, '9 Place de la Bourse', 'Bordeaux', '33000', 1200, 1, 'Arrivée au c
 INSERT INTO Arrivee (ID_Arrivee, Adresse, Ville, Code_Postal, distance_centre, Zone_Urbaine, Description_Arrivee) 
 VALUES (15, '7 Rue de la Vieille-Draperie', 'Nancy', '54000', 800, 0, 'Arrivée près de la Place Stanislas');
 
-INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Depart (ID_HEURE_DEPART, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (1, '08:00:00', 'matin', 'AM', 1, '08:00', 'CET', '07:00');
-INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Depart (ID_HEURE_DEPART, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (2, '12:30:00', 'apres-midi', 'PM', 0, '12:30', 'CET', '11:30');
-INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Depart (ID_HEURE_DEPART, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (3, '17:45:00', 'soir', 'PM', 1, '17:45', 'CET', '16:45');
-INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Depart (ID_HEURE_DEPART, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (4, '23:15:00', 'nuit', 'PM', 0, '23:15', 'CET', '22:15');
-INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Depart (ID_HEURE_DEPART, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (5, '06:30:00', 'matin', 'AM', 1, '06:30', 'CET', '05:30');
-INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Depart (ID_HEURE_DEPART, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (6, '14:00:00', 'apres-midi', 'PM', 0, '14:00', 'CET', '13:00');
-INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Depart (ID_HEURE_DEPART, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (7, '19:30:00', 'soir', 'PM', 1, '19:30', 'CET', '18:30');
-INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Depart (ID_HEURE_DEPART, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (8, '22:00:00', 'nuit', 'PM', 0, '22:00', 'CET', '21:00');
-INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Depart (ID_HEURE_DEPART, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (9, '07:15:00', 'matin', 'AM', 1, '07:15', 'CET', '06:15');
-INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Depart (ID_HEURE_DEPART, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (10, '13:45:00', 'apres-midi', 'PM', 0, '13:45', 'CET', '12:45');
-INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Depart (ID_HEURE_DEPART, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (11, '18:00:00', 'soir', 'PM', 1, '18:00', 'CET', '17:00');
-INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Depart (ID_HEURE_DEPART, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (12, '21:30:00', 'nuit', 'PM', 0, '21:30', 'CET', '20:30');
-INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Depart (ID_HEURE_DEPART, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (13, '05:45:00', 'matin', 'AM', 1, '05:45', 'CET', '04:45');
-INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Depart (ID_HEURE_DEPART, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (14, '15:30:00', 'apres-midi', 'PM', 0, '15:30', 'CET', '14:30');
-INSERT INTO Heure_Depart (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Depart (ID_HEURE_DEPART, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (15, '20:15:00', 'soir', 'PM', 1, '20:15', 'CET', '19:15');
 
-INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Arrive (ID_HEURE_ARRIVEE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (1, '08:30:00', 'matin', 'AM', 1, '08:30', 'CET', '07:30');
-INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Arrive (ID_HEURE_ARRIVEE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (2, '13:00:00', 'apres-midi', 'PM', 0, '13:00', 'CET', '12:00');
-INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Arrive (ID_HEURE_ARRIVEE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (3, '18:15:00', 'soir', 'PM', 1, '18:15', 'CET', '17:15');
-INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Arrive (ID_HEURE_ARRIVEE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (4, '23:45:00', 'nuit', 'PM', 0, '23:45', 'CET', '22:45');
-INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Arrive (ID_HEURE_ARRIVEE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (5, '07:00:00', 'matin', 'AM', 1, '07:00', 'CET', '06:00');
-INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Arrive (ID_HEURE_ARRIVEE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (6, '14:30:00', 'apres-midi', 'PM', 0, '14:30', 'CET', '13:30');
-INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Arrive (ID_HEURE_ARRIVEE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (7, '20:00:00', 'soir', 'PM', 1, '20:00', 'CET', '19:00');
-INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Arrive (ID_HEURE_ARRIVEE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (8, '22:30:00', 'nuit', 'PM', 0, '22:30', 'CET', '21:30');
-INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Arrive (ID_HEURE_ARRIVEE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (9, '07:45:00', 'matin', 'AM', 1, '07:45', 'CET', '06:45');
-INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Arrive (ID_HEURE_ARRIVEE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (10, '13:15:00', 'apres-midi', 'PM', 0, '13:15', 'CET', '12:15');
-INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Arrive (ID_HEURE_ARRIVEE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (11, '18:45:00', 'soir', 'PM', 1, '18:45', 'CET', '17:45');
-INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Arrive (ID_HEURE_ARRIVEE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (12, '21:00:00', 'nuit', 'PM', 0, '21:00', 'CET', '20:00');
-INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Arrive (ID_HEURE_ARRIVEE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (13, '06:15:00', 'matin', 'AM', 1, '06:15', 'CET', '05:15');
-INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Arrive (ID_HID_HEURE_ARRIVEEEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (14, '15:45:00', 'apres-midi', 'PM', 0, '15:45', 'CET', '14:45');
-INSERT INTO Heure_Arrive (ID_HEURE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
+INSERT INTO Heure_Arrive (ID_HEURE_ARRIVEE, Heure_Complete, Periode_Journee, AM_PM, Heure_Pointe, Heure_Format24h, Fuseau_Horaire, Heure_UTC) VALUES
 (15, '20:30:00', 'soir', 'PM', 1, '20:30', 'CET', '19:30');
 
 INSERT INTO Meteo (ID_METEO, Date_Meteo, Temperature, Humidite, Precipitations, Vent_Vitesse, Vent_Direction, Condition_Meteo, Pression_Atmospherique, Indice_UV) VALUES
