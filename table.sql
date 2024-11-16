@@ -131,16 +131,16 @@ CREATE TABLE Course (
     ID_METEO INT,
     ID_COURSE INT PRIMARY KEY,
    
-    Prix NUMBER(10,2),
-    Distance_Parcourue NUMBER(10,2),
+    Prix INT,
+    Distance_Parcourue INT,
     Duree_Du_Trajet INT,
     Nombre_Passagers INT,
     Statut_Course VARCHAR2(20) CHECK(Statut_Course IN('Demande', 'Confirmation', 'Prise_en_Charge', 'Termine')),
     Temps_dattente_client INT,
     Code_Promo VARCHAR2(10),
     Motif_Annulation VARCHAR2(255),
-    Revenue_moyen_par_course NUMBER(10,2),
-    Indice_Satisfaction_Client NUMBER(10,2)
+    Revenue_moyen_par_course INT,
+    Indice_Satisfaction_Client INT
 );
 
     
