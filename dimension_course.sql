@@ -6,7 +6,6 @@ DROP TABLE  Arrivee;
 DROP TABLE  Heure;
 DROP TABLE  Dates;
 DROP TABLE Meteo;
-DROP TABLE Course;
 
 -- Création des tables de dimensions
 
