@@ -130,17 +130,25 @@ CREATE TABLE Course (
     ID_VEHICULE INT, 
     ID_METEO INT,
     ID_COURSE INT PRIMARY KEY,
-   
-    Prix INT,
-    Distance_Parcourue INT,
+    FOREIGN KEY (ID_DATE) REFERENCES Dates(ID_DATE),
+    FOREIGN KEY (ID_ARRIVEE) REFERENCES Arrivee(ID_ARRIVEE),
+    FOREIGN KEY (ID_DEPART) REFERENCES Depart(ID_DEPART),
+    FOREIGN KEY (ID_CLIENT) REFERENCES Client(ID_Client),
+    FOREIGN KEY (ID_HEURE) REFERENCES Heure(ID_HEURE),
+    FOREIGN KEY (ID_CHAUFFEUR) REFERENCES Chauffeur(ID_Chauffeur),
+    FOREIGN KEY (ID_VEHICULE) REFERENCES Vehicule(ID_Vehicule),
+    FOREIGN KEY (ID_METEO) REFERENCES Meteo(ID_METEO),
+
+    Prix NUMBER(10,2),
+    Distance_Parcourue NUMBER(10,2),
     Duree_Du_Trajet INT,
     Nombre_Passagers INT,
     Statut_Course VARCHAR2(20) CHECK(Statut_Course IN('Demande', 'Confirmation', 'Prise_en_Charge', 'Termine')),
     Temps_dattente_client INT,
     Code_Promo VARCHAR2(10),
     Motif_Annulation VARCHAR2(255),
-    Revenue_moyen_par_course INT,
-    Indice_Satisfaction_Client INT
+    Revenue_moyen_par_course NUMBER(10,2),
+    Indice_Satisfaction_Client NUMBER(10,2)
 );
 
     
