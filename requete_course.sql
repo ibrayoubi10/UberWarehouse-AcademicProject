@@ -41,6 +41,7 @@ HAVING
     COUNT(c.ID_COURSE) < (SELECT AVG(TotalCourses)FROM (SELECT COUNT(c1.ID_COURSE) AS TotalCourses FROM Course c1 GROUP BY c1.ID_DATE)) ORDER BY 
     Nombre_Courses ASC;
 
+--requete pour le traitement 4 
 SELECT 
     cl.ID_Client,
     cl.Nom,
