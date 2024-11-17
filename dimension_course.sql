@@ -331,47 +331,87 @@ INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Prefe
 INSERT INTO Client (ID_Client, Nom, Prenom, Age, Sexe, Type_Client, Langue_Preferee, Email, Telephone, Point_gagnee) VALUES
 (100, 'Garcia', 'Carlos', 41, 'H', 'VIP', 'Espagnol', 'carlos.garcia@example.com', '0123456888', 120);
 
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (1, 'Pierre', 'Diane', TO_DATE('2021-08-11', 'YYYY-MM-DD'), '79975772438', 'B', '+33 (0)4 9', 'sylvie83@example.org', 'Inactif', 'Marseille');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (2, 'Dumas', 'Alice', TO_DATE('2021-02-22', 'YYYY-MM-DD'), '89885694824', 'B', '+33 4 79 0', 'alice63@example.org', 'Inactif', 'Paris');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (3, 'Legros', 'Tristan', TO_DATE('2018-02-09', 'YYYY-MM-DD'), '27465000916', 'C', '06 37 80 8', 'lucepereira@example.net', 'Suspendu', 'Nantes');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (4, 'Bailly', 'Nathalie', TO_DATE('2022-03-01', 'YYYY-MM-DD'), '95304430232', 'D', '+33 3 86 1', 'manon38@example.com', 'Actif', 'Lille');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (5, 'Dupont', 'Aurélie', TO_DATE('2019-07-15', 'YYYY-MM-DD'), '64784597232', 'B', '+33 6 54 1', 'aurelie.dupont@example.org', 'Actif', 'Lyon');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (6, 'Martin', 'Charles', TO_DATE('2020-01-20', 'YYYY-MM-DD'), '89756237894', 'C', '+33 7 62 8', 'charles.martin@example.net', 'Inactif', 'Bordeaux');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (7, 'Morel', 'Jeanne', TO_DATE('2023-04-11', 'YYYY-MM-DD'), '32478003456', 'D', '+33 4 55 9', 'jeanne.morel@example.com', 'Actif', 'Toulouse');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (8, 'Simon', 'Paul', TO_DATE('2017-09-18', 'YYYY-MM-DD'), '76948256743', 'B', '+33 3 41 2', 'paul.simon@example.org', 'Suspendu', 'Nice');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (9, 'Leclerc', 'Marie', TO_DATE('2022-11-05', 'YYYY-MM-DD'), '34578902134', 'C', '+33 5 37 8', 'marie.leclerc@example.net', 'Actif', 'Strasbourg');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (10, 'Durand', 'Lucas', TO_DATE('2021-06-23', 'YYYY-MM-DD'), '45698123567', 'B', '+33 6 39 7', 'lucas.durand@example.org', 'Inactif', 'Marseille');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (11, 'Rousseau', 'Alice', TO_DATE('2018-08-14', 'YYYY-MM-DD'), '34781234567', 'B', '+33 6 12 3', 'alice.rousseau@example.com', 'Actif', 'Lille');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (12, 'Fournier', 'Éric', TO_DATE('2020-03-10', 'YYYY-MM-DD'), '23456789234', 'C', '+33 7 14 6', 'eric.fournier@example.net', 'Suspendu', 'Nantes');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (13, 'Girard', 'Lucie', TO_DATE('2019-12-05', 'YYYY-MM-DD'), '76543219876', 'D', '+33 5 62 7', 'lucie.girard@example.org', 'Actif', 'Rennes');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (14, 'Bonnet', 'Julien', TO_DATE('2021-02-25', 'YYYY-MM-DD'), '90871234656', 'B', '+33 3 45 9', 'julien.bonnet@example.com', 'Inactif', 'Toulon');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (15, 'Dupuis', 'Sophie', TO_DATE('2023-05-17', 'YYYY-MM-DD'), '23456789876', 'C', '+33 4 55 2', 'sophie.dupuis@example.org', 'Actif', 'Montpellier');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (16, 'Fontaine', 'Antoine', TO_DATE('2017-11-03', 'YYYY-MM-DD'), '45678901345', 'D', '+33 7 41 8', 'antoine.fontaine@example.net', 'Suspendu', 'Reims');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (17, 'Masson', 'Claire', TO_DATE('2022-04-29', 'YYYY-MM-DD'), '56789012345', 'B', '+33 6 59 1', 'claire.masson@example.org', 'Actif', 'Orléans');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (18, 'Garnier', 'Pauline', TO_DATE('2021-09-30', 'YYYY-MM-DD'), '78901234567', 'C', '+33 5 37 5', 'pauline.garnier@example.com', 'Inactif', 'Rouen');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (19, 'Chevalier', 'Hugo', TO_DATE('2020-10-15', 'YYYY-MM-DD'), '89012345678', 'D', '+33 3 65 4', 'hugo.chevalier@example.net', 'Actif', 'Dijon');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (20, 'Lemoine', 'Nathalie', TO_DATE('2023-01-12', 'YYYY-MM-DD'), '23456789012', 'B', '+33 7 48 9', 'nathalie.lemoine@example.org', 'Suspendu', 'Le Havre');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (21, 'Renaud', 'Mathieu', TO_DATE('2019-06-06', 'YYYY-MM-DD'), '56789012378', 'C', '+33 6 34 2', 'mathieu.renaud@example.com', 'Actif', 'Perpignan');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (22, 'Dufour', 'Camille', TO_DATE('2018-03-21', 'YYYY-MM-DD'), '67890123456', 'D', '+33 5 19 7', 'camille.dufour@example.net', 'Actif', 'Clermont-Ferrand');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (23, 'Benoit', 'Thomas', TO_DATE('2020-12-07', 'YYYY-MM-DD'), '78901234678', 'B', '+33 3 72 6', 'thomas.benoit@example.org', 'Inactif', 'Metz');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (24, 'Perrin', 'Elise', TO_DATE('2022-07-13', 'YYYY-MM-DD'), '89012345679', 'C', '+33 7 88 4', 'elise.perrin@example.com', 'Actif', 'Brest');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (25, 'Marchand', 'Valentin', TO_DATE('2021-05-28', 'YYYY-MM-DD'), '23456789099', 'D', '+33 6 92 3', 'valentin.marchand@example.net', 'Suspendu', 'Angers');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (26, 'Blanchard', 'Julie', TO_DATE('2017-09-14', 'YYYY-MM-DD'), '56789023412', 'B', '+33 6 11 22 33 44', 'julie.blanchard@example.com', 'Actif', 'Toulouse');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (27, 'Morin', 'Benoît', TO_DATE('2019-11-07', 'YYYY-MM-DD'), '67890123421', 'C', '+33 7 22 33 44 55', 'benoit.morin@example.net', 'Suspendu', 'Nice');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (28, 'Gauthier', 'Laetitia', TO_DATE('2020-05-12', 'YYYY-MM-DD'), '78901234532', 'D', '+33 5 33 44 55 66', 'laetitia.gauthier@example.org', 'Actif', 'Bordeaux');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (29, 'Poulain', 'Théo', TO_DATE('2021-10-20', 'YYYY-MM-DD'), '89012345643', 'B', '+33 4 44 55 66 77', 'theo.poulain@example.com', 'Inactif', 'Strasbourg');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (30, 'Lemoine', 'Amandine', TO_DATE('2022-06-15', 'YYYY-MM-DD'), '90123456754', 'C', '+33 3 55 66 77 88', 'amandine.lemoine@example.net', 'Actif', 'Grenoble');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (31, 'Leclerc', 'Damien', TO_DATE('2018-04-09', 'YYYY-MM-DD'), '01234567865', 'D', '+33 6 66 77 88 99', 'damien.leclerc@example.org', 'Suspendu', 'Toulouse');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (32, 'Charpentier', 'Émilie', TO_DATE('2019-03-28', 'YYYY-MM-DD'), '12345678976', 'B', '+33 7 77 88 99 00', 'emilie.charpentier@example.com', 'Actif', 'Nantes');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (33, 'Aubert', 'Romain', TO_DATE('2023-01-05', 'YYYY-MM-DD'), '23456789087', 'C', '+33 5 88 99 00 11', 'romain.aubert@example.net', 'Inactif', 'Lyon');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (34, 'Barbier', 'Sabrina', TO_DATE('2020-11-13', 'YYYY-MM-DD'), '34567890198', 'D', '+33 4 99 00 11 22', 'sabrina.barbier@example.org', 'Suspendu', 'Paris');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (35, 'Renard', 'Lucas', TO_DATE('2017-08-30', 'YYYY-MM-DD'), '45678901209', 'B', '+33 3 00 11 22 33', 'lucas.renard@example.com', 'Actif', 'Marseille');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (36, 'Schmitt', 'Nicolas', TO_DATE('2019-02-14', 'YYYY-MM-DD'), '56789012310', 'C', '+33 6 11 22 33 44', 'nicolas.schmitt@example.net', 'Inactif', 'Lille');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (37, 'Collet', 'Audrey', TO_DATE('2021-04-18', 'YYYY-MM-DD'), '67890123421', 'D', '+33 7 22 33 44 55', 'audrey.collet@example.org', 'Actif', 'Toulouse');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (38, 'Pires', 'Antoine', TO_DATE('2023-07-22', 'YYYY-MM-DD'), '78901234532', 'B', '+33 5 33 44 55 66', 'antoine.pires@example.com', 'Suspendu', 'Nice');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (39, 'Perrot', 'Clara', TO_DATE('2020-10-10', 'YYYY-MM-DD'), '89012345643', 'C', '+33 4 44 55 66 77', 'clara.perrot@example.net', 'Actif', 'Bordeaux');
+INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale)
+VALUES (40, 'Langlois', 'Victor', TO_DATE('2021-09-09', 'YYYY-MM-DD'), '90123456754', 'D', '+33 3 55 66 77 88', 'victor.langlois@example.org', 'Inactif', 'Strasbourg');
 
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (1, 'Pierre', 'Diane', '2021-08-11', '79975772438', 'B', '+33 (0)4 9', 'sylvie83@example.org', 'Inactif', 'Marseille');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (2, 'Dumas', 'Alice', '2021-02-22', '89885694824', 'B', '+33 4 79 0', 'alice63@example.org', 'Inactif', 'Paris');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (3, 'Legros', 'Tristan', '2018-02-09', '27465000916', 'C', '06 37 80 8', 'lucepereira@example.net', 'Suspendu', 'Nantes');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (4, 'Bailly', 'Nathalie', '2022-03-01', '95304430232', 'D', '+33 3 86 1', 'manon38@example.com', 'Actif', 'Lille');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (5, 'Legrand', 'Zacharie', '2015-02-09', '40398497986', 'B', '0223867905', 'luc93@example.net', 'Suspendu', 'Marseille');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (6, 'Pons', 'Richard', '2018-05-09', '59615669701', 'D', '+33 1 69 8', 'grosraymond@example.org', 'Inactif', 'Bordeaux');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (7, 'Gautier', 'Alexandre', '2015-10-11', '11987448635', 'B', '+33 (0)2 1', 'alphonsegiraud@example.com', 'Inactif', 'Toulouse');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (8, 'Blanchard', 'Adélaïde', '2017-01-15', '16050413889', 'D', '+33 (0)4 4', 'de-oliveiravictor@example.com', 'Inactif', 'Lyon');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (9, 'Camus', 'Timothée', '2016-02-21', '67997527180', 'C', '01 80 79 9', 'alainpierre@example.net', 'Suspendu', 'Nantes');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (10, 'Roger', 'Céline', '2019-07-14', '66833704616', 'D', '+33 (0)6 3', 'jeannormand@example.net', 'Actif', 'Toulouse');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (11, 'Poirier', 'Alain', '2022-11-16', '66132948951', 'C', '+33 1 40 1', 'eugene42@example.org', 'Suspendu', 'Marseille');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (12, 'Paris', 'Aurore', '2016-08-01', '63785493757', 'C', '+33 (0)2 2', 'philippe43@example.net', 'Inactif', 'Lille');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (13, 'Clerc', 'Noémi', '2015-11-15', '96804220728', 'C', '01 64 51 5', 'marcphilippe@example.com', 'Inactif', 'Lyon');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (14, 'Joseph', 'Aimé', '2017-02-15', '39352468715', 'B', '+33 4 50 8', 'daniel22@example.net', 'Suspendu', 'Lyon');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (15, 'Legrand', 'Michel', '2018-09-12', '69330009634', 'D', '0594229074', 'laureroche@example.net', 'Actif', 'Lille');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (16, 'Moulin', 'Guillaume', '2017-05-06', '62910507957', 'B', '0632986276', 'yjacquet@example.org', 'Actif', 'Toulouse');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (17, 'Lebrun', 'Thérèse', '2017-03-10', '42731460607', 'C', '0633536022', 'victorauger@example.net', 'Inactif', 'Marseille');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (18, 'Hoareau', 'Colette', '2018-10-09', '76392758688', 'C', '+33 (0)1 4', 'genevievegomez@example.com', 'Suspendu', 'Lille');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (19, 'Bonnin', 'Aurore', '2021-12-29', '09942220467', 'D', '0490698059', 'marinepichon@example.com', 'Suspendu', 'Marseille');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (20, 'Muller', 'Denise', '2017-03-02', '12914533591', 'C', '+33 (0)4 8', 'pierre92@example.net', 'Inactif', 'Marseille');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (21, 'Morin', 'Martin', '2018-02-25', '39288153440', 'C', '0558725722', 'guillonbertrand@example.net', 'Inactif', 'Paris');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (22, 'Jacquet', 'Michel', '2017-09-12', '95384821393', 'C', '0389434206', 'leducmichelle@example.org', 'Actif', 'Nantes');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (23, 'Vidal', 'Gilles', '2019-02-14', '77607456243', 'D', '0156926998', 'renaultsuzanne@example.org', 'Actif', 'Lyon');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (24, 'Roche', 'Sabine', '2017-12-01', '23681888122', 'D', '04 97 71 8', 'lauremaury@example.org', 'Suspendu', 'Bordeaux');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (25, 'Rocher', 'Denis', '2022-08-02', '68989599352', 'B', '0173631729', 'ybernier@example.org', 'Inactif', 'Marseille');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (26, 'Lejeune', 'Valentine', '2016-06-29', '38769841683', 'B', '+33 (0)2 4', 'imartineau@example.org', 'Suspendu', 'Nantes');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (27, 'Riou', 'Éric', '2018-01-14', '00346265904', 'D', '03 67 54 6', 'bouchetelodie@example.net', 'Inactif', 'Toulouse');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (28, 'Schmitt', 'Christine', '2021-12-17', '62191885148', 'B', '0565581157', 'sabine20@example.com', 'Inactif', 'Marseille');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (29, 'Peltier', 'Zacharie', '2023-08-16', '94091574435', 'D', '+33 5 64 0', 'danieldupont@example.org', 'Suspendu', 'Bordeaux');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (30, 'Perrot', 'Joseph', '2021-09-28', '26242703953', 'D', '03 21 50 9', 'fontainehenri@example.com', 'Suspendu', 'Nice');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (31, 'Renaud', 'Adélaïde', '2017-04-15', '30826886825', 'C', '+33 (0)6 5', 'marchandjulien@example.com', 'Inactif', 'Lille');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (32, 'Rodriguez', 'Stéphanie', '2019-09-25', '27005251273', 'D', '+33 (0)2 3', 'inesmarin@example.com', 'Suspendu', 'Marseille');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (33, 'Becker', 'Céline', '2022-11-03', '49988925176', 'D', '0627209968', 'lorraine93@example.org', 'Suspendu', 'Toulouse');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (34, 'Perrot', 'Matthieu', '2015-08-25', '25886150286', 'C', '01 30 23 9', 'lefortthierry@example.org', 'Actif', 'Nantes');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (35, 'Robert', 'Olivie', '2019-11-28', '70950491909', 'D', '+33 4 26 2', 'hdevaux@example.com', 'Actif', 'Toulouse');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (36, 'Lévy', 'Michel', '2022-01-22', '33875602860', 'B', '0146899795', 'chantal35@example.net', 'Suspendu', 'Paris');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (37, 'Voisin', 'Raymond', '2021-05-24', '73670915085', 'C', '0648905957', 'michellemarechal@example.org', 'Actif', 'Toulouse');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (38, 'Moreau', 'Denise', '2015-09-29', '37875314451', 'D', '+33 (0)6 4', 'sophie28@example.net', 'Suspendu', 'Marseille');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (39, 'Maillet', 'Inès', '2022-02-27', '75513081167', 'C', '03 90 64 2', 'odetteadam@example.net', 'Suspendu', 'Lyon');
-INSERT INTO Chauffeur (ID_Chauffeur, Nom, Prenom, Date_Embauche, Numero_Permis, Type_Permis, Telephone, Email, Statut, Zone_Principale) VALUES (40, 'Pruvost', 'Pierre', '2023-07-22', '08091027023', 'B', '03 71 53 2', 'corinnerichard@example.com', 'Inactif', 'Toulouse');
 
 
 INSERT INTO Depart (ID_DEPART, Adresse, Ville, Code_Postal, Distance_Centre, Zone_Urbaine, Prise_En_Charge, Description_Depart) VALUES (1, '32, rue Blot', 'PerrinVille', '93936', 4129, 1, 'En_Attente', 'Fumée consentir valeur besoin calmer.');
