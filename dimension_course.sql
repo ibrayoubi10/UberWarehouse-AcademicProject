@@ -32,7 +32,7 @@ CREATE TABLE Chauffeur (
     Date_Embauche DATE,
     Numero_Permis  VARCHAR2(50),
     Type_Permis  VARCHAR2(50),
-    Telephone  VARCHAR2(15),
+    Telephone  VARCHAR2(50),
     Email  VARCHAR2(50),
     Statut  VARCHAR2(10) CHECK (Statut IN ('Actif', 'Inactif')),
     Zone_Principale  VARCHAR2(50)
@@ -546,7 +546,29 @@ INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Etat_Ve
 INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Etat_Vehicule, Km_Parcourus, Derniere_Revision, Consommation, Assurance_Valide) VALUES
 (14, 'Peugeot', '208', 2019, 'Essence', 'Bon', 40000, TO_DATE('2023-08-12', 'YYYY-MM-DD'), 6.8, 1);
 INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Etat_Vehicule, Km_Parcourus, Derniere_Revision, Consommation, Assurance_Valide) VALUES
-(15, 'Mazda', 'CX-5', 2020, 'Essence', 'Excellent', 28000, TO_DATE('2023-06-09', 'YYYY-MM-DD'), 7.1, 1);evision, Consommation, Assurance_Valide) VALUES (40, 'Ford', 'Focus', 2019, 'Electrique', 'Mauvais', 51705, TO_DATE('2024-05-23', 'yyyy-mm-dd'), 0.0, 0);
+(15, 'Mazda', 'CX-5', 2020, 'Essence', 'Excellent', 28000, TO_DATE('2023-06-09', 'YYYY-MM-DD'), 7.1, 1);
+INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Etat_Vehicule, Km_Parcourus, Derniere_Revision, Consommation, Assurance_Valide) VALUES
+(16, 'Toyota', 'Corolla', 2022, 'Hybride', 'Excellent', 15000, TO_DATE('2024-04-15', 'YYYY-MM-DD'), 4.5, 1);
+INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Etat_Vehicule, Km_Parcourus, Derniere_Revision, Consommation, Assurance_Valide) VALUES
+(17, 'Volkswagen', 'Golf', 2021, 'Essence', 'Bon', 32000, TO_DATE('2023-10-01', 'YYYY-MM-DD'), 6.2, 1);
+INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Etat_Vehicule, Km_Parcourus, Derniere_Revision, Consommation, Assurance_Valide) VALUES
+(18, 'Hyundai', 'Ioniq 5', 2023, 'Electrique', 'Excellent', 5000, TO_DATE('2024-06-20', 'YYYY-MM-DD'), 0.0, 1);
+INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Etat_Vehicule, Km_Parcourus, Derniere_Revision, Consommation, Assurance_Valide) VALUES
+(19, 'Ford', 'Focus', 2017, 'Diesel', 'Mauvais', 110000, TO_DATE('2022-11-25', 'YYYY-MM-DD'), 6.9, 1);
+INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Etat_Vehicule, Km_Parcourus, Derniere_Revision, Consommation, Assurance_Valide) VALUES
+(20, 'Nissan', 'Leaf', 2020, 'Electrique', 'Bon', 45000, TO_DATE('2023-12-05', 'YYYY-MM-DD'), 0.0, 1);
+INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Etat_Vehicule, Km_Parcourus, Derniere_Revision, Consommation, Assurance_Valide) VALUES
+(21, 'Chevrolet', 'Bolt EV', 2021, 'Electrique', 'Bon', 30000, TO_DATE('2024-02-12', 'YYYY-MM-DD'), 0.0, 1);
+INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Etat_Vehicule, Km_Parcourus, Derniere_Revision, Consommation, Assurance_Valide) VALUES
+(22, 'BMW', 'i3', 2019, 'Electrique', 'Excellent', 25000, TO_DATE('2023-05-15', 'YYYY-MM-DD'), 0.0, 1);
+INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Etat_Vehicule, Km_Parcourus, Derniere_Revision, Consommation, Assurance_Valide) VALUES
+(23, 'Audi', 'A3', 2020, 'Diesel', 'Bon', 60000, TO_DATE('2023-09-10', 'YYYY-MM-DD'), 5.8, 1);
+INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Etat_Vehicule, Km_Parcourus, Derniere_Revision, Consommation, Assurance_Valide) VALUES
+(24, 'Honda', 'Civic', 2018, 'Essence', 'Mauvais', 85000, TO_DATE('2022-03-18', 'YYYY-MM-DD'), 7.3, 1);
+INSERT INTO Vehicule (ID_Vehicule, Marque, Modele, Annee, Type_Vehicule, Etat_Vehicule, Km_Parcourus, Derniere_Revision, Consommation, Assurance_Valide) VALUES
+(25, 'Subaru', 'Outback', 2021, 'Essence', 'Excellent', 20000, TO_DATE('2024-08-22', 'YYYY-MM-DD'), 6.5, 1);
+
+
 
 
 
