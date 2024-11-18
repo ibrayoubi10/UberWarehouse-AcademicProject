@@ -210,118 +210,19 @@ INSERT INTO Date_fin_evenement VALUES (100, TO_DATE('2032-04-10', 'YYYY-MM-DD'),
 
 -- Insertion des données dans la table Dimension_Region
 
-INSERT INTO Dimension_Region VALUES (1, 'Occitanie', 'France', 'Urbaine', '34000', 'N', 72787, 2950000, 'Stable', 0.89);
-INSERT INTO Dimension_Region VALUES (2, 'Nouvelle-Aquitaine', 'France', 'Rurale', '33000', 'N', 84000, 5900000, 'En développement', 0.91);
-INSERT INTO Dimension_Region VALUES (3, 'Île-de-France', 'France', 'Urbaine', '75000', 'Y', 12000, 12200000, 'Stable', 0.95);
-INSERT INTO Dimension_Region VALUES (4, 'Provence-Alpes-Côte d\''Azur', 'France', 'Urbaine', '06000', 'N', 31400, 5050000, 'Stable', 0.93);
-INSERT INTO Dimension_Region VALUES (5, 'Auvergne-Rhône-Alpes', 'France', 'Rurale', '69000', 'N', 69711, 8060000, 'En développement', 0.90);
-INSERT INTO Dimension_Region VALUES (6, 'Bretagne', 'France', 'Rurale', '35000', 'N', 27208, 3340000, 'Stable', 0.88);
-INSERT INTO Dimension_Region VALUES (7, 'Pays de la Loire', 'France', 'Rurale', '44000', 'N', 32082, 3800000, 'Stable', 0.89);
-INSERT INTO Dimension_Region VALUES (8, 'Normandie', 'France', 'Rurale', '76000', 'N', 29906, 3300000, 'En déclin', 0.87);
-INSERT INTO Dimension_Region VALUES (9, 'Hauts-de-France', 'France', 'Urbaine', '59000', 'N', 31813, 6000000, 'Stable', 0.90);
-INSERT INTO Dimension_Region VALUES (10, 'Grand Est', 'France', 'Rurale', '67000', 'N', 57433, 5500000, 'Stable', 0.89);
--- Lignes 11 à 100 pour Dimension_Region
-INSERT INTO Dimension_Region VALUES (11, 'Centre-Val de Loire', 'France', 'Rurale', '45000', 'N', 39151, 2600000, 'Stable', 0.88);
-INSERT INTO Dimension_Region VALUES (12, 'Bourgogne-Franche-Comté', 'France', 'Rurale', '21000', 'N', 47784, 2800000, 'En déclin', 0.86);
-INSERT INTO Dimension_Region VALUES (13, 'Corse', 'France', 'Urbaine', '20000', 'N', 8680, 340000, 'Stable', 0.89);
-INSERT INTO Dimension_Region VALUES (14, 'Occitanie', 'France', 'Rurale', '31000', 'N', 72787, 2950000, 'En développement', 0.92);
-INSERT INTO Dimension_Region VALUES (15, 'Normandie', 'France', 'Urbaine', '14000', 'N', 29906, 3300000, 'En déclin', 0.85);
-INSERT INTO Dimension_Region VALUES (16, 'Île-de-France', 'France', 'Urbaine', '91000', 'Y', 12000, 12200000, 'Stable', 0.95);
-INSERT INTO Dimension_Region VALUES (17, 'Pays de la Loire', 'France', 'Rurale', '49000', 'N', 32082, 3800000, 'Stable', 0.89);
-INSERT INTO Dimension_Region VALUES (18, 'Provence-Alpes-Côte d\''Azur', 'France', 'Urbaine', '13000', 'N', 31400, 5050000, 'Stable', 0.93);
-INSERT INTO Dimension_Region VALUES (19, 'Auvergne-Rhône-Alpes', 'France', 'Rurale', '43000', 'N', 69711, 8060000, 'En développement', 0.90);
-INSERT INTO Dimension_Region VALUES (20, 'Hauts-de-France', 'France', 'Urbaine', '80000', 'N', 31813, 6000000, 'Stable', 0.90);
-
-INSERT INTO Dimension_Region VALUES (21, 'Grand Est', 'France', 'Rurale', '57000', 'N', 57433, 5500000, 'Stable', 0.89);
-INSERT INTO Dimension_Region VALUES (22, 'Nouvelle-Aquitaine', 'France', 'Urbaine', '87000', 'N', 84000, 5900000, 'Stable', 0.91);
-INSERT INTO Dimension_Region VALUES (23, 'Bretagne', 'France', 'Rurale', '29000', 'N', 27208, 3340000, 'Stable', 0.88);
-INSERT INTO Dimension_Region VALUES (24, 'Guyane', 'France', 'Rurale', '97300', 'N', 83846, 290000, 'En développement', 0.80);
-INSERT INTO Dimension_Region VALUES (25, 'Martinique', 'France', 'Urbaine', '97200', 'N', 1128, 360000, 'Stable', 0.82);
-INSERT INTO Dimension_Region VALUES (26, 'Guadeloupe', 'France', 'Urbaine', '97100', 'N', 1628, 400000, 'Stable', 0.83);
-INSERT INTO Dimension_Region VALUES (27, 'Réunion', 'France', 'Urbaine', '97400', 'N', 2512, 860000, 'Stable', 0.84);
-INSERT INTO Dimension_Region VALUES (28, 'Mayotte', 'France', 'Urbaine', '97600', 'N', 374, 310000, 'En développement', 0.78);
-INSERT INTO Dimension_Region VALUES (29, 'Saint-Pierre-et-Miquelon', 'France', 'Rurale', '97500', 'N', 242, 6000, 'Stable', 0.75);
-INSERT INTO Dimension_Region VALUES (30, 'Polynésie Française', 'France', 'Urbaine', '98700', 'N', 4167, 280000, 'Stable', 0.79);
-
-INSERT INTO Dimension_Region VALUES (31, 'Nouvelle-Calédonie', 'France', 'Rurale', '98800', 'N', 18575, 270000, 'Stable', 0.81);
-INSERT INTO Dimension_Region VALUES (32, 'Wallis-et-Futuna', 'France', 'Rurale', '98600', 'N', 274, 10000, 'En déclin', 0.72);
-INSERT INTO Dimension_Region VALUES (33, 'Pays Basque', 'Espagne', 'Urbaine', '48000', 'N', 7244, 2200000, 'Stable', 0.90);
-INSERT INTO Dimension_Region VALUES (34, 'Andalousie', 'Espagne', 'Rurale', '41000', 'N', 87599, 8400000, 'En développement', 0.88);
-INSERT INTO Dimension_Region VALUES (35, 'Catalogne', 'Espagne', 'Urbaine', '08000', 'N', 32000, 7600000, 'Stable', 0.92);
-INSERT INTO Dimension_Region VALUES (36, 'Lombardie', 'Italie', 'Urbaine', '20000', 'N', 23863, 10040000, 'Stable', 0.93);
-INSERT INTO Dimension_Region VALUES (37, 'Bavière', 'Allemagne', 'Urbaine', '80000', 'N', 70552, 13000000, 'Stable', 0.94);
-INSERT INTO Dimension_Region VALUES (38, 'Californie', 'États-Unis', 'Urbaine', '90000', 'Y', 423970, 39500000, 'Stable', 0.97);
-INSERT INTO Dimension_Region VALUES (39, 'Québec', 'Canada', 'Rurale', 'G1A0A2', 'N', 1542056, 8500000, 'Stable', 0.91);
-INSERT INTO Dimension_Region VALUES (40, 'Ontario', 'Canada', 'Urbaine', 'M5H2N2', 'N', 1076395, 15000000, 'Stable', 0.93);
-
--- Continuez avec des régions diversifiées (France et autres pays)
-INSERT INTO Dimension_Region VALUES (41, 'Victoria', 'Australie', 'Urbaine', '3000', 'N', 237629, 6700000, 'Stable', 0.94);
-INSERT INTO Dimension_Region VALUES (42, 'New South Wales', 'Australie', 'Urbaine', '2000', 'N', 801150, 8200000, 'Stable', 0.93);
-INSERT INTO Dimension_Region VALUES (43, 'Bretagne Sud', 'France', 'Rurale', '56000', 'N', 10000, 1800000, 'Stable', 0.87);
-INSERT INTO Dimension_Region VALUES (44, 'Ardennes', 'France', 'Rurale', '08000', 'N', 5052, 280000, 'En déclin', 0.81);
-INSERT INTO Dimension_Region VALUES (45, 'Pays de Galles', 'Royaume-Uni', 'Rurale', 'CF10', 'N', 20779, 3100000, 'Stable', 0.89);
-INSERT INTO Dimension_Region VALUES (46, 'Écosse', 'Royaume-Uni', 'Rurale', 'EH1', 'N', 77933, 5400000, 'Stable', 0.92);
-INSERT INTO Dimension_Region VALUES (47, 'Dublin', 'Irlande', 'Urbaine', 'D01', 'Y', 115, 1400000, 'Stable', 0.94);
-INSERT INTO Dimension_Region VALUES (48, 'Oslo', 'Norvège', 'Urbaine', '0010', 'Y', 454, 700000, 'Stable', 0.96);
-INSERT INTO Dimension_Region VALUES (49, 'Berlin', 'Allemagne', 'Urbaine', '10115', 'Y', 891, 3700000, 'Stable', 0.95);
-INSERT INTO Dimension_Region VALUES (50, 'Zurich', 'Suisse', 'Urbaine', '8001', 'Y', 91, 400000, 'Stable', 0.98);
-
-INSERT INTO Dimension_Region VALUES (51, 'Genève', 'Suisse', 'Urbaine', '1201', 'Y', 15, 200000, 'Stable', 0.97);
-INSERT INTO Dimension_Region VALUES (52, 'Vienne', 'Autriche', 'Urbaine', '1010', 'Y', 415, 1900000, 'Stable', 0.96);
-INSERT INTO Dimension_Region VALUES (53, 'Bruxelles', 'Belgique', 'Urbaine', '1000', 'Y', 161, 1200000, 'Stable', 0.95);
-INSERT INTO Dimension_Region VALUES (54, 'Copenhague', 'Danemark', 'Urbaine', '1050', 'Y', 88, 800000, 'Stable', 0.97);
-INSERT INTO Dimension_Region VALUES (55, 'Lisbonne', 'Portugal', 'Urbaine', '1000-001', 'Y', 100, 500000, 'Stable', 0.93);
-INSERT INTO Dimension_Region VALUES (56, 'Madrid', 'Espagne', 'Urbaine', '28001', 'Y', 604, 6700000, 'Stable', 0.95);
-INSERT INTO Dimension_Region VALUES (57, 'Barcelone', 'Espagne', 'Urbaine', '08002', 'Y', 101, 5600000, 'Stable', 0.94);
-INSERT INTO Dimension_Region VALUES (58, 'Athènes', 'Grèce', 'Urbaine', '10563', 'Y', 38, 3100000, 'Stable', 0.89);
-INSERT INTO Dimension_Region VALUES (59, 'Rome', 'Italie', 'Urbaine', '00100', 'Y', 1285, 4300000, 'Stable', 0.92);
-INSERT INTO Dimension_Region VALUES (60, 'Stockholm', 'Suède', 'Urbaine', '11120', 'Y', 188, 975000, 'Stable', 0.96);
-
--- Complétez les dernières 40 lignes en diversifiant les pays, zones et populations
-INSERT INTO Dimension_Region VALUES (61, 'Helsinki', 'Finlande', 'Urbaine', '00100', 'Y', 213, 650000, 'Stable', 0.95);
-INSERT INTO Dimension_Region VALUES (62, 'Tallinn', 'Estonie', 'Urbaine', '10123', 'Y', 159, 430000, 'Stable', 0.93);
-INSERT INTO Dimension_Region VALUES (63, 'Riga', 'Lettonie', 'Urbaine', 'LV-1050', 'Y', 307, 630000, 'Stable', 0.92);
-INSERT INTO Dimension_Region VALUES (64, 'Vilnius', 'Lituanie', 'Urbaine', 'LT-01100', 'Y', 402, 550000, 'Stable', 0.91);
-INSERT INTO Dimension_Region VALUES (65, 'Prague', 'République Tchèque', 'Urbaine', '11000', 'Y', 496, 1300000, 'Stable', 0.95);
-INSERT INTO Dimension_Region VALUES (66, 'Varsovie', 'Pologne', 'Urbaine', '00-001', 'Y', 517, 1800000, 'Stable', 0.93);
-INSERT INTO Dimension_Region VALUES (67, 'Bucarest', 'Roumanie', 'Urbaine', '010011', 'Y', 228, 1800000, 'Stable', 0.92);
-INSERT INTO Dimension_Region VALUES (68, 'Sofia', 'Bulgarie', 'Urbaine', '1000', 'Y', 492, 1300000, 'Stable', 0.91);
-INSERT INTO Dimension_Region VALUES (69, 'Belgrade', 'Serbie', 'Urbaine', '11000', 'Y', 360, 1400000, 'Stable', 0.90);
-INSERT INTO Dimension_Region VALUES (70, 'Zagreb', 'Croatie', 'Urbaine', '10000', 'Y', 641, 800000, 'Stable', 0.91);
-
-INSERT INTO Dimension_Region VALUES (71, 'Ljubljana', 'Slovénie', 'Urbaine', '1000', 'Y', 164, 300000, 'Stable', 0.93);
-INSERT INTO Dimension_Region VALUES (72, 'Sarajevo', 'Bosnie-Herzégovine', 'Urbaine', '71000', 'Y', 142, 275000, 'Stable', 0.88);
-INSERT INTO Dimension_Region VALUES (73, 'Podgorica', 'Monténégro', 'Urbaine', '81000', 'Y', 144, 187000, 'Stable', 0.86);
-INSERT INTO Dimension_Region VALUES (74, 'Skopje', 'Macédoine du Nord', 'Urbaine', '1000', 'Y', 254, 500000, 'Stable', 0.88);
-INSERT INTO Dimension_Region VALUES (75, 'Tirana', 'Albanie', 'Urbaine', '1001', 'Y', 412, 420000, 'Stable', 0.87);
-INSERT INTO Dimension_Region VALUES (76, 'Athènes Nord', 'Grèce', 'Urbaine', '10600', 'N', 50, 800000, 'Stable', 0.89);
-INSERT INTO Dimension_Region VALUES (77, 'Crète', 'Grèce', 'Rurale', '70014', 'N', 645, 620000, 'Stable', 0.86);
-INSERT INTO Dimension_Region VALUES (78, 'Chypre', 'Chypre', 'Urbaine', '1010', 'Y', 135, 875000, 'Stable', 0.90);
-INSERT INTO Dimension_Region VALUES (79, 'Amérique du Nord', 'États-Unis', 'Urbaine', '99900', 'Y', 1000000, 100000000, 'Stable', 0.95);
-INSERT INTO Dimension_Region VALUES (80, 'Amazonas', 'Brésil', 'Rurale', '69000', 'N', 5000000, 4200000, 'En développement', 0.75);
-
-INSERT INTO Dimension_Region VALUES (81, 'Bogota', 'Colombie', 'Urbaine', '11001', 'Y', 160, 7200000, 'Stable', 0.88);
-INSERT INTO Dimension_Region VALUES (82, 'Buenos Aires', 'Argentine', 'Urbaine', 'C1001', 'Y', 203, 15000000, 'Stable', 0.90);
-INSERT INTO Dimension_Region VALUES (83, 'Santiago', 'Chili', 'Urbaine', '8320000', 'Y', 641, 8000000, 'Stable', 0.92);
-INSERT INTO Dimension_Region VALUES (84, 'Lima', 'Pérou', 'Urbaine', '15000', 'Y', 266, 9600000, 'Stable', 0.91);
-INSERT INTO Dimension_Region VALUES (85, 'Quito', 'Équateur', 'Urbaine', '17000', 'Y', 324, 1700000, 'Stable', 0.90);
-INSERT INTO Dimension_Region VALUES (86, 'Brasilia', 'Brésil', 'Urbaine', '70000', 'Y', 580, 3000000, 'Stable', 0.91);
-INSERT INTO Dimension_Region VALUES (87, 'Montréal', 'Canada', 'Urbaine', 'H2X1X7', 'Y', 365, 4000000, 'Stable', 0.92);
-INSERT INTO Dimension_Region VALUES (88, 'San Francisco', 'États-Unis', 'Urbaine', '94103', 'Y', 121, 870000, 'Stable', 0.97);
-INSERT INTO Dimension_Region VALUES (89, 'Los Angeles', 'États-Unis', 'Urbaine', '90001', 'Y', 129, 4000000, 'Stable', 0.95);
-INSERT INTO Dimension_Region VALUES (90, 'Chicago', 'États-Unis', 'Urbaine', '60601', 'Y', 606, 2700000, 'Stable', 0.94);
-
-INSERT INTO Dimension_Region VALUES (91, 'Houston', 'États-Unis', 'Urbaine', '77001', 'Y', 667, 2300000, 'Stable', 0.93);
-INSERT INTO Dimension_Region VALUES (92, 'Miami', 'États-Unis', 'Urbaine', '33101', 'Y', 135, 480000, 'Stable', 0.92);
-INSERT INTO Dimension_Region VALUES (93, 'Atlanta', 'États-Unis', 'Urbaine', '30301', 'Y', 132, 498000, 'Stable', 0.91);
-INSERT INTO Dimension_Region VALUES (94, 'Seattle', 'États-Unis', 'Urbaine', '98101', 'Y', 142, 350000, 'Stable', 0.91);
-INSERT INTO Dimension_Region VALUES (95, 'Denver', 'États-Unis', 'Urbaine', '80201', 'Y', 153, 720000, 'Stable', 0.91);
-INSERT INTO Dimension_Region VALUES (96, 'Phoenix', 'États-Unis', 'Urbaine', '85001', 'Y', 519, 1700000, 'Stable', 0.90);
-INSERT INTO Dimension_Region VALUES (97, 'Boston', 'États-Unis', 'Urbaine', '02101', 'Y', 89, 700000, 'Stable', 0.93);
-INSERT INTO Dimension_Region VALUES (98, 'Austin', 'États-Unis', 'Urbaine', '73301', 'Y', 271, 900000, 'Stable', 0.92);
-INSERT INTO Dimension_Region VALUES (99, 'Las Vegas', 'États-Unis', 'Urbaine', '89101', 'Y', 132, 640000, 'Stable', 0.92);
-INSERT INTO Dimension_Region VALUES (100, 'Detroit', 'États-Unis', 'Urbaine', '48201', 'Y', 388, 670000, 'Stable', 0.91);
---select count(*) as A from Dimension_Region; --100
+INSERT INTO Dimension_Region VALUES (1, 'Auvergne-Rhône-Alpes', 'France', 'Urbaine', '34000', 'N', 72787, 2950000, 'Stable', 0.89);
+INSERT INTO Dimension_Region VALUES (2, 'Bourgogne-Franche-Comté', 'France', 'Rurale', '21000', 'N', 47784, 2800000, 'En déclin', 0.86);
+INSERT INTO Dimension_Region VALUES (3, 'Bretagne', 'France', 'Rurale', '35000', 'N', 27208, 3340000, 'Stable', 0.88);
+INSERT INTO Dimension_Region VALUES (4, 'Centre-Val de Loire', 'France', 'Rurale', '45000', 'N', 39151, 2600000, 'Stable', 0.88);
+INSERT INTO Dimension_Region VALUES (5, 'Corse', 'France', 'Urbaine', '20000', 'N', 8680, 340000, 'Stable', 0.89);
+INSERT INTO Dimension_Region VALUES (6, 'Grand Est', 'France', 'Rurale', '67000', 'N', 57433, 5500000, 'Stable', 0.89);
+INSERT INTO Dimension_Region VALUES (7, 'Hauts-de-France', 'France', 'Urbaine', '59000', 'N', 31813, 6000000, 'Stable', 0.90);
+INSERT INTO Dimension_Region VALUES (8, 'Île-de-France', 'France', 'Urbaine', '75000', 'Y', 12000, 12200000, 'Stable', 0.95);
+INSERT INTO Dimension_Region VALUES (9, 'Normandie', 'France', 'Rurale', '76000', 'N', 29906, 3300000, 'En déclin', 0.87);
+INSERT INTO Dimension_Region VALUES (10, 'Nouvelle-Aquitaine', 'France', 'Rurale', '33000', 'N', 84000, 5900000, 'En développement', 0.91);
+INSERT INTO Dimension_Region VALUES (11, 'Occitanie', 'France', 'Urbaine', '34000', 'N', 72787, 2950000, 'Stable', 0.89);
+INSERT INTO Dimension_Region VALUES (12, 'Pays de la Loire', 'France', 'Rurale', '44000', 'N', 32082, 3800000, 'Stable', 0.89);
+INSERT INTO Dimension_Region VALUES (13, 'Provence-Alpes-Côte d''Azur', 'France', 'Urbaine', '06000', 'N', 31400, 5050000, 'Stable', 0.93);
 
 
 
@@ -662,6 +563,7 @@ INSERT INTO Dimension_Employe VALUES (100, 'Lemoine', 'Camille', TO_DATE('1993-0
 
 
 -- Insertion des données dans la table Fait_Suivi_Employe
+-- Lignes 1 à 100 pour la table Fait_Suivi_Employe
 INSERT INTO Fait_Suivi_Employe VALUES (1, 1, 1, 1, 1, 1, 5000, 8.5, 2);
 INSERT INTO Fait_Suivi_Employe VALUES (2, 2, 2, 2, 2, 2, 3000, 7.8, 1);
 INSERT INTO Fait_Suivi_Employe VALUES (3, 3, 3, 3, 3, 3, 4500, 8.2, 1.5);
@@ -672,99 +574,108 @@ INSERT INTO Fait_Suivi_Employe VALUES (7, 7, 7, 7, 7, 7, 4300, 8.0, 1);
 INSERT INTO Fait_Suivi_Employe VALUES (8, 8, 8, 8, 8, 8, 4900, 7.9, 2);
 INSERT INTO Fait_Suivi_Employe VALUES (9, 9, 9, 9, 9, 9, 4600, 8.4, 1.8);
 INSERT INTO Fait_Suivi_Employe VALUES (10, 10, 10, 10, 10, 10, 5100, 8.1, 1.2);
--- Lignes 11 à 100 pour Fait_Suivi_Employe
+
 INSERT INTO Fait_Suivi_Employe VALUES (11, 11, 11, 11, 11, 11, 4000, 8.3, 1.5);
 INSERT INTO Fait_Suivi_Employe VALUES (12, 12, 12, 12, 12, 12, 3200, 7.6, 2.2);
 INSERT INTO Fait_Suivi_Employe VALUES (13, 13, 13, 13, 13, 13, 3700, 8.0, 1.8);
-INSERT INTO Fait_Suivi_Employe VALUES (14, 14, 14, 14, 14, 14, 4400, 8.9, 2.3);
-INSERT INTO Fait_Suivi_Employe VALUES (15, 15, 15, 15, 15, 15, 4800, 8.2, 1.4);
-INSERT INTO Fait_Suivi_Employe VALUES (16, 16, 16, 16, 16, 16, 4200, 7.7, 1.9);
-INSERT INTO Fait_Suivi_Employe VALUES (17, 17, 17, 17, 17, 17, 5100, 8.5, 2.1);
-INSERT INTO Fait_Suivi_Employe VALUES (18, 18, 18, 18, 18, 18, 3500, 7.8, 1.6);
-INSERT INTO Fait_Suivi_Employe VALUES (19, 19, 19, 19, 19, 19, 4700, 8.4, 2.0);
-INSERT INTO Fait_Suivi_Employe VALUES (20, 20, 20, 20, 20, 20, 4500, 8.1, 1.7);
+INSERT INTO Fait_Suivi_Employe VALUES (14, 14, 14, 1, 14, 14, 4400, 8.9, 2.3);
+INSERT INTO Fait_Suivi_Employe VALUES (15, 15, 15, 2, 15, 15, 4800, 8.2, 1.4);
+INSERT INTO Fait_Suivi_Employe VALUES (16, 16, 16, 3, 16, 16, 4200, 7.7, 1.9);
+INSERT INTO Fait_Suivi_Employe VALUES (17, 17, 17, 4, 17, 17, 5100, 8.5, 2.1);
+INSERT INTO Fait_Suivi_Employe VALUES (18, 18, 18, 5, 18, 18, 3500, 7.8, 1.6);
+INSERT INTO Fait_Suivi_Employe VALUES (19, 19, 19, 6, 19, 19, 4700, 8.4, 2.0);
+INSERT INTO Fait_Suivi_Employe VALUES (20, 20, 20, 7, 20, 20, 4500, 8.1, 1.7);
 
-INSERT INTO Fait_Suivi_Employe VALUES (21, 21, 21, 21, 21, 21, 4300, 7.9, 1.8);
-INSERT INTO Fait_Suivi_Employe VALUES (22, 22, 22, 22, 22, 22, 5200, 8.7, 2.3);
-INSERT INTO Fait_Suivi_Employe VALUES (23, 23, 23, 23, 23, 23, 4900, 8.0, 2.1);
-INSERT INTO Fait_Suivi_Employe VALUES (24, 24, 24, 24, 24, 24, 4700, 8.5, 1.9);
-INSERT INTO Fait_Suivi_Employe VALUES (25, 25, 25, 25, 25, 25, 3800, 7.4, 1.4);
-INSERT INTO Fait_Suivi_Employe VALUES (26, 26, 26, 26, 26, 26, 4400, 8.1, 2.0);
-INSERT INTO Fait_Suivi_Employe VALUES (27, 27, 27, 27, 27, 27, 3900, 7.8, 1.7);
-INSERT INTO Fait_Suivi_Employe VALUES (28, 28, 28, 28, 28, 28, 4800, 8.6, 2.4);
-INSERT INTO Fait_Suivi_Employe VALUES (29, 29, 29, 29, 29, 29, 3600, 7.5, 1.5);
-INSERT INTO Fait_Suivi_Employe VALUES (30, 30, 30, 30, 30, 30, 5300, 8.8, 2.2);
+INSERT INTO Fait_Suivi_Employe VALUES (21, 21, 21, 8, 21, 21, 4300, 7.9, 1.8);
+INSERT INTO Fait_Suivi_Employe VALUES (22, 22, 22, 9, 22, 22, 5200, 8.7, 2.3);
+INSERT INTO Fait_Suivi_Employe VALUES (23, 23, 23, 10, 23, 23, 4900, 8.0, 2.1);
+INSERT INTO Fait_Suivi_Employe VALUES (24, 24, 24, 11, 24, 24, 4700, 8.5, 1.9);
+INSERT INTO Fait_Suivi_Employe VALUES (25, 25, 25, 12, 25, 25, 3800, 7.4, 1.4);
+INSERT INTO Fait_Suivi_Employe VALUES (26, 26, 26, 13, 26, 26, 4400, 8.1, 2.0);
+INSERT INTO Fait_Suivi_Employe VALUES (27, 27, 27, 1, 27, 27, 3900, 7.8, 1.7);
+INSERT INTO Fait_Suivi_Employe VALUES (28, 28, 28, 2, 28, 28, 4800, 8.6, 2.4);
+INSERT INTO Fait_Suivi_Employe VALUES (29, 29, 29, 3, 29, 29, 3600, 7.5, 1.5);
+INSERT INTO Fait_Suivi_Employe VALUES (30, 30, 30, 4, 30, 30, 5300, 8.8, 2.2);
+-- Lignes 31 à 100 pour Fait_Suivi_Employe avec condition sur les dates
+INSERT INTO Fait_Suivi_Employe VALUES (31, 31, 5, 8, 12, 6, 4200, 7.9, 1.7);
+INSERT INTO Fait_Suivi_Employe VALUES (32, 32, 10, 7, 5, 8, 5000, 8.3, 2.1);
+INSERT INTO Fait_Suivi_Employe VALUES (33, 33, 3, 4, 11, 2, 3600, 7.2, 1.4);
+INSERT INTO Fait_Suivi_Employe VALUES (34, 34, 15, 3, 8, 7, 4300, 8.0, 2.3);
+INSERT INTO Fait_Suivi_Employe VALUES (35, 35, 20, 9, 6, 1, 6000, 8.8, 1.9);
+INSERT INTO Fait_Suivi_Employe VALUES (36, 36, 25, 2, 10, 13, 4900, 7.7, 2.2);
+INSERT INTO Fait_Suivi_Employe VALUES (37, 37, 8, 5, 1, 9, 4000, 8.2, 1.5);
+INSERT INTO Fait_Suivi_Employe VALUES (38, 38, 18, 13, 7, 4, 4600, 7.8, 2.0);
+INSERT INTO Fait_Suivi_Employe VALUES (39, 39, 7, 10, 9, 11, 5200, 8.9, 1.8);
+INSERT INTO Fait_Suivi_Employe VALUES (40, 40, 12, 6, 3, 5, 4100, 7.6, 2.4);
 
-INSERT INTO Fait_Suivi_Employe VALUES (31, 31, 31, 31, 31, 31, 4100, 7.7, 1.8);
-INSERT INTO Fait_Suivi_Employe VALUES (32, 32, 32, 32, 32, 32, 4200, 8.3, 1.9);
-INSERT INTO Fait_Suivi_Employe VALUES (33, 33, 33, 33, 33, 33, 4700, 8.5, 2.1);
-INSERT INTO Fait_Suivi_Employe VALUES (34, 34, 34, 34, 34, 34, 3900, 7.8, 1.7);
-INSERT INTO Fait_Suivi_Employe VALUES (35, 35, 35, 35, 35, 35, 5300, 8.9, 2.3);
-INSERT INTO Fait_Suivi_Employe VALUES (36, 36, 36, 36, 36, 36, 5000, 8.2, 2.0);
-INSERT INTO Fait_Suivi_Employe VALUES (37, 37, 37, 37, 37, 37, 4500, 8.0, 1.5);
-INSERT INTO Fait_Suivi_Employe VALUES (38, 38, 38, 38, 38, 38, 5200, 8.7, 2.4);
-INSERT INTO Fait_Suivi_Employe VALUES (39, 39, 39, 39, 39, 39, 4700, 8.3, 1.8);
-INSERT INTO Fait_Suivi_Employe VALUES (40, 40, 40, 40, 40, 40, 4000, 7.6, 1.6);
+INSERT INTO Fait_Suivi_Employe VALUES (41, 41, 9, 4, 2, 12, 5300, 8.5, 1.7);
+INSERT INTO Fait_Suivi_Employe VALUES (42, 42, 13, 11, 8, 10, 3800, 7.3, 1.3);
+INSERT INTO Fait_Suivi_Employe VALUES (43, 43, 19, 12, 5, 3, 4700, 8.0, 1.9);
+INSERT INTO Fait_Suivi_Employe VALUES (44, 44, 17, 9, 6, 6, 4400, 7.5, 2.2);
+INSERT INTO Fait_Suivi_Employe VALUES (45, 45, 4, 2, 13, 8, 3600, 8.4, 1.5);
+INSERT INTO Fait_Suivi_Employe VALUES (46, 46, 14, 3, 4, 7, 5200, 8.6, 2.3);
+INSERT INTO Fait_Suivi_Employe VALUES (47, 47, 23, 1, 9, 11, 4500, 7.8, 1.6);
+INSERT INTO Fait_Suivi_Employe VALUES (48, 48, 6, 13, 12, 5, 5000, 8.7, 2.1);
+INSERT INTO Fait_Suivi_Employe VALUES (49, 49, 21, 10, 7, 4, 4900, 7.9, 1.8);
+INSERT INTO Fait_Suivi_Employe VALUES (50, 50, 16, 8, 3, 9, 5300, 8.2, 2.4);
 
-INSERT INTO Fait_Suivi_Employe VALUES (41, 41, 41, 41, 41, 41, 4900, 8.4, 1.9);
-INSERT INTO Fait_Suivi_Employe VALUES (42, 42, 42, 42, 42, 42, 4300, 7.9, 1.8);
-INSERT INTO Fait_Suivi_Employe VALUES (43, 43, 43, 43, 43, 43, 5400, 8.6, 2.3);
-INSERT INTO Fait_Suivi_Employe VALUES (44, 44, 44, 44, 44, 44, 4600, 8.2, 2.0);
-INSERT INTO Fait_Suivi_Employe VALUES (45, 45, 45, 45, 45, 45, 4800, 8.1, 1.7);
-INSERT INTO Fait_Suivi_Employe VALUES (46, 46, 46, 46, 46, 46, 4200, 7.5, 1.5);
-INSERT INTO Fait_Suivi_Employe VALUES (47, 47, 47, 47, 47, 47, 5500, 8.9, 2.2);
-INSERT INTO Fait_Suivi_Employe VALUES (48, 48, 48, 48, 48, 48, 5100, 8.3, 1.9);
-INSERT INTO Fait_Suivi_Employe VALUES (49, 49, 49, 49, 49, 49, 4400, 7.8, 1.6);
-INSERT INTO Fait_Suivi_Employe VALUES (50, 50, 50, 50, 50, 50, 4700, 8.5, 2.1);
-INSERT INTO Fait_Suivi_Employe VALUES (51, 51, 51, 51, 51, 51, 4300, 8.1, 1.8);
-INSERT INTO Fait_Suivi_Employe VALUES (52, 52, 52, 52, 52, 52, 5000, 8.7, 2.2);
-INSERT INTO Fait_Suivi_Employe VALUES (53, 53, 53, 53, 53, 53, 3900, 7.6, 1.5);
-INSERT INTO Fait_Suivi_Employe VALUES (54, 54, 54, 54, 54, 54, 4700, 8.3, 1.9);
-INSERT INTO Fait_Suivi_Employe VALUES (55, 55, 55, 55, 55, 55, 4400, 7.8, 2.0);
-INSERT INTO Fait_Suivi_Employe VALUES (56, 56, 56, 56, 56, 56, 5200, 8.4, 2.1);
-INSERT INTO Fait_Suivi_Employe VALUES (57, 57, 57, 57, 57, 57, 3600, 7.5, 1.6);
-INSERT INTO Fait_Suivi_Employe VALUES (58, 58, 58, 58, 58, 58, 4900, 8.6, 2.2);
-INSERT INTO Fait_Suivi_Employe VALUES (59, 59, 59, 59, 59, 59, 4100, 7.9, 1.7);
-INSERT INTO Fait_Suivi_Employe VALUES (60, 60, 60, 60, 60, 60, 5300, 8.8, 2.5);
-INSERT INTO Fait_Suivi_Employe VALUES (61, 61, 61, 61, 61, 61, 4500, 8.2, 1.8);
-INSERT INTO Fait_Suivi_Employe VALUES (62, 62, 62, 62, 62, 62, 3800, 7.6, 1.4);
-INSERT INTO Fait_Suivi_Employe VALUES (63, 63, 63, 63, 63, 63, 4200, 8.0, 1.9);
-INSERT INTO Fait_Suivi_Employe VALUES (64, 64, 64, 64, 64, 64, 4800, 8.5, 2.3);
-INSERT INTO Fait_Suivi_Employe VALUES (65, 65, 65, 65, 65, 65, 5200, 8.9, 2.2);
-INSERT INTO Fait_Suivi_Employe VALUES (66, 66, 66, 66, 66, 66, 4000, 7.8, 1.5);
-INSERT INTO Fait_Suivi_Employe VALUES (67, 67, 67, 67, 67, 67, 4900, 8.3, 1.9);
-INSERT INTO Fait_Suivi_Employe VALUES (68, 68, 68, 68, 68, 68, 4500, 7.9, 1.6);
-INSERT INTO Fait_Suivi_Employe VALUES (69, 69, 69, 69, 69, 69, 4700, 8.4, 2.0);
-INSERT INTO Fait_Suivi_Employe VALUES (70, 70, 70, 70, 70, 70, 5100, 8.7, 2.2);
-INSERT INTO Fait_Suivi_Employe VALUES (71, 71, 71, 71, 71, 71, 4200, 7.5, 1.8);
-INSERT INTO Fait_Suivi_Employe VALUES (72, 72, 72, 72, 72, 72, 5300, 8.3, 2.1);
-INSERT INTO Fait_Suivi_Employe VALUES (73, 73, 73, 73, 73, 73, 4400, 7.8, 1.5);
-INSERT INTO Fait_Suivi_Employe VALUES (74, 74, 74, 74, 74, 74, 5100, 8.9, 2.3);
-INSERT INTO Fait_Suivi_Employe VALUES (75, 75, 75, 75, 75, 75, 4700, 8.2, 1.9);
-INSERT INTO Fait_Suivi_Employe VALUES (76, 76, 76, 76, 76, 76, 4900, 8.4, 2.0);
-INSERT INTO Fait_Suivi_Employe VALUES (77, 77, 77, 77, 77, 77, 3600, 7.6, 1.6);
-INSERT INTO Fait_Suivi_Employe VALUES (78, 78, 78, 78, 78, 78, 5300, 8.7, 2.3);
-INSERT INTO Fait_Suivi_Employe VALUES (79, 79, 79, 79, 79, 79, 4000, 7.9, 1.5);
-INSERT INTO Fait_Suivi_Employe VALUES (80, 80, 80, 80, 80, 80, 4500, 8.3, 1.8);
-INSERT INTO Fait_Suivi_Employe VALUES (81, 81, 81, 81, 81, 81, 5000, 8.5, 2.1);
-INSERT INTO Fait_Suivi_Employe VALUES (82, 82, 82, 82, 82, 82, 3800, 7.4, 1.4);
-INSERT INTO Fait_Suivi_Employe VALUES (83, 83, 83, 83, 83, 83, 4200, 8.0, 1.9);
-INSERT INTO Fait_Suivi_Employe VALUES (84, 84, 84, 84, 84, 84, 4700, 8.3, 1.8);
-INSERT INTO Fait_Suivi_Employe VALUES (85, 85, 85, 85, 85, 85, 5300, 8.9, 2.2);
-INSERT INTO Fait_Suivi_Employe VALUES (86, 86, 86, 86, 86, 86, 4900, 8.4, 2.0);
-INSERT INTO Fait_Suivi_Employe VALUES (87, 87, 87, 87, 87, 87, 3600, 7.5, 1.5);
-INSERT INTO Fait_Suivi_Employe VALUES (88, 88, 88, 88, 88, 88, 4000, 7.8, 1.6);
-INSERT INTO Fait_Suivi_Employe VALUES (89, 89, 89, 89, 89, 89, 5500, 8.7, 2.4);
-INSERT INTO Fait_Suivi_Employe VALUES (90, 90, 90, 90, 90, 90, 4100, 7.9, 1.7);
-INSERT INTO Fait_Suivi_Employe VALUES (91, 91, 91, 91, 91, 91, 5000, 8.5, 2.1);
-INSERT INTO Fait_Suivi_Employe VALUES (92, 92, 92, 92, 92, 92, 4200, 8.2, 1.8);
-INSERT INTO Fait_Suivi_Employe VALUES (93, 93, 93, 93, 93, 93, 3800, 7.6, 1.4);
-INSERT INTO Fait_Suivi_Employe VALUES (94, 94, 94, 94, 94, 94, 5300, 8.9, 2.3);
-INSERT INTO Fait_Suivi_Employe VALUES (95, 95, 95, 95, 95, 95, 4700, 8.4, 2.0);
-INSERT INTO Fait_Suivi_Employe VALUES (96, 96, 96, 96, 96, 96, 4400, 7.8, 1.5);
-INSERT INTO Fait_Suivi_Employe VALUES (97, 97, 97, 97, 97, 97, 5200, 8.7, 2.2);
-INSERT INTO Fait_Suivi_Employe VALUES (98, 98, 98, 98, 98, 98, 5000, 8.3, 1.8);
-INSERT INTO Fait_Suivi_Employe VALUES (99, 99, 99, 99, 99, 99, 4700, 8.0, 1.7);
-INSERT INTO Fait_Suivi_Employe VALUES (100, 100, 100, 100, 100, 100, 4300, 7.9, 1.6);
+INSERT INTO Fait_Suivi_Employe VALUES (51, 51, 22, 6, 10, 13, 4100, 7.4, 1.6);
+INSERT INTO Fait_Suivi_Employe VALUES (52, 52, 11, 2, 8, 1, 4700, 8.0, 1.7);
+INSERT INTO Fait_Suivi_Employe VALUES (53, 53, 24, 11, 6, 3, 5300, 8.8, 2.5);
+INSERT INTO Fait_Suivi_Employe VALUES (54, 54, 2, 13, 7, 7, 4200, 8.1, 2.1);
+INSERT INTO Fait_Suivi_Employe VALUES (55, 55, 18, 4, 12, 9, 3900, 7.6, 1.8);
+INSERT INTO Fait_Suivi_Employe VALUES (56, 56, 5, 8, 1, 4, 5100, 8.3, 1.9);
+INSERT INTO Fait_Suivi_Employe VALUES (57, 57, 6, 10, 5, 12, 3600, 7.9, 1.5);
+INSERT INTO Fait_Suivi_Employe VALUES (58, 58, 14, 2, 3, 8, 5200, 8.7, 2.0);
+INSERT INTO Fait_Suivi_Employe VALUES (59, 59, 26, 7, 9, 11, 4700, 8.5, 2.3);
+INSERT INTO Fait_Suivi_Employe VALUES (60, 60, 1, 6, 4, 2, 4400, 7.4, 1.6);
+
+INSERT INTO Fait_Suivi_Employe VALUES (61, 61, 3, 13, 8, 13, 3800, 7.5, 1.7);
+INSERT INTO Fait_Suivi_Employe VALUES (62, 62, 20, 11, 10, 5, 4900, 8.9, 2.1);
+INSERT INTO Fait_Suivi_Employe VALUES (63, 63, 25, 9, 2, 6, 5300, 8.6, 2.2);
+INSERT INTO Fait_Suivi_Employe VALUES (64, 64, 7, 8, 6, 1, 4200, 7.3, 1.4);
+INSERT INTO Fait_Suivi_Employe VALUES (65, 65, 12, 5, 13, 10, 5000, 8.5, 2.3);
+INSERT INTO Fait_Suivi_Employe VALUES (66, 66, 16, 2, 4, 9, 4500, 8.0, 1.9);
+INSERT INTO Fait_Suivi_Employe VALUES (67, 67, 14, 7, 11, 11, 5300, 8.7, 2.4);
+INSERT INTO Fait_Suivi_Employe VALUES (68, 68, 21, 3, 9, 8, 4100, 7.6, 1.8);
+INSERT INTO Fait_Suivi_Employe VALUES (69, 69, 4, 1, 7, 12, 3600, 7.8, 1.5);
+INSERT INTO Fait_Suivi_Employe VALUES (70, 70, 19, 10, 5, 13, 4700, 8.4, 2.2);
+
+-- Lignes 71 à 100 pour Fait_Suivi_Employe
+INSERT INTO Fait_Suivi_Employe VALUES (71, 72, 15, 1, 8, 6, 4000, 8.0, 1.7);
+INSERT INTO Fait_Suivi_Employe VALUES (72, 73, 22, 3, 11, 10, 4700, 7.8, 2.1);
+INSERT INTO Fait_Suivi_Employe VALUES (73, 74, 13, 7, 5, 4, 3600, 8.3, 1.4);
+INSERT INTO Fait_Suivi_Employe VALUES (74, 75, 24, 9, 12, 2, 5300, 8.7, 2.3);
+INSERT INTO Fait_Suivi_Employe VALUES (75, 76, 6, 5, 3, 8, 5100, 8.5, 1.9);
+INSERT INTO Fait_Suivi_Employe VALUES (76, 77, 18, 10, 7, 11, 3900, 7.4, 1.6);
+INSERT INTO Fait_Suivi_Employe VALUES (77, 78, 2, 13, 10, 9, 5200, 8.6, 2.4);
+INSERT INTO Fait_Suivi_Employe VALUES (78, 79, 14, 6, 8, 12, 4500, 8.1, 2.0);
+INSERT INTO Fait_Suivi_Employe VALUES (79, 80, 20, 11, 1, 7, 5000, 8.8, 1.8);
+INSERT INTO Fait_Suivi_Employe VALUES (80, 84, 4, 8, 13, 3, 4700, 7.7, 2.2);
+
+INSERT INTO Fait_Suivi_Employe VALUES (81, 82, 21, 2, 9, 5, 4400, 8.4, 1.5);
+INSERT INTO Fait_Suivi_Employe VALUES (82, 83, 11, 7, 2, 6, 3800, 7.6, 1.4);
+INSERT INTO Fait_Suivi_Employe VALUES (83, 84, 25, 4, 6, 8, 5100, 8.3, 1.9);
+INSERT INTO Fait_Suivi_Employe VALUES (84, 85, 19, 3, 5, 10, 5300, 8.7, 2.1);
+INSERT INTO Fait_Suivi_Employe VALUES (85, 86, 16, 10, 4, 11, 4200, 7.8, 1.6);
+INSERT INTO Fait_Suivi_Employe VALUES (86, 87, 8, 12, 8, 1, 5000, 8.9, 2.4);
+INSERT INTO Fait_Suivi_Employe VALUES (87, 88, 3, 13, 9, 9, 4500, 7.9, 1.7);
+INSERT INTO Fait_Suivi_Employe VALUES (88, 89, 23, 5, 7, 4, 3600, 8.0, 1.5);
+INSERT INTO Fait_Suivi_Employe VALUES (89, 90, 12, 11, 3, 2, 3900, 7.5, 1.3);
+INSERT INTO Fait_Suivi_Employe VALUES (90, 91, 17, 9, 10, 6, 5100, 8.2, 1.8);
+
+INSERT INTO Fait_Suivi_Employe VALUES (91, 92, 7, 1, 6, 7, 4400, 7.4, 1.6);
+INSERT INTO Fait_Suivi_Employe VALUES (92, 93, 5, 4, 12, 13, 4700, 8.5, 1.9);
+INSERT INTO Fait_Suivi_Employe VALUES (93, 94, 26, 8, 11, 11, 5300, 8.8, 2.3);
+INSERT INTO Fait_Suivi_Employe VALUES (94, 95, 14, 2, 7, 10, 5000, 8.7, 1.9);
+INSERT INTO Fait_Suivi_Employe VALUES (95, 99, 22, 3, 5, 3, 3900, 7.9, 1.4);
+INSERT INTO Fait_Suivi_Employe VALUES (96, 97, 4, 7, 13, 9, 5100, 8.4, 1.8);
+INSERT INTO Fait_Suivi_Employe VALUES (97, 98, 15, 6, 2, 5, 4200, 7.6, 2.0);
+INSERT INTO Fait_Suivi_Employe VALUES (97, 99, 8, 13, 8, 4, 4500, 8.1, 1.7);
+INSERT INTO Fait_Suivi_Employe VALUES (99, 100, 20, 11, 6, 8, 5000, 8.5, 1.9);
+INSERT INTO Fait_Suivi_Employe VALUES (99, 100, 1, 10, 4, 12, 3900, 7.7, 2.2);
+
+
+
 
 --select count(*) as count_suivi_employe from Fait_Suivi_Employe; --100
