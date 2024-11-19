@@ -40,25 +40,7 @@ COLUMN NBRE_PART FORMAT 999
 COLUMN NOMBRE_EQUIPES FORMAT 999
 
 -- Requete SQL :
-SELECT 
-    Ev.Type_Evenement AS Type_Ev, 
-    Ev.Description_Evenement AS Descr, 
-    Ev.Impact_Evenement_Societe AS Impact,
-    Eq.Nom_Equipe AS Equipe, 
-    SUM(F.Cout_Evenement) AS Cout_Total,
-    COUNT(F.ID_Employe) AS Nbre_Part, 
-    COUNT(DISTINCT F.ID_Equipe) AS Nombre_Equipes 
-FROM 
-    Fait_Suivi_Employe F
-JOIN 
-    Dimension_Evenement Ev ON F.ID_Evenement = Ev.ID_Evenement
-LEFT JOIN 
-    Dimension_Equipe Eq ON F.ID_Equipe = Eq.ID_Equipe
-GROUP BY 
-    Ev.Type_Evenement, Ev.Description_Evenement, Ev.Impact_Evenement_Societe, Eq.Nom_Equipe
-ORDER BY 
-    Cout_Total DESC 
-FETCH FIRST 10 ROWS ONLY; 
+a 
 
 --
 
